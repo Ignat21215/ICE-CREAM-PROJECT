@@ -18,9 +18,166 @@
 </head>
 
 <body>
-    <header class="header"></header>
+    <header class="header">
+        <div class="container hreader__container">
+            <a href="index.html" class="logo">
+                <img src="./images/logo.png" alt="logo" class="logo__img">
+            </a>
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="index.html" class="header__link">Home</a></li>
+                        <li class="header__item"><a href="#made" class="header__link">How it’s made?</a></li>
+                        <li class="header__item"><a href="#products" class="header__link">Our products</a></li>
+                        <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="header__btn button" type="button">Buy now <svg class="header__btn-icon">
+                        <use href="./images/symbol-defs.svg#icon-short-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
-    <main class="main"></main>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">ice cream
+                    made with
+                    passion</h1>
+                <button class="hero__btn button" type="button">Products</button>
+                <a href="#" class="hero__link">How it’s made?</a>
+                <div class="hero__wrapper">
+                    <img src="./images/plate-of-ice-cream.png" alt="ice cream">
+                    <div class="hero__txt-wrapper">
+                        <p class="hero__desc">Indulge in a scoop of ice cream made with passion and treat your taste
+                            buds to an unforgettable experience!</p>
+                        <a href="#" class="hero__link"><svg class="hero__icon">
+                                <use href="./images/symbol-defs.svg#icon-long-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <h3 class="hero__item-title">16</h3>
+                        <p class="hero__item-desc">cafes</p>
+                    </li>
+                    <li class="hero__item">
+                        <h3 class="hero__item-title">23</h3>
+                        <p class="hero__item-desc">food trucks</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <div class="container">
+                <p class="products__subtitle">100% natural</p>
+                <h2 class="products__title">products</h2>
+                <ul class="products__list">
+                    <li class="products__item">
+                        <div class="products__item-wrapper"><img src="" alt="" class="products__img"></div>
+                        <h3 class="products__item-title">ice cream</h3>
+                        <p class="products__desc">Soft ice cream with a delicate taste. Made with milk, cream, sugar and
+                            natural stabilizer</p>
+                        <a href="" class="products__link modal__open" data-open-modal>
+                            <svg class="products__icon">
+                                <use href="./images/symbol-defs.svg#icon-long-arrow"></use>
+                            </svg>
+                        </a>
+                        <div class="backdrop is-hidden">
+                            <div class="products__modal">
+                                <button class="btn" data-close-modal><svg class="products__modal-close">
+                                    <use href="./images/symbol-defs.svg#icon-close-button"></use>
+                                </svg></button>
+                                <h2 class="products__modal-title">Chololate
+                                    icecream</h2>
+                                <div class="products__modal-wrapper">
+                                    <img src="./images/chocolate.jpg" alt="chocolate ice cream"
+                                        class="products__modal-img">
+                                </div>
+                                <ul class="products__modal-list">
+                                    <li class="products__modal-item">
+                                        <h3 class="products__modal-title">320</h3>
+                                        <p class="products__modal-desc">kcal</p>
+                                    </li>
+                                    <li class="products__modal-item">
+                                        <h3 class="products__modal-title">4g</h3>
+                                        <p class="products__modal-desc">Prote...</p>
+                                    </li>
+                                    <li class="products__modal-item">
+                                        <h3 class="products__modal-title">8,2g</h3>
+                                        <p class="products__modal-desc">Fats</p>
+                                    </li>
+                                    <li class="products__modal-item">
+                                        <h3 class="products__modal-title">40,4g</h3>
+                                        <p class="products__modal-desc">Carbs</p>
+                                    </li>
+                                </ul>
+                                <h3 class="products__modal-ingredients__title">Ingredients</h3>
+                                <ul class="products__modal-ingredients">
+                                    <li class="products__modal-ingredients__item">
+                                        <p class="products__modal-ingredients__desc">Milk</p>
+                                        <p class="products__modal-ingredients__desc">100ml</p>
+                                    </li>
+                                    <li class="products__modal-ingredients__item">
+                                        <p class="products__modal-ingredients__desc">Belgian chocolate</p>
+                                        <p class="products__modal-ingredients__desc">20g</p>
+                                    </li>
+                                    <li class="products__modal-ingredients__item">
+                                        <p class="products__modal-ingredients__desc">Cream</p>
+                                        <p class="products__modal-ingredients__desc">150 ml</p>
+                                    </li>
+                                    <li class="products__modal-ingredients__item">
+                                        <p class="products__modal-ingredients__desc">Cocoa powder</p>
+                                        <p class="products__modal-ingredients__desc">30g</p>
+                                    </li>
+                                    <li class="products__modal-ingredients__item">
+                                        <p class="products__modal-ingredients__desc">Sugar</p>
+                                        <p class="products__modal-ingredients__desc">40g</p>
+                                    </li>
+                                    <li class="products__modal-ingredients__item">
+                                        <p class="products__modal-ingredients__desc">Vanilla sugar</p>
+                                        <p class="products__modal-ingredients__desc">10g</p>
+                                    </li>
+                                </ul>
+                                <form class="products__modal-form">
+                                    <input type="text" class="products__modal-input" placeholder="Name">
+                                    <input type="tel" class="products__modal-input" placeholder="Phone">
+                                    <textarea class="products__modal-textarea" placeholder="Comment"></textarea>
+                                    <button class="produts__modal-button">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <div class="products__item-wrapper"><img src="" alt="" class="products__img"></div>
+                        <h3 class="products__item-title">ice coffee</h3>
+                        <p class="products__desc">Fragrant invigorating drink created from 100% natural ingredients
+                            without the use of preservatives and flavor enhancers</p>
+                        <a href="" class="products__link">
+                            <svg class="products__icon">
+                                <use href="./images/symbol-defs.svg#icon-long-arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="products__item">
+                        <div class="products__item-wrapper"><img src="" alt="" class="products__img"></div>
+                        <h3 class="products__item-title">milkshakes</h3>
+                        <p class="products__desc">Sweet drinks based on milk and ice cream, supplemented with syrups,
+                            fruits, berries and other sweets of your choice
+                        </p>
+                        <a href="" class="products__link">
+                            <svg class="products__icon">
+                                <use href="./images/symbol-defs.svg#icon-long-arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer"></footer>
 
