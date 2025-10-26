@@ -1,31 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ice Cream</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ice Cream</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
-</head>
+	<body>
+		<header class="header"></header>
 
-<body>
-    <header class="header"></header>
+		<main class="main">
+			<section class="how-made">
+				<div class="how-made__container container">
+					<h4 class="how-made__subtitle">tradition and love</h4>
+					<h2 class="how-made__title">how it’s made?</h2>
 
-    <main class="main"></main>
+					<div class="how-made__content">
+						<img src="images/cow.jpg" alt="" class="how-made__image" />
 
-    <footer class="footer"></footer>
+						<div class="how-made__text-wrapper">
+							<p class="how-made__text">
+								Ice is a place where you will become not only a little happier,
+								but also healthier. Health is the main value for us, and we
+								follow it when creating our handmade desserts.
+							</p>
+							<p class="how-made__text">
+								We use traditional recipes and 100% natural ingredients. Our
+								products are so natural that they can be given to children from
+								the age of three years. Sweets lovers can expect 55 types of ice
+								cream, 15 types of coffee and 23 milkshakes.
+							</p>
+							<p class="how-made__text how-made__text--highlight">
+								This is enough to choose ice cream and coffee for any mood!
+							</p>
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/reviews-slider.js"></script>
-</body>
+							<button class="how-made__button">
+								Read more
+								<svg class="how-made__button-icon" width="12" height="12">
+									<use href="images/symbol-defs.svg#icon-short-arrow"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
 
+					<ul class="how-made__stats">
+						<li class="how-made__stat">
+							<div class="how-made__icon">
+								<svg width="36" height="36">
+									<use href="images/symbol-defs.svg#icon-cow"></use>
+								</svg>
+							</div>
+							<h4 class="how-made__stat-title">721</h4>
+							<p class="how-made__stat-text">
+								Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+							</p>
+						</li>
+
+						<li class="how-made__stat">
+							<div class="how-made__icon">
+								<svg width="36" height="36">
+									<use href="images/symbol-defs.svg#icon-weight"></use>
+								</svg>
+							</div>
+							<h4 class="how-made__stat-title">16kg</h4>
+							<p class="how-made__stat-text">
+								Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+							</p>
+						</li>
+
+						<li class="how-made__stat">
+							<div class="how-made__icon">
+								<svg width="36" height="36">
+									<use href="images/symbol-defs.svg#icon-ice-cream"></use>
+								</svg>
+							</div>
+							<h4 class="how-made__stat-title">84</h4>
+							<p class="how-made__stat-text">
+								Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="response">
+				<div class="response__container container">
+					<div class="response__track">
+						<ul class="response__list">
+							<li class="response__item">
+								<img
+									src="images/ice-creams-on-table.jpg"
+									alt=""
+									class="response__img"
+								/>
+								<img src="images/woman.jpg" alt="" class="response__user-img" />
+								<p class="response__text">
+									I love visiting your cafe. You prepare the most delicious ice
+									cream in Los Angeles! In addition, you have beautiful serving,
+									cozy atmosphere and polite staff.
+								</p>
+								<h3 class="response__user-name">Emily, Los Angeles</h3>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="response__pagination">
+						<li role="presentation">
+							<button
+								class="response__pagination-btn is-active"
+								type="button"
+							></button>
+						</li>
+						<li role="presentation">
+							<button class="response__pagination-btn" type="button"></button>
+						</li>
+						<li role="presentation">
+							<button class="response__pagination-btn" type="button"></button>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- help -->
+
+			<!-- ---- -->
+			<section class="cards">
+				<div class="cards__container container">
+					<ul class="cards__list">
+						<li class="cards__item">
+							<h2 class="cards__title">CAFE</h2>
+							<h3 class="cards__subtitle">Chicago</h3>
+							<a
+								href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
+								class="cards__address"
+							>
+								10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+							</a>
+
+							<p class="cards__text">
+								Monday - Friday
+								<time datetime="#" class="cards__time"
+									>06:00 AM - 10:00 PM</time
+								>
+							</p>
+							<p class="cards__text">
+								Saturday - Sunday
+								<time datetime="#" class="cards__time"
+									>08:00 AM - 16:00 PM</time
+								>
+							</p>
+
+							<a href="tel:61383766284" class="cards__phone"
+								>+61(0) 383 766 284</a
+							>
+							<a href="mailto:noreply@envato.com" class="cards__email"
+								>noreply@envato.com</a
+							>
+						</li>
+
+						<li class="cards__item">
+							<h2 class="cards__title">FOODTRUCK</h2>
+							<h3 class="cards__subtitle">Los Angeles</h3>
+							<a
+								href="https://maps.app.goo.gl/sRWyFTd1EqsYK6vm9"
+								class="cards__address"
+							>
+								1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+							</a>
+
+							<p class="cards__text">
+								Monday - Friday
+								<time datetime="#" class="cards__time"
+									>06:00 AM - 10:00 PM</time
+								>
+							</p>
+							<p class="cards__text">
+								Saturday - Sunday
+								<time datetime="#" class="cards__time"
+									>08:00 AM - 16:00 PM</time
+								>
+							</p>
+
+							<a href="tel:61383766284" class="cards__phone"
+								>+61(0) 383 766 284</a
+							>
+							<a href="mailto:noreply@envato.com" class="cards__email"
+								>noreply@envato.com</a
+							>
+						</li>
+
+						<li class="cards__item">
+							<h2 class="cards__title">CAFE</h2>
+							<h3 class="cards__subtitle">New York</h3>
+							<a
+								href="https://maps.app.goo.gl/oWkxnQrhjifGi3y66"
+								class="cards__address"
+							>
+								726 Sterling Pl, Brooklyn, NY 11222, USA
+							</a>
+
+							<p class="cards__text">
+								Monday - Friday
+								<time datetime="#" class="cards__time"
+									>06:00 AM - 10:00 PM</time
+								>
+							</p>
+							<p class="cards__text">
+								Saturday - Sunday
+								<time datetime="#" class="cards__time"
+									>08:00 AM - 16:00 PM</time
+								>
+							</p>
+
+							<a href="tel:61383766284" class="cards__phone"
+								>+61(0) 383 766 284</a
+							>
+							<a href="mailto:noreply@envato.com" class="cards__email"
+								>noreply@envato.com</a
+							>
+						</li>
+					</ul>
+
+					<div class="cards__actions">
+						<button type="button" class="cards__button cards__button--primary">
+							Our Locations
+							<svg width="12" height="12" class="cards__button-icon">
+								<use href="images/symbol-defs.svg#icon-short-arrow"></use>
+							</svg>
+						</button>
+
+						<button
+							type="button"
+							class="cards__button cards__button--secondary"
+						>
+							Franchise
+							<svg width="12" height="12" class="cards__button-icon">
+								<use href="images/symbol-defs.svg#icon-short-arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- need help -->
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__info">
+					<h3 class="footer__subtitle">homemade ice cream made</h3>
+					<h2 class="footer__title">with passion</h2>
+				</div>
+
+				<div class="footer__contacts">
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link">
+								<svg width="20" height="20" class="footer__social-icon">
+									<use href="images/symbol-defs.svg#icon-github"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link">
+								<svg width="20" height="20" class="footer__social-icon">
+									<use href="images/symbol-defs.svg#icon-telegram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link">
+								<svg width="20" height="20" class="footer__social-icon">
+									<use href="images/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+					<p class="footer__text">
+						Feel free to contact
+						<a class="footer__contact" href="tel:+610383766284"
+							>+61 (0) 383 766 284</a
+						>
+					</p>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<p class="footer__copyright">© 2022 - IceCream. All Rights Reserved.</p>
+			</div>
+		</footer>
+
+		<div class="modal-backdrop" data-action="backdrop">
+			<div class="modal">
+				<button class="modal__close-btn" data-action="close-btn">
+					<svg class="modal__close-icon" width="32" height="32">
+						<use href="images/symbol-defs.svg#icon-close-button"></use>
+					</svg>
+				</button>
+
+				<h2 class="modal__title">Buy now</h2>
+
+				<ul class="modal__list">
+					<li class="modal__item">
+						<img
+							src="images/ice-creams-hand.jpg"
+							alt=""
+							width="132"
+							class="modal__img"
+						/>
+						<h3 class="modal__subtitle">ice cream</h3>
+					</li>
+					<li class="modal__item">
+						<img
+							src="images/cocktail.jpg"
+							alt=""
+							width="132"
+							class="modal__img"
+						/>
+						<h3 class="modal__subtitle">ice coffee</h3>
+					</li>
+					<li class="modal__item">
+						<img
+							src="images/oreo-cocktail.jpg"
+							alt=""
+							width="132"
+							class="modal__img"
+						/>
+						<h3 class="modal__subtitle">milkshake</h3>
+					</li>
+				</ul>
+
+				<form class="modal__form">
+					<input type="text" placeholder="Name" class="modal__input" />
+					<input type="tel" placeholder="Phone" class="modal__input" />
+					<textarea placeholder="Comment" class="modal__textarea"></textarea>
+					<button type="submit" class="modal__submit-btn">Submit</button>
+				</form>
+			</div>
+		</div>
+		<div class="modal-backdrop" data-action="backdrop">
+			<div class="modal modal--locations">
+				<button class="modal__close-btn" data-action="close-btn">
+					<svg class="modal__close-icon" width="32" height="32">
+						<use href="images/symbol-defs.svg#icon-close-button"></use>
+					</svg>
+				</button>
+				<img class="modal__img" src="images/poltava.jpg" alt="poltava" />
+				<h2 class="modal__title">Our Locations</h2>
+			</div>
+		</div>
+		<div class="modal-backdrop" id="modal-how-made" data-action="backdrop">
+			<div class="modal modal--how-made">
+				<button class="modal__close-btn" data-action="close-btn">
+					<svg class="modal__close-icon" width="32" height="32">
+						<use href="images/symbol-defs.svg#icon-close-button"></use>
+					</svg>
+				</button>
+
+				<h3 class="modal__title">How it’s made?</h3>
+
+				<svg class="modal__play-icon" width="36" height="36">
+					<use href="images/symbol-defs.svg#icon-play-button"></use>
+				</svg>
+
+				<p class="modal__text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+					consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					labore et
+				</p>
+			</div>
+		</div>
+
+		<script src="./js/modal.js"></script>
+	</body>
 </html>
