@@ -1,5 +1,11 @@
-@use './utils/variables';
+@use '../utils/placeholders';
+@use '../utils/variables';
 @use './base/reset';
 @use './base/base';
 @use './components/footer';
 @use './components/header';
+@use './components/menu';
+@use './components/made';
+@use './components/products';
+@use './components/response';
+@use './components/cards';
