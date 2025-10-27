@@ -1,1 +1,13 @@
-@use '../utils/variables';
+@use '../utils/placeholders' as *;
+@use '../utils/variables' as *;
+
+body {
+    font-family: $font-family;
+    color: $light-txt-color;
+    letter-spacing: 0.04em;
+}
+
+.container {
+    width: 1168px;
+    margin: 0 auto;
+}

@@ -1,7 +1,8 @@
-@use './utils/placeholders';
 @use './utils/variables';
+@use './utils/placeholders';
 @use './base/reset';
 @use './base/base';
+@use './components/buttons';
 @use './components/footer';
 @use './components/header';
 @use './components/menu';

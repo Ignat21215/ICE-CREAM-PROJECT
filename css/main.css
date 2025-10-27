@@ -149,3 +149,80 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(252, 252, 252);
+  letter-spacing: 0.04em;
+}
+
+.container {
+  width: 1168px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: rgb(248, 210, 78);
+  border-radius: 10px;
+  border: 0;
+  color: rgb(19, 19, 19);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.header {
+  padding-top: 8px;
+  padding-bottom: 45px;
+  background-color: rgb(132, 161, 120);
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 308px;
+}
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 208px;
+  padding-top: 20px;
+  padding-bottom: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
+.header__link {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+  color: rgb(252, 252, 252);
+  font-weight: 600;
+}
+.header__link:hover {
+  color: rgb(248, 210, 78);
+}
+.header__btn {
+  padding: 12px 35px 12px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+  gap: 4px;
+}
+.header__btn-icon {
+  width: 12px;
+  height: 12px;
+  fill: rgb(0, 0, 0);
+}
