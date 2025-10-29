@@ -1,2 +1,95 @@
-@use '../utils/placeholders' as *;
-@use '../utils/variables' as *;
+@use "../utils/placeholders" as *;
+@use "../utils/variables" as *;
+
+.hero {
+  background: url(../images/ice-creams-faces.png) top 14px left 652px,
+    url(../images/dots.png) bottom;
+  background-repeat: no-repeat;
+  background-color: $bg-color;
+  position: relative;
+  padding-bottom: 65px;
+
+  &__title {
+    color: $light-txt-color;
+    font-weight: 400;
+    font-size: 38px;
+    text-transform: uppercase;
+    width: 367px;
+    font-family: $second-family;
+    padding-bottom: 28px;
+  }
+
+  &__btn {
+    color: $dark-txt-color;
+    background-color: transparent;
+    border: 2px solid $accent-color;
+    padding: 12px 34px;
+    margin-bottom: 42px;
+  }
+
+  &__link {
+    color: $accent-color;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    padding: 12px 21px 11px 22px;
+    margin-left: 12px;
+  }
+
+  &__desc {
+    width: 200px;
+    font-size: 14px;
+    font-family: $fourth-family;
+    letter-spacing: 0;
+    line-height: 1.4;
+    padding-bottom: 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__txt-wrapper {
+    padding-top: 67px;
+    padding-bottom: 38px;
+  }
+
+  &__icon {
+    fill: $light-txt-color;
+    width: 40px;
+    height: 16px;
+  }
+
+  &__arrow-link {
+    display: flex;
+  }
+
+  &__list {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__item {
+    text-align: right;
+
+    &-title {
+        color: $dark-txt-color;
+        font-size: 46px;
+        font-weight: 900;
+        padding-block: 5px;
+        margin-bottom: 4px;
+    }
+
+    &-desc {
+        font-size: 14px;
+        letter-spacing: 0;
+        color: $light-txt-color;
+    }
+  }
+}
