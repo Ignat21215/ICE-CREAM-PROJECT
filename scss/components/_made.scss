@@ -1,2 +1,133 @@
 @use '../utils/placeholders' as *;
 @use '../utils/variables' as *;
+
+.how-made {
+	background-color: $bg-color;
+	padding-top: 60px;
+	padding-bottom: 178px;
+
+	&__subtitle {
+		font-family: $font-family;
+		font-size: 30px;
+		font-weight: 800;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__title {
+		font-family: $second-family;
+		font-size: 36px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding-top: 12px;
+		padding-bottom: 82px;
+		text-align: center;
+	}
+
+	&__content {
+		display: flex;
+		gap: 109px;
+		align-items: center;
+		padding-bottom: 60px;
+	}
+
+	&__image {
+		width: 490px;
+		height: 490px;
+		border-radius: 50%;
+		object-fit: cover;
+		z-index: 2;
+		position: relative;
+	}
+
+	&__image-wrapper {
+		position: relative;
+		width: 490px;
+		height: 490px;
+	}
+
+	&__image-wrapper::before {
+		content: '';
+		position: absolute;
+		top: -40px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 490px;
+		height: 490px;
+		background: $card-rect-bg-yellow;
+		border-radius: 50%;
+		z-index: 1;
+	}
+
+	&__text-wrapper {
+		max-width: 463px;
+		font-family: $font-family;
+		line-height: 176%;
+		font-size: 14px;
+		gap: 8px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	&__button {
+		margin-top: 54px;
+		padding: 12px 34px;
+		border-radius: 10px;
+		background-color: $accent-color;
+		border: none;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		font-weight: 600;
+		transition: background-color ease-in 0.3s;
+		text-align: center;
+	}
+
+	&__button:hover {
+		background-color: $btn-hover;
+	}
+
+	&__button:focus {
+		background-color: $btn-hover;
+		color: #fff;
+		fill: #fff;
+	}
+
+	&__stats {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__stat {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__stat-title {
+		font-size: 58px;
+		font-weight: 700;
+		padding-top: 40px;
+		color: $light-txt-color;
+		font-family: $font-family;
+	}
+
+	&__stat-text {
+		font-size: 16px;
+		font-weight: 400;
+		color: $light-txt-color;
+		text-align: center;
+		padding-top: 12px;
+		line-height: 176%;
+	}
+
+	&__icon {
+		background-color: $card-rect-bg-yellow;
+		border-radius: 50%;
+		display: flex;
+		width: 50px;
+		height: 50px;
+		align-items: center;
+		justify-content: center;
+	}
+}
