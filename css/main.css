@@ -546,6 +546,122 @@ body {
   letter-spacing: 0;
 }
 
+input[type=checkbox],
+label {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  label {
+    display: block;
+  }
+  label {
+    padding: 8px 4px;
+  }
+  label span,
+  label span::before,
+  label span::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2.67px;
+    background: rgb(255, 255, 255);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+  }
+  label span::before {
+    top: -8px;
+    position: absolute;
+  }
+  label span::after {
+    top: 8px;
+    position: absolute;
+  }
+  .header__nav {
+    display: none;
+  }
+  #toggle:checked ~ .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__nav {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: rgb(132, 161, 120);
+    height: 796px;
+    padding-top: 140px;
+    padding-bottom: 528px;
+  }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .header__link {
+    color: rgb(252, 252, 252);
+    font-size: 48px;
+    letter-spacing: 0;
+    font-weight: 700;
+    max-width: 385px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__link:hover {
+    color: rgb(19, 19, 19);
+  }
+  input[type=checkbox]:checked ~ label span {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  input[type=checkbox]:checked ~ label span::before {
+    top: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  input[type=checkbox]:checked ~ label span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  input[type=checkbox]:checked ~ label {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    z-index: 3;
+  }
+  input[type=checkbox]:checked ~ .logo {
+    position: absolute;
+    top: 20px;
+    left: 32px;
+  }
+  .logo {
+    z-index: 3;
+  }
+}
 .how-made {
   background-color: rgb(132, 161, 120);
   padding-top: 60px;
