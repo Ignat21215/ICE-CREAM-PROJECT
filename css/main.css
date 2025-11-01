@@ -162,6 +162,11 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 705px;
+  }
+}
 .button {
   background-color: rgb(248, 210, 78);
   border-radius: 10px;
