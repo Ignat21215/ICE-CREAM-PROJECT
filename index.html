@@ -303,17 +303,13 @@
 					</div>
 				</div>
 			</section>
-
 			<section class="cards">
 				<div class="cards__container container">
 					<ul class="cards__list">
 						<li class="cards__item">
 							<h2 class="cards__title">CAFE</h2>
 							<h3 class="cards__subtitle">Chicago</h3>
-							<a
-								href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
-								class="cards__address"
-							>
+							<a href="https://maps.app.goo.gl/fZmPPUdndzR753jY7" class="cards__address">
 								10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
 							</a>
 							<p class="cards__text">
@@ -326,20 +322,13 @@
 								<time datetime="08:00" class="cards__time">08:00 AM</time> -
 								<time datetime="16:00" class="cards__time">16:00 PM</time>
 							</p>
-							<a href="tel:61383766284" class="cards__phone"
-								>+61(0) 383 766 284</a
-							>
-							<a href="mailto:noreply@envato.com" class="cards__email"
-								>noreply@envato.com</a
-							>
+							<a href="tel:61383766284" class="cards__phone">+61(0) 383 766 284</a>
+							<a href="mailto:noreply@envato.com" class="cards__email">noreply@envato.com</a>
 						</li>
 						<li class="cards__item">
 							<h2 class="cards__title">FOODTRUCK</h2>
 							<h3 class="cards__subtitle">Los Angeles</h3>
-							<a
-								href="https://maps.app.goo.gl/sRWyFTd1EqsYK6vm9"
-								class="cards__address"
-							>
+							<a href="https://maps.app.goo.gl/sRWyFTd1EqsYK6vm9" class="cards__address">
 								1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
 							</a>
 							<p class="cards__text">
@@ -352,20 +341,13 @@
 								<time datetime="08:00" class="cards__time">08:00 AM</time> -
 								<time datetime="16:00" class="cards__time">16:00 PM</time>
 							</p>
-							<a href="tel:61383766284" class="cards__phone"
-								>+61(0) 383 766 284</a
-							>
-							<a href="mailto:noreply@envato.com" class="cards__email"
-								>noreply@envato.com</a
-							>
+							<a href="tel:61383766284" class="cards__phone">+61(0) 383 766 284</a>
+							<a href="mailto:noreply@envato.com" class="cards__email">noreply@envato.com</a>
 						</li>
 						<li class="cards__item">
 							<h2 class="cards__title">CAFE</h2>
 							<h3 class="cards__subtitle">New York</h3>
-							<a
-								href="https://maps.app.goo.gl/oWkxnQrhjifGi3y66"
-								class="cards__address"
-							>
+							<a href="https://maps.app.goo.gl/oWkxnQrhjifGi3y66" class="cards__address">
 								726 Sterling Pl, Brooklyn, NY 11222, USA
 							</a>
 							<p class="cards__text">
@@ -378,60 +360,65 @@
 								<time datetime="08:00" class="cards__time">08:00 AM</time> -
 								<time datetime="16:00" class="cards__time">16:00 PM</time>
 							</p>
-							<a href="tel:61383766284" class="cards__phone"
-								>+61(0) 383 766 284</a
-							>
-							<a href="mailto:noreply@envato.com" class="cards__email"
-								>noreply@envato.com</a
-							>
+							<a href="tel:61383766284" class="cards__phone">+61(0) 383 766 284</a>
+							<a href="mailto:noreply@envato.com" class="cards__email">noreply@envato.com</a>
 						</li>
 					</ul>
-
+			
 					<div class="cards__actions">
-						<button
-							type="button"
-							class="cards__button cards__button--primary"
-							data-open-modal="locations"
-						>
+						<button type="button" class="cards__button cards__button--primary" data-open-modal="locations">
 							Our Locations
 							<svg width="12" height="12" class="cards__button-icon">
 								<use href="images/symbol-defs.svg#icon-short-arrow"></use>
 							</svg>
 						</button>
-
-					<button type="button" class="cards__button cards__button--secondary" data-open-modal>
-						Franchise
-						<svg width="12" height="12" class="cards__button-icon">
-							<use href="images/symbol-defs.svg#icon-short-arrow"></use>
-						</svg>
-					</button>
-					<div class="modal">
+						<button type="button" class="cards__button cards__button--secondary" data-open-modal>
+							Franchise
+							<svg width="12" height="12" class="cards__button-icon">
+								<use href="images/symbol-defs.svg#icon-short-arrow"></use>
+							</svg>
+						</button>
+						<div class="modal">
+							<button class="modal__close-btn" data-close-modal>
+								<svg class="modal__close-btn__icon">
+									<use href="images/symbol-defs.svg#icon-close-button"></use>
+								</svg>
+							</button>
+							<h2 class="franchise__title modal__title">Thank you for your interest in owning an Ice Cream shop</h2>
+							<p class="franchise__desc modal__desc">
+								Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+								applications at this time. Once
+								the application process resumes, we will contact you for further information. Please fill
+								out the contact information
+								below and we will reach out for additional information. We appreciate your patience.
+							</p>
+						
+							<form class="modal__form">
+								<input type="text" class="modal__input" placeholder="Name">
+								<input type="tel" class="modal__input" placeholder="Phone">
+								<input type="email" class="modal__input" placeholder="Email">
+								<textarea class="modal__textarea" placeholder="Comment"></textarea>
+							</form>
+							<button class="modal__button" type="button">Submit</button>
+						</div>
+					</div>
+				</div>
+				<div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="locations">
+					<div class="cards__modal modal">
 						<button class="modal__close-btn" data-close-modal>
-							<svg class="modal__close-btn__icon">
+							<svg>
 								<use href="images/symbol-defs.svg#icon-close-button"></use>
 							</svg>
 						</button>
-						<h2 class="franchise__title modal__title">Thank you for your interest in owning an Ice Cream shop</h2>
-						<p class="franchise__desc modal__desc">
-							Due to the overwhelming volume of franchise requests we are not accepting new franchisee
-							applications at this time. Once
-							the application process resumes, we will contact you for further information. Please fill
-							out the contact information
-							below and we will reach out for additional information. We appreciate your patience.
-						</p>
-
-						<form class="modal__form">
-							<input type="text" class="modal__input" placeholder="Name">
-							<input type="tel" class="modal__input" placeholder="Phone">
-							<input type="email" class="modal__input" placeholder="Email">
-							<textarea class="modal__textarea" placeholder="Comment"></textarea>
-						</form>
-						<button class="modal__button" type="button">Submit</button>
+						<h2 class="cards__modal-title">Our Locations</h2>
+						<iframe class="cards__modal-map"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26469.123456789!2d34.557!3d49.589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDM1JzU5LjAiTiAzNMKwMzMnMjcuMCJF!5e0!3m2!1sen!2sua!4v1696234567890!5m2!1sen!2sua"
+							width="448" height="260" loading="lazy" style="border-radius: 10px"></iframe>
+						<a href="https://www.google.com/maps/place/Poltava/" target="_blank">
+							<button class="cards__modal-button">Open map</button></a>
 					</div>
 				</div>
-			</div>
-			</div>
-		</section>
+			</section>
 	</main>
 
 			<footer class="footer">
