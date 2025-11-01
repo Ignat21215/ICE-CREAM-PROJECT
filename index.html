@@ -267,7 +267,11 @@
           <div class="response__track">
             <ul class="response__list">
               <li class="response__item">
-                <img src="images/woman.jpg" alt="" class="response__user-img" />
+                <img
+                  src="images/woman.jpg"
+                  alt="woman"
+                  class="response__user-img"
+                />
                 <p class="response__text">
                   I love visiting your cafe. You prepare the most delicious ice
                   cream in Los Angeles! In addition, you have beautiful serving,
@@ -275,19 +279,53 @@
                 </p>
                 <h3 class="response__user-name">Emily, Los Angeles</h3>
               </li>
+              <li class="response__item slider-hidden">
+                <img
+                  src="images/man.png"
+                  alt="man"
+                  class="response__user-img"
+                />
+                <p class="response__text">
+                  Every day we come to you with friends after classes in
+                  college. We love your ice cream and casual atmosphere!
+                </p>
+                <h3 class="response__user-name">Bryan, New-York</h3>
+              </li>
+              <li class="response__item slider-hidden">
+                <img
+                  src="images/woman2.png"
+                  alt="woman"
+                  class="response__user-img"
+                />
+                <p class="response__text">
+                  Ice cream is my passion! I love your chocolate hazelnut ice
+                  cream! And I really like the excellent service - always served
+                  politely and quickly!
+                </p>
+                <h3 class="response__user-name">Diana, Chicago</h3>
+              </li>
             </ul>
             <ul class="response__pagination">
               <li role="presentation">
                 <button
                   class="response__pagination-btn is-active"
                   type="button"
+                  onclick="changeSlide(0)"
                 ></button>
               </li>
               <li role="presentation">
-                <button class="response__pagination-btn" type="button"></button>
+                <button
+                  class="response__pagination-btn"
+                  type="button"
+                  onclick="changeSlide(1)"
+                ></button>
               </li>
               <li role="presentation">
-                <button class="response__pagination-btn" type="button"></button>
+                <button
+                  class="response__pagination-btn"
+                  type="button"
+                  onclick="changeSlide(2)"
+                ></button>
               </li>
             </ul>
           </div>
@@ -520,5 +558,6 @@
     </main>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
