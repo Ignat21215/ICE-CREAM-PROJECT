@@ -40,18 +40,24 @@
     background-color: $green-bg-color;
     position: relative;
     text-align: center;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px 0px $first-product-card-shadow;
 
     &--yellow {
       background-color: $yellow-card-bg;
+      box-shadow: none;
     }
 
     &--brown {
       background-color: $card-orange-bg;
+      box-shadow: none;
     }
 
     &-container {
       position: absolute;
       top: -183px;
+      left: 34px;
+      transform: translate(-50% -50%);
     }
 
     &-wrapper {
@@ -101,7 +107,13 @@
     }
   }
 
+  &__link {
+    justify-content: center;
+  }
+
   &__icon {
     fill: $dark-txt-color;
+    width: 40px;
+    height: 16px;
   }
 }

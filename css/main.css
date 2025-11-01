@@ -222,10 +222,96 @@ body {
   line-height: 1;
   gap: 4px;
 }
+.header__btn:hover {
+  background-color: rgb(10, 136, 23);
+}
+.header__btn:hover {
+  background-color: rgb(10, 136, 23);
+  color: rgb(252, 252, 252);
+}
 .header__btn-icon {
   width: 12px;
   height: 12px;
   fill: rgb(0, 0, 0);
+}
+
+.buy {
+  padding: 32px 54px;
+  width: 568px;
+  height: 644px;
+  border-radius: 10px;
+  border: 2px solid rgb(248, 210, 78);
+}
+.buy__title {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Seymour One", sans-serif;
+  color: rgb(19, 19, 19);
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  padding-bottom: 113px;
+}
+.buy__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  padding-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.buy__item {
+  padding: 95px 13px 20px 13px;
+  border: 2px solid rgb(150, 175, 140);
+  border-radius: 15px;
+  position: relative;
+}
+.buy__item--padding {
+  padding-inline: 16px;
+}
+.buy__item--yellow {
+  background-color: rgb(239, 212, 120);
+  border-color: rgb(239, 212, 120);
+}
+.buy__item--orange {
+  border-color: rgb(214, 147, 109);
+}
+.buy__item-title {
+  color: rgb(19, 19, 19);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.buy__img {
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  border-radius: 100%;
+  top: -7px;
+}
+.buy__img-wrapper {
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  top: -63px;
+  left: 0;
+  border-radius: 100%;
+  background-color: rgba(156, 190, 143, 0.7);
+  -webkit-box-shadow: 0px 5px 19px 0px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 5px 19px 0px rgba(10, 136, 23, 0.25);
+}
+.buy__img-wrapper--yellow {
+  -webkit-box-shadow: 0px 5px 19px 0px rgba(153, 114, 23, 0.25);
+          box-shadow: 0px 5px 19px 0px rgba(153, 114, 23, 0.25);
+  background-color: rgba(248, 210, 78, 0.7);
+}
+.buy__img-wrapper--orange {
+  -webkit-box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgb(214, 147, 109);
 }
 
 .hero {
@@ -251,6 +337,13 @@ body {
   padding: 12px 34px;
   margin-bottom: 42px;
 }
+.hero__btn:hover {
+  border-color: rgb(10, 136, 23);
+}
+.hero__btn:focus {
+  border-color: rgb(10, 136, 23);
+  color: rgb(252, 252, 252);
+}
 .hero__link {
   color: rgb(248, 210, 78);
   text-decoration: underline;
@@ -259,6 +352,12 @@ body {
   letter-spacing: 0;
   padding: 12px 21px 11px 22px;
   margin-left: 12px;
+}
+.hero__link:hover {
+  color: rgb(10, 136, 23);
+}
+.hero__link:focus {
+  color: rgb(252, 252, 252);
 }
 .hero__desc {
   width: 200px;
@@ -509,16 +608,26 @@ body {
   background-color: rgb(174, 198, 165);
   position: relative;
   text-align: center;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 }
 .products__item--yellow {
   background-color: rgb(239, 212, 120);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .products__item--brown {
   background-color: rgb(214, 147, 109);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .products__item-container {
   position: absolute;
   top: -183px;
+  left: 34px;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
 }
 .products__item-wrapper {
   position: relative;
@@ -562,8 +671,15 @@ body {
 .products__desc--first {
   padding-bottom: 87px;
 }
+.products__link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .products__icon {
   fill: rgb(19, 19, 19);
+  width: 40px;
+  height: 16px;
 }
 
 .modal-backdrop {
@@ -587,22 +703,138 @@ body {
 
 .modal {
   background-color: #fff;
-  border-radius: 12px;
   padding: 20px;
-  max-width: 500px;
-  width: 90%;
-  max-height: 90%;
+  height: 100%;
   overflow-y: auto;
   position: relative;
+}
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 32px;
+}
+.modal__input {
+  width: 368px;
+  padding: 11px 16px;
+  border: 1px solid rgb(132, 161, 120);
+  border-radius: 10px;
+  background-color: rgba(248, 210, 78, 0.1);
+  margin: 0 auto;
+}
+.modal__input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__input::placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__textarea {
+  margin: 0 auto;
+  border: 1px solid rgb(132, 161, 120);
+  border-radius: 10px;
+  background-color: rgba(248, 210, 78, 0.1);
+  width: 368px;
+  padding: 11px 16px;
+  height: 84px;
+  resize: none;
+}
+.modal__textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__textarea::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__textarea:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__textarea::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  background-color: rgb(248, 210, 78);
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 34px;
+  color: rgb(19, 19, 19);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   background: none;
   border: none;
   cursor: pointer;
+  padding: 7px;
+}
+.modal__close-btn__icon {
+  width: 13px;
+  height: 13px;
+  fill: rgb(19, 19, 19);
 }
 
 .no-scroll {
@@ -611,4 +843,4 @@ body {
 
 .is-hidden {
   display: none;
-}/*# sourceMappingURL=main.css.map */
+}

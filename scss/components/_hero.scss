@@ -25,6 +25,15 @@
     border: 2px solid $accent-color;
     padding: 12px 34px;
     margin-bottom: 42px;
+
+    &:hover {
+      border-color: $btn-hover;
+    }
+
+    &:focus {
+      border-color: $btn-hover;
+      color: $light-txt-color;
+    }
   }
 
   &__link {
@@ -35,6 +44,14 @@
     letter-spacing: 0;
     padding: 12px 21px 11px 22px;
     margin-left: 12px;
+
+    &:hover {
+      color: $btn-hover;
+    }
+
+    &:focus {
+      color: $light-txt-color;
+    }
   }
 
   &__desc {

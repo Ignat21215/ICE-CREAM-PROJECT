@@ -1,52 +1,144 @@
-@use '../utils/placeholders' as *;
-@use '../utils/variables' as *;
+@use "../utils/placeholders" as *;
+@use "../utils/variables" as *;
 
 .header {
-    padding-top: 8px;
-    padding-bottom: 45px;
-    background-color: $bg-color;
+  padding-top: 8px;
+  padding-bottom: 45px;
+  background-color: $bg-color;
 
-    &__container {
-        display: flex;
-        gap: 308px;
+  &__container {
+    display: flex;
+    gap: 308px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 208px;
+    padding-top: 20px;
+    padding-bottom: 3px;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__link {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1;
+    color: $light-txt-color;
+    font-weight: 600;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__btn {
+    padding: 12px 35px 12px 36px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    gap: 4px;
+
+    &:hover {
+      background-color: $btn-hover;
     }
 
-    &__wrapper {
-        display: flex;
-        gap: 208px;
-        padding-top: 20px;
-        padding-bottom: 3px;
-        align-items: center;
+    &:hover {
+      background-color: $btn-hover;
+      color: $light-txt-color;
     }
 
-    &__list {
-        display: flex;
-        gap: 28px;
+    &-icon {
+      width: 12px;
+      height: 12px;
+      fill: $dark-btn-txt-color;
+    }
+  }
+}
+
+.buy {
+  padding: 32px 54px;
+  width: 568px;
+  height: 644px;
+  border-radius: 10px;
+  border: 2px solid $accent-color;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: $second-family;
+    color: $dark-txt-color;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: center;
+    padding-bottom: 113px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 95px 13px 20px 13px;
+    border: 2px solid $buy-green-border;
+    border-radius: 15px;
+    position: relative;
+
+    &--padding {
+      padding-inline: 16px;
     }
 
-    &__link {
-        font-size: 16px;
-        letter-spacing: 0;
-        line-height: 1;
-        color: $light-txt-color;
-        font-weight: 600;
-
-        &:hover {
-            color: $accent-color;
-        }
+    &--yellow {
+      background-color: $yellow-card-bg;
+      border-color: $yellow-card-bg;
     }
 
-    &__btn {
-        padding: 12px 35px 12px 36px;
-        display: flex;
-        align-items: center;
-        line-height: 1;
-        gap: 4px;
-
-        &-icon {
-            width: 12px;
-            height: 12px;
-            fill: $dark-btn-txt-color;
-        }
+    &--orange {
+      border-color: $card-orange-bg;
     }
+
+    &-title {
+      color: $dark-txt-color;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    border-radius: 100%;
+    top: -7px;
+
+    &-wrapper {
+      position: absolute;
+      width: 132px;
+      height: 132px;
+      top: -63px;
+      left: 0;
+      border-radius: 100%;
+      background-color: $card-rect-bg-green;
+      box-shadow: 0px 5px 19px 0px $buy-wrapper-shadow;
+
+      &--yellow {
+        box-shadow: 0px 5px 19px 0px $card-rect-shadow-yellow;
+        background-color: $buy-wrapper-yellow-bg;
+      }
+
+      &--orange {
+        box-shadow: 0px 5px 19px 0px $card-rect-shadow-brown;
+        background-color: $card-orange-bg;
+      }
+    }
+  }
 }
