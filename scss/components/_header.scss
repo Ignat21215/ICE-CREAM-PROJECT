@@ -135,3 +135,25 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 14px;
+
+        &__container {
+            gap: 440px;
+        }
+
+        &__wrapper {
+            gap: 32px;
+            padding-top: 4px;
+            padding-bottom: 0;
+            align-items: center;
+        }
+
+        .logo {
+            padding-bottom: 2px;
+        }
+    }
+}
