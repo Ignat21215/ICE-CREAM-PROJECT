@@ -1,13 +1,41 @@
-@use '../utils/placeholders' as *;
-@use '../utils/variables' as *;
+@use "../utils/placeholders" as *;
+@use "../utils/variables" as *;
 
 .button {
-    background-color: $accent-color;
-    border-radius: 10px;
-    border: 0;
-    color: $dark-txt-color;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: 0;
+  background-color: $accent-color;
+  border-radius: 10px;
+  border: 0;
+  color: $dark-txt-color;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+
+  &:focus {
+    background-color: $btn-hover;
+    color: #fff;
+    fill: #fff;
+  }
+
+  &--hover {
+    &:hover {
+      border: 2px solid $btn-hover;
+    }
+
+    &:focus {
+      border: 2px solid $btn-hover;
+      color: #fff;
+      fill: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+    .button {
+        font-size: 12px;
+    }
 }

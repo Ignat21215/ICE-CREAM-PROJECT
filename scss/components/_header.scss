@@ -40,7 +40,6 @@
     padding: 12px 35px 12px 36px;
     display: flex;
     align-items: center;
-    line-height: 1;
     gap: 4px;
     border-radius: 10px;
     background-color: $accent-color;
@@ -51,16 +50,6 @@
     font-weight: 600;
     transition: background-color ease-in 0.3s;
     text-align: center;
-
-    &:hover {
-      background-color: $btn-hover;
-    }
-
-    &:focus {
-      background-color: $btn-hover;
-      color: #fff;
-      fill: #fff;
-    }
 
     &-icon {
       width: 12px;
@@ -75,7 +64,7 @@
         padding-bottom: 14px;
 
         &__container {
-            gap: 440px;
+            justify-content: space-between;
         }
 
         &__wrapper {

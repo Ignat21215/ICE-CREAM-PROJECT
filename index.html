@@ -26,7 +26,12 @@
 		<header class="header">
 			<div class="container header__container">
 				<a href="index.html" class="logo">
-					<img src="./images/logo.png" alt="logo" class="logo__img" />
+					<picture>
+						<img src="./images/logo.png" alt="logo" class="logo__img" />
+						<source src="./images/logo@2x.png">
+						<source src="./images/logo@3x.png">
+						<source src="./images/logo@4x.png">
+					</picture>
 				</a>
 				<div class="header__wrapper">
 					<input type="checkbox" id="toggle">
@@ -67,12 +72,15 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero__title">ice cream made with passion</h1>
-					<button class="hero__btn button" type="button" data-open-modal="buy">
+					<button class="hero__btn button--hover" type="button" data-open-modal="buy">
 						Products
 					</button>
 					<a href="#made" class="hero__link">How it’s made?</a>
 					<div class="hero__wrapper">
-						<img src="./images/plate-of-ice-cream.png" alt="ice cream" />
+						<picture>
+							<img src="./images/plate-of-ice-cream.png" alt="ice cream" class="hero__img"/>
+							<source srcset="./images/plate-of-ice-cream@2x.png">
+						</picture>
 						<div class="hero__txt-wrapper">
 							<p class="hero__desc">
 								Indulge in a scoop of ice cream made with passion and treat your
@@ -106,11 +114,12 @@
 						<li class="products__item">
 							<div class="products__item-container">
 								<div class="products__item-wrapper">
-									<img
-										src="./images/ice-creams-hand.jpg"
-										alt="ice-creams"
-										class="products__img"
-									/>
+									<picture>
+										<img src="./images/ice-cream-hand.png" alt="ice-creams" class="products__img" />
+										<source srcset="./images/ice-cream-hand@2x.png">
+										<source srcset="./images/ice-cream-hand@3x.png">
+										<source srcset="./images/ice-cream-hand@4x.png">
+									</picture>
 								</div>
 							</div>
 							<h3 class="products__item-title">ice cream</h3>
@@ -134,11 +143,12 @@
 								<div
 									class="products__item-wrapper products__item-wrapper--yellow"
 								>
-									<img
-										src="./images/cocktail.jpg"
-										alt="cocktail"
-										class="products__img"
-									/>
+									<picture>
+										<img src="./images/cocktail.png" alt="cocktail" class="products__img" />
+										<source srcset="./images/cocktail@2x.png">
+										<source srcset="./images/cocktail@3x.png">
+										<source srcset="./images/cocktail@3x.png">
+									</picture>
 								</div>
 							</div>
 							<h3 class="products__item-title">ice coffee</h3>
@@ -163,11 +173,12 @@
 								<div
 									class="products__item-wrapper products__item-wrapper--brown"
 								>
-									<img
-										src="./images/oreo-cocktail.jpg"
-										alt="oreo-cocktail"
-										class="products__img"
-									/>
+									<picture>
+										<img src="./images/milkshake.png" alt="oreo-cocktail" class="products__img" />
+										<source src="./images/milkshake@2x.png">
+										<source src="./images/milkshake@3x.png">
+										<source src="./images/milkshake@4x.png">
+									</picture>
 								</div>
 							</div>
 							<h3 class="products__item-title">milkshakes</h3>
@@ -196,7 +207,7 @@
 					data-action="backdrop"
 				>
 					<div class="products__modal modal">
-						<button class="btn modal__close-btn" data-close-modal>
+						<button class="btn modal__close-btn button" data-close-modal>
 							<svg class="products__modal-close">
 								<use href="./images/symbol-defs.svg#icon-close-button"></use>
 							</svg>
@@ -271,7 +282,7 @@
 								class="products__modal-textarea"
 								placeholder="Comment"
 							></textarea>
-							<button class="products__modal-button">Submit</button>
+							<button class="products__modal-button button">Submit</button>
 						</form>
 					</div>
 				</div>
@@ -302,7 +313,7 @@
 								This is enough to choose ice cream and coffee for any mood!
 							</p>
 
-							<button class="how-made__button" data-open-modal="how-made">
+							<button class="how-made__button button" data-open-modal="how-made">
 								Read more
 								<svg class="how-made__button-icon" width="12" height="12">
 									<use href="images/symbol-defs.svg#icon-short-arrow"></use>
@@ -556,7 +567,7 @@
 
 						<button
 							type="button"
-							class="cards__button cards__button--secondary"
+							class="cards__button cards__button--secondary button--hover"
 							data-open-modal="franchise"
 						>
 							Franchise
@@ -590,7 +601,7 @@
 							href="https://www.google.com/maps/place/Poltava/"
 							target="_blank"
 						>
-							<button class="cards__modal-button">Open map</button></a
+							<button class="cards__modal-button button">Open map</button></a
 						>
 					</div>
 				</div>
@@ -673,7 +684,7 @@
 							placeholder="Comment"
 						></textarea>
 					</form>
-					<button class="franchise__button" type="button">Submit</button>
+					<button class="franchise__button button" type="button">Submit</button>
 				</div>
 			</div>
 
@@ -730,7 +741,7 @@
 							placeholder="Comment"
 						></textarea>
 					</form>
-					<button class="hero__modal__button" type="button">Submit</button>
+					<button class="hero__modal__button button" type="button">Submit</button>
 				</div>
 			</div>
 		</main>

@@ -18,3 +18,15 @@ body {
 		width: 705px;
 	}
 }
+
+@media (max-width: 480px) {
+	.container {
+		width: 440px;
+	}
+}
+
+@media (max-width: 320px) {
+	.container {
+		width: 280px;
+	}
+}
