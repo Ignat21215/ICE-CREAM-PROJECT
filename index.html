@@ -121,7 +121,7 @@
 							<a
 								href="#"
 								class="products__link modal__open"
-								data-open-modal="product1"
+								data-open-modal="products-modal"
 							>
 								<svg class="products__icon">
 									<use href="./images/symbol-defs.svg#icon-long-arrow"></use>
@@ -150,7 +150,7 @@
 							<a
 								href="#"
 								class="products__link modal__open"
-								data-open-modal="product2"
+								data-open-modal="products-modal"
 							>
 								<svg class="products__icon">
 									<use href="./images/symbol-defs.svg#icon-long-arrow"></use>
@@ -178,7 +178,7 @@
 							<a
 								href="#"
 								class="products__link modal__open"
-								data-open-modal="product3"
+								data-open-modal="products-modal"
 							>
 								<svg class="products__icon">
 									<use href="./images/symbol-defs.svg#icon-long-arrow"></use>
@@ -186,6 +186,94 @@
 							</a>
 						</li>
 					</ul>
+				</div>
+
+				<!-- =================MODAL============================ -->
+
+				<div
+					class="modal-backdrop is-hidden"
+					data-modal="products-modal"
+					data-action="backdrop"
+				>
+					<div class="products__modal modal">
+						<button class="btn modal__close-btn" data-close-modal>
+							<svg class="products__modal-close">
+								<use href="./images/symbol-defs.svg#icon-close-button"></use>
+							</svg>
+						</button>
+						<h2 class="products__modal-title">Chololate icecream</h2>
+						<div class="products__modal-wrapper">
+							<img
+								src="./images/chocolate.jpg"
+								alt="chocolate ice cream"
+								class="products__modal-img"
+							/>
+						</div>
+						<ul class="products__modal-list">
+							<li class="products__modal-item">
+								<h3 class="products__modal-nutrition">320</h3>
+								<p class="products__modal-desc">kcal</p>
+							</li>
+							<li class="products__modal-item">
+								<h3 class="products__modal-nutrition">4g</h3>
+								<p class="products__modal-desc">Protein</p>
+							</li>
+							<li class="products__modal-item">
+								<h3 class="products__modal-nutrition">8,2g</h3>
+								<p class="products__modal-desc">Fats</p>
+							</li>
+							<li class="products__modal-item">
+								<h3 class="products__modal-nutrition">40,4g</h3>
+								<p class="products__modal-desc">Carbs</p>
+							</li>
+						</ul>
+						<h3 class="products__modal-ingredients__title">Ingredients</h3>
+						<ul class="products__modal-ingredients">
+							<li class="products__modal-ingredients__item">
+								<p class="products__modal-ingredients__desc">Milk</p>
+								<p class="products__modal-ingredients__desc">100ml</p>
+							</li>
+							<li class="products__modal-ingredients__item">
+								<p class="products__modal-ingredients__desc">
+									Belgian chocolate
+								</p>
+								<p class="products__modal-ingredients__desc">20g</p>
+							</li>
+							<li class="products__modal-ingredients__item">
+								<p class="products__modal-ingredients__desc">Cream</p>
+								<p class="products__modal-ingredients__desc">150 ml</p>
+							</li>
+							<li class="products__modal-ingredients__item">
+								<p class="products__modal-ingredients__desc">Cocoa powder</p>
+								<p class="products__modal-ingredients__desc">30g</p>
+							</li>
+							<li class="products__modal-ingredients__item">
+								<p class="products__modal-ingredients__desc">Sugar</p>
+								<p class="products__modal-ingredients__desc">40g</p>
+							</li>
+							<li class="products__modal-ingredients__item">
+								<p class="products__modal-ingredients__desc">Vanilla sugar</p>
+								<p class="products__modal-ingredients__desc">10g</p>
+							</li>
+						</ul>
+						<form class="products__modal-form">
+							<input
+								type="text"
+								class="products__modal-input"
+								placeholder="Name"
+							/>
+							<input
+								type="tel"
+								class="products__modal-input"
+								placeholder="Phone"
+							/>
+							<textarea
+								class="products__modal-textarea"
+								placeholder="Comment"
+							></textarea>
+							<button class="products__modal-button">Submit</button>
+						</form>
+					</div>
 				</div>
 			</section>
 
@@ -259,15 +347,46 @@
 						</li>
 					</ul>
 				</div>
+				<div
+					class="modal-backdrop is-hidden"
+					data-action="backdrop"
+					data-modal="how-made"
+				>
+					<div class="how-made__modal modal">
+						<button class="modal__close-btn" data-close-modal>
+							<svg>
+								<use href="images/symbol-defs.svg#icon-close-button"></use>
+							</svg>
+						</button>
+						<h3 class="how-made__modal-title">How it’s made?</h3>
+						<div class="how-made__video">
+							<svg class="how-made__modal-play-icon" width="36" height="36">
+								<use href="images/symbol-defs.svg#icon-play-button"></use>
+							</svg>
+						</div>
+						<p class="how-made__modal-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
 			</section>
 
 			<section class="response">
 				<div class="response__container container">
-					<img src="images/ice-creams-on-table.jpg" alt="" class="response__img" />
+					<img
+						src="images/ice-creams-on-table.jpg"
+						alt=""
+						class="response__img"
+					/>
 					<div class="response__track">
 						<ul class="response__list">
 							<li class="response__item">
-								<img src="images/woman.jpg" alt="woman" class="response__user-img" />
+								<img
+									src="images/woman.jpg"
+									alt="woman"
+									class="response__user-img"
+								/>
 								<p class="response__text">
 									I love visiting your cafe. You prepare the most delicious ice
 									cream in Los Angeles! In addition, you have beautiful serving,
@@ -276,7 +395,11 @@
 								<h3 class="response__user-name">Emily, Los Angeles</h3>
 							</li>
 							<li class="response__item slider-hidden">
-								<img src="images/man.png" alt="man" class="response__user-img" />
+								<img
+									src="images/man.png"
+									alt="man"
+									class="response__user-img"
+								/>
 								<p class="response__text">
 									Every day we come to you with friends after classes in
 									college. We love your ice cream and casual atmosphere!
@@ -284,7 +407,11 @@
 								<h3 class="response__user-name">Bryan, New-York</h3>
 							</li>
 							<li class="response__item slider-hidden">
-								<img src="images/woman2.png" alt="woman" class="response__user-img" />
+								<img
+									src="images/woman2.png"
+									alt="woman"
+									class="response__user-img"
+								/>
 								<p class="response__text">
 									Ice cream is my passion! I love your chocolate hazelnut ice
 									cream! And I really like the excellent service - always served
@@ -295,119 +422,155 @@
 						</ul>
 						<ul class="response__pagination">
 							<li role="presentation">
-								<button class="response__pagination-btn is-active" type="button" onclick="changeSlide(0)"></button>
+								<button
+									class="response__pagination-btn is-active"
+									type="button"
+									onclick="changeSlide(0)"
+								></button>
 							</li>
 							<li role="presentation">
-								<button class="response__pagination-btn" type="button" onclick="changeSlide(1)"></button>
+								<button
+									class="response__pagination-btn"
+									type="button"
+									onclick="changeSlide(1)"
+								></button>
 							</li>
 							<li role="presentation">
-								<button class="response__pagination-btn" type="button" onclick="changeSlide(2)"></button>
+								<button
+									class="response__pagination-btn"
+									type="button"
+									onclick="changeSlide(2)"
+								></button>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
+
 			<section class="cards">
 				<div class="cards__container container">
 					<ul class="cards__list">
 						<li class="cards__item">
 							<h2 class="cards__title">CAFE</h2>
 							<h3 class="cards__subtitle">Chicago</h3>
-							<a href="https://maps.app.goo.gl/fZmPPUdndzR753jY7" class="cards__address">
-								10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
-							</a>
-							<p class="cards__text">
-								Monday - Friday
-								<time datetime="06:00" class="cards__time">06:00 AM</time> -
-								<time datetime="22:00" class="cards__time">10:00 PM</time>
-							</p>
-							<p class="cards__text">
-								Saturday - Sunday
-								<time datetime="08:00" class="cards__time">08:00 AM</time> -
-								<time datetime="16:00" class="cards__time">16:00 PM</time>
-							</p>
-							<a href="tel:61383766284" class="cards__phone">+61(0) 383 766 284</a>
-							<a href="mailto:noreply@envato.com" class="cards__email">noreply@envato.com</a>
+							<div class="cards__wrapper">
+								<a
+									href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
+									class="cards__address"
+								>
+									10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+								</a>
+							</div>
+							<div class="cards__time-wrapper">
+								<div class="cards__text">
+									<p class="cards__text-day">Monday - Friday</p>
+									<time datetime="06:00" class="cards__time">06:00 AM</time> -
+									<time datetime="22:00" class="cards__time">10:00 PM</time>
+								</div>
+								<div class="cards__text">
+									<p class="cards__text-day">Saturday - Sunday</p>
+									<time datetime="08:00" class="cards__time">08:00 AM</time> -
+									<time datetime="16:00" class="cards__time">16:00 PM</time>
+								</div>
+							</div>
+							<a href="tel:61383766284" class="cards__phone"
+								>+61(0) 383 766 284</a
+							>
+							<a href="mailto:noreply@envato.com" class="cards__email"
+								>noreply@envato.com</a
+							>
 						</li>
 						<li class="cards__item">
 							<h2 class="cards__title">FOODTRUCK</h2>
 							<h3 class="cards__subtitle">Los Angeles</h3>
-							<a href="https://maps.app.goo.gl/sRWyFTd1EqsYK6vm9" class="cards__address">
-								1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
-							</a>
-							<p class="cards__text">
-								Monday - Friday
-								<time datetime="06:00" class="cards__time">06:00 AM</time> -
-								<time datetime="22:00" class="cards__time">10:00 PM</time>
-							</p>
-							<p class="cards__text">
-								Saturday - Sunday
-								<time datetime="08:00" class="cards__time">08:00 AM</time> -
-								<time datetime="16:00" class="cards__time">16:00 PM</time>
-							</p>
-							<a href="tel:61383766284" class="cards__phone">+61(0) 383 766 284</a>
-							<a href="mailto:noreply@envato.com" class="cards__email">noreply@envato.com</a>
+							<div class="cards__wrapper">
+								<a
+									href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
+									class="cards__address"
+								>
+									10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+								</a>
+							</div>
+							<div class="cards__time-wrapper">
+								<div class="cards__text">
+									<p class="cards__text-day">Monday - Friday</p>
+									<time datetime="06:00" class="cards__time">06:00 AM</time> -
+									<time datetime="22:00" class="cards__time">10:00 PM</time>
+								</div>
+								<div class="cards__text">
+									<p class="cards__text-day">Saturday - Sunday</p>
+									<time datetime="08:00" class="cards__time">08:00 AM</time> -
+									<time datetime="16:00" class="cards__time">16:00 PM</time>
+								</div>
+							</div>
+							<a href="tel:61383766284" class="cards__phone"
+								>+61(0) 383 766 284</a
+							>
+							<a href="mailto:noreply@envato.com" class="cards__email"
+								>noreply@envato.com</a
+							>
 						</li>
 						<li class="cards__item">
 							<h2 class="cards__title">CAFE</h2>
 							<h3 class="cards__subtitle">New York</h3>
-							<a href="https://maps.app.goo.gl/oWkxnQrhjifGi3y66" class="cards__address">
-								726 Sterling Pl, Brooklyn, NY 11222, USA
-							</a>
-							<p class="cards__text">
-								Monday - Friday
-								<time datetime="06:00" class="cards__time">06:00 AM</time> -
-								<time datetime="22:00" class="cards__time">10:00 PM</time>
-							</p>
-							<p class="cards__text">
-								Saturday - Sunday
-								<time datetime="08:00" class="cards__time">08:00 AM</time> -
-								<time datetime="16:00" class="cards__time">16:00 PM</time>
-							</p>
-							<a href="tel:61383766284" class="cards__phone">+61(0) 383 766 284</a>
-							<a href="mailto:noreply@envato.com" class="cards__email">noreply@envato.com</a>
+							<div class="cards__wrapper">
+								<a
+									href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
+									class="cards__address"
+								>
+									10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+								</a>
+							</div>
+							<div class="cards__time-wrapper">
+								<div class="cards__text">
+									<p class="cards__text-day">Monday - Friday</p>
+									<time datetime="06:00" class="cards__time">06:00 AM</time> -
+									<time datetime="22:00" class="cards__time">10:00 PM</time>
+								</div>
+								<div class="cards__text">
+									<p class="cards__text-day">Saturday - Sunday</p>
+									<time datetime="08:00" class="cards__time">08:00 AM</time> -
+									<time datetime="16:00" class="cards__time">16:00 PM</time>
+								</div>
+							</div>
+							<a href="tel:61383766284" class="cards__phone"
+								>+61(0) 383 766 284</a
+							>
+							<a href="mailto:noreply@envato.com" class="cards__email"
+								>noreply@envato.com</a
+							>
 						</li>
 					</ul>
-			
+
 					<div class="cards__actions">
-						<button type="button" class="cards__button cards__button--primary" data-open-modal="locations">
+						<button
+							type="button"
+							class="cards__button cards__button--primary"
+							data-open-modal="locations"
+						>
 							Our Locations
 							<svg width="12" height="12" class="cards__button-icon">
 								<use href="images/symbol-defs.svg#icon-short-arrow"></use>
 							</svg>
 						</button>
-						<button type="button" class="cards__button cards__button--secondary" data-open-modal>
+
+						<button
+							type="button"
+							class="cards__button cards__button--secondary"
+							data-open-modal="franchise"
+						>
 							Franchise
 							<svg width="12" height="12" class="cards__button-icon">
 								<use href="images/symbol-defs.svg#icon-short-arrow"></use>
 							</svg>
 						</button>
-						<div class="modal">
-							<button class="modal__close-btn" data-close-modal>
-								<svg class="modal__close-btn__icon">
-									<use href="images/symbol-defs.svg#icon-close-button"></use>
-								</svg>
-							</button>
-							<h2 class="franchise__title modal__title">Thank you for your interest in owning an Ice Cream shop</h2>
-							<p class="franchise__desc modal__desc">
-								Due to the overwhelming volume of franchise requests we are not accepting new franchisee
-								applications at this time. Once
-								the application process resumes, we will contact you for further information. Please fill
-								out the contact information
-								below and we will reach out for additional information. We appreciate your patience.
-							</p>
-						
-							<form class="modal__form">
-								<input type="text" class="modal__input" placeholder="Name">
-								<input type="tel" class="modal__input" placeholder="Phone">
-								<input type="email" class="modal__input" placeholder="Email">
-								<textarea class="modal__textarea" placeholder="Comment"></textarea>
-							</form>
-							<button class="modal__button" type="button">Submit</button>
-						</div>
 					</div>
 				</div>
-				<div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="locations">
+				<div
+					class="modal-backdrop is-hidden"
+					data-action="backdrop"
+					data-modal="locations"
+				>
 					<div class="cards__modal modal">
 						<button class="modal__close-btn" data-close-modal>
 							<svg>
@@ -415,15 +578,23 @@
 							</svg>
 						</button>
 						<h2 class="cards__modal-title">Our Locations</h2>
-						<iframe class="cards__modal-map"
+						<iframe
+							class="cards__modal-map"
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26469.123456789!2d34.557!3d49.589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDM1JzU5LjAiTiAzNMKwMzMnMjcuMCJF!5e0!3m2!1sen!2sua!4v1696234567890!5m2!1sen!2sua"
-							width="448" height="260" loading="lazy" style="border-radius: 10px"></iframe>
-						<a href="https://www.google.com/maps/place/Poltava/" target="_blank">
-							<button class="cards__modal-button">Open map</button></a>
+							width="100%"
+							height="260"
+							loading="lazy"
+							style="border-radius: 10px"
+						></iframe>
+						<a
+							href="https://www.google.com/maps/place/Poltava/"
+							target="_blank"
+						>
+							<button class="cards__modal-button">Open map</button></a
+						>
 					</div>
 				</div>
 			</section>
-	</main>
 
 			<footer class="footer">
 				<div class="footer__container container">
@@ -431,7 +602,7 @@
 						<h3 class="footer__subtitle">homemade ice cream made</h3>
 						<h2 class="footer__title">with passion</h2>
 					</div>
-
+			
 					<div class="footer__contacts">
 						<ul class="footer__social-list">
 							<li class="footer__social-item">
@@ -456,92 +627,115 @@
 								</a>
 							</li>
 						</ul>
-
+			
 						<p class="footer__text">
 							Feel free to contact
-							<a class="footer__contact" href="tel:+610383766284"
-								>+61 (0) 383 766 284</a
-							>
+							<a class="footer__contact" href="tel:+610383766284">+61 (0) 383 766 284</a>
 						</p>
 					</div>
 				</div>
-
+			
 				<div class="footer__bottom">
 					<p class="footer__copyright">
 						© 2022 - IceCream. All Rights Reserved.
 					</p>
 				</div>
 			</footer>
+			<div
+				class="modal-backdrop is-hidden"
+				data-action="backdrop"
+				data-modal="franchise"
+			>
+				<div class="franchise__modal modal">
+					<button class="modal__close-btn" data-close-modal>
+						<svg class="modal__close-btn__icon">
+							<use href="images/symbol-defs.svg#icon-close-button"></use>
+						</svg>
+					</button>
+					<h2 class="franchise__title modal__title">
+						Thank you for your interest in owning an Ice Cream shop
+					</h2>
+					<p class="franchise__desc modal__desc">
+						Due to the overwhelming volume of franchise requests we are not
+						accepting new franchisee applications at this time. Once the
+						application process resumes, we will contact you for further
+						information. Please fill out the contact information below and we
+						will reach out for additional information. We appreciate your
+						patience.
+					</p>
 
-	<div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="buy">
-		<div class="modal buy">
-			<button class="modal__close-btn" data-close-modal>
-				<svg class="modal__close-btn__icon">
-					<use href="images/symbol-defs.svg#icon-close-button"></use>
-				</svg>
-			</button>
-			<h2 class="buy__title modal__title">Buy now</h2>
-			<ul class="buy__list">
-				<li class="buy__item buy__item--padding">
-					<div class="buy__img-wrapper">
-						<img src="images/ice-creams-hand.jpg" alt="" class="buy__img" />
-					</div>
-					<h3 class="buy__item-title">ice cream</h3>
-				</li>
-				<li class="buy__item buy__item--yellow">
-					<div class="buy__img-wrapper buy__img-wrapper--yellow">
-						<img src="images/cocktail.jpg" alt="" class="buy__img" />
-					</div>
-					<h3 class="buy__item-title">ice coffee</h3>
-				</li>
-				<li class="buy__item buy__item--orange">
-					<div class="buy__img-wrapper buy__img-wrapper--orange">
-						<img src="images/oreo-cocktail.jpg" alt="" class="buy__img" />
-					</div>
-					<h3 class="buy__item-title">milkshake</h3>
-				</li>
-			</ul>
+					<form class="franchise__form">
+						<input type="text" class="franchise__input" placeholder="Name" />
+						<input type="tel" class="franchise__input" placeholder="Phone" />
+						<input type="email" class="franchise__input" placeholder="Email" />
+						<textarea
+							class="franchise__textarea"
+							placeholder="Comment"
+						></textarea>
+					</form>
+					<button class="franchise__button" type="button">Submit</button>
+				</div>
+			</div>
 
-			<form class="modal__form">
-				<input type="text" class="modal__input" placeholder="Name">
-				<input type="tel" class="modal__input" placeholder="Phone">
-				<textarea class="modal__textarea" placeholder="Comment"></textarea>
-			</form>
-			<button class="modal__button" type="button">Submit</button>
-		</div>
-	</div>
+			<div
+				class="modal-backdrop is-hidden"
+				data-action="backdrop"
+				data-modal="buy"
+			>
+				<div class="hero__modal modal buy">
+					<button class="modal__close-btn" data-close-modal>
+						<svg class="modal__close-btn__icon">
+							<use href="images/symbol-defs.svg#icon-close-button"></use>
+						</svg>
+					</button>
+					<h2 class="hero__buy__title modal__title">Buy now</h2>
+					<ul class="hero__buy__list">
+						<li class="hero__buy__item buy__item--padding">
+							<div class="hero__buy__img-wrapper">
+								<img
+									src="images/ice-creams-hand.jpg"
+									alt=""
+									class="hero__buy__img"
+								/>
+							</div>
+							<h3 class="hero__buy__item-title">ice cream</h3>
+						</li>
+						<li class="hero__buy__item hero__buy__item--yellow">
+							<div
+								class="hero__buy__img-wrapper hero__buy__img-wrapper--yellow"
+							>
+								<img src="images/cocktail.jpg" alt="" class="hero__buy__img" />
+							</div>
+							<h3 class="hero__buy__item-title">ice coffee</h3>
+						</li>
+						<li class="hero__buy__item hero__buy__item--orange">
+							<div
+								class="hero__buy__img-wrapper hero__buy__img-wrapper--orange"
+							>
+								<img
+									src="images/oreo-cocktail.jpg"
+									alt=""
+									class="hero__buy__img"
+								/>
+							</div>
+							<h3 class="hero__buy__item-title">milkshake</h3>
+						</li>
+					</ul>
 
-	<div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="locations">
-		<div class="modal">
-			<button class="modal__close-btn" data-close-modal>
-				<svg width="32" height="32">
-					<use href="images/symbol-defs.svg#icon-close-button"></use>
-				</svg>
-			</button>
-			<img src="images/poltava.jpg" alt="poltava" class="modal__img" />
-			<h2 class="modal__title">Our Locations</h2>
-		</div>
-	</div>
+					<form class="hero__modal__form">
+						<input type="text" class="hero__modal__input" placeholder="Name" />
+						<input type="tel" class="hero__modal__input" placeholder="Phone" />
+						<textarea
+							class="hero__modal__textarea"
+							placeholder="Comment"
+						></textarea>
+					</form>
+					<button class="hero__modal__button" type="button">Submit</button>
+				</div>
+			</div>
+		</main>
 
-	<div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="how-made">
-		<div class="modal">
-			<button class="modal__close-btn" data-close-modal>
-				<svg width="32" height="32">
-					<use href="images/symbol-defs.svg#icon-close-button"></use>
-				</svg>
-			</button>
-			<h3 class="modal__title">How it’s made?</h3>
-			<svg class="modal__play-icon" width="36" height="36">
-				<use href="images/symbol-defs.svg#icon-play-button"></use>
-			</svg>
-			<p class="modal__text">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-				eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			</p>
-		</div>
-	</div>
-
-    <script src="./js/modal.js"></script>
-    <script src="./js/slider.js"></script>
-  </body>
+		<script src="./js/modal.js"></script>
+		<script src="./js/slider.js"></script>
+	</body>
 </html>

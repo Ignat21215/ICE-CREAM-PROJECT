@@ -1,5 +1,5 @@
-@use "../utils/placeholders" as *;
-@use "../utils/variables" as *;
+@use '../utils/placeholders' as *;
+@use '../utils/variables' as *;
 
 .header {
   padding-top: 8px;
@@ -42,96 +42,29 @@
     align-items: center;
     line-height: 1;
     gap: 4px;
+    border-radius: 10px;
+    background-color: $accent-color;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    transition: background-color ease-in 0.3s;
+    text-align: center;
 
     &:hover {
       background-color: $btn-hover;
     }
 
-    &:hover {
+    &:focus {
       background-color: $btn-hover;
-      color: $light-txt-color;
+      color: #fff;
+      fill: #fff;
     }
 
     &-icon {
       width: 12px;
       height: 12px;
-      fill: $dark-btn-txt-color;
-    }
-  }
-}
-
-.buy {
-  padding: 32px 54px;
-  width: 568px;
-  height: 644px;
-  border-radius: 10px;
-  border: 2px solid $accent-color;
-
-  &__title {
-    padding-bottom: 113px;
-  }
-
-  &__list {
-    display: flex;
-    gap: 32px;
-    padding-bottom: 40px;
-    justify-content: center;
-  }
-
-  &__item {
-    padding: 95px 13px 20px 13px;
-    border: 2px solid $buy-green-border;
-    border-radius: 15px;
-    position: relative;
-
-    &--padding {
-      padding-inline: 16px;
-    }
-
-    &--yellow {
-      background-color: $yellow-card-bg;
-      border-color: $yellow-card-bg;
-    }
-
-    &--orange {
-      border-color: $card-orange-bg;
-    }
-
-    &-title {
-      color: $dark-txt-color;
-      font-size: 16px;
-      text-transform: uppercase;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-  }
-
-  &__img {
-    position: absolute;
-    width: 132px;
-    height: 132px;
-    border-radius: 100%;
-    top: -7px;
-
-    &-wrapper {
-      position: absolute;
-      width: 132px;
-      height: 132px;
-      top: -63px;
-      left: 0;
-      border-radius: 100%;
-      background-color: $card-rect-bg-green;
-      box-shadow: 0px 5px 19px 0px $buy-wrapper-shadow;
-
-      &--yellow {
-        box-shadow: 0px 5px 19px 0px $card-rect-shadow-yellow;
-        background-color: $buy-wrapper-yellow-bg;
-      }
-
-      &--orange {
-        box-shadow: 0px 5px 19px 0px $card-rect-shadow-brown;
-        background-color: $card-orange-bg;
-      }
     }
   }
 }

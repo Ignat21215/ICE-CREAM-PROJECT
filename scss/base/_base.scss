@@ -2,19 +2,19 @@
 @use '../utils/variables' as *;
 
 body {
-    font-family: $font-family;
-    color: $light-txt-color;
-    letter-spacing: 0.04em;
-    line-height: 1;
+	font-family: $font-family;
+	color: $light-txt-color;
+	letter-spacing: 0.04em;
+	line-height: 1;
 }
 
 .container {
-    width: 1168px;
-    margin: 0 auto;
+	width: 1168px;
+	margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 705px;
-    }
+	.container {
+		width: 705px;
+	}
 }

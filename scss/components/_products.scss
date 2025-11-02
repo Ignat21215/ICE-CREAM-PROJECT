@@ -1,5 +1,5 @@
-@use "../utils/placeholders" as *;
-@use "../utils/variables" as *;
+@use '../utils/placeholders' as *;
+@use '../utils/variables' as *;
 
 .products {
   background-image: url(../images/ice-creams-bg.png);
@@ -103,7 +103,7 @@
     padding-bottom: 50px;
 
     &--first {
-        padding-bottom: 87px;
+      padding-bottom: 87px;
     }
   }
 
@@ -115,5 +115,157 @@
     fill: $dark-txt-color;
     width: 40px;
     height: 16px;
+  }
+
+  &__modal {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__modal-title {
+    font-family: $second-family;
+    color: $dark-txt-color;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 0 24px 0;
+  }
+
+  &__modal-wrapper {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      linear-gradient(0deg, #d9d9d9, #d9d9d9);
+    box-shadow: 0px 5.26px 19.73px rgba(10, 136, 23, 0.25);
+    border-radius: 50%;
+    padding-bottom: 10px;
+  }
+
+  &__modal-img {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__modal-list {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    display: flex;
+    color: $dark-txt-color;
+    gap: 20px;
+  }
+
+  &__modal-item {
+    border: $card-rect-bg-green 2px solid;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3px;
+  }
+
+  &__modal-nutrition {
+    background-color: $card-rect-bg-green;
+    font-family: $font-family;
+    font-weight: 500;
+    border-radius: 50%;
+    width: 53px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  }
+
+  &__modal-desc {
+    font-size: 12px;
+    text-align: center;
+    font-family: $font-family;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+
+  &__modal-ingredients {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding-bottom: 48px;
+
+    &__title {
+      font-family: $font-family;
+      color: $dark-txt-color;
+      font-size: 20px;
+      padding-bottom: 24px;
+    }
+
+    &__item {
+      color: $dark-txt-color;
+      font-size: 14px;
+      font-weight: 400;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__modal-form {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  &__modal-input {
+    width: 368px;
+    padding: 11px 16px;
+    border: 1px solid $bg-color;
+    border-radius: 10px;
+    background-color: $input-bg;
+    margin: 0 auto;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.4em;
+      letter-spacing: 0;
+      color: $dark-txt-color;
+      font-weight: 400;
+    }
+  }
+
+  &__modal-textarea {
+    margin: 0 auto;
+    border: 1px solid $bg-color;
+    border-radius: 10px;
+    background-color: $input-bg;
+    width: 368px;
+    padding: 11px 16px;
+    height: 84px;
+    resize: none;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.4em;
+      letter-spacing: 0;
+      color: $dark-txt-color;
+      font-weight: 400;
+    }
+  }
+
+  &__modal-button {
+    display: flex;
+    margin: 0 auto;
+    background-color: $accent-color;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 34px;
+    color: $dark-txt-color;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
   }
 }
