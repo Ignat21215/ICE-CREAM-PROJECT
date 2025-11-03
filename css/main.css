@@ -1510,7 +1510,7 @@ label {
 }
 .response {
   background-color: #fff;
-  background-image: url(../images/ice-creams-bg.png);
+  background-image: url(../images/hlib/desktop/ice-creams-bg.jpg);
   background-size: cover;
   position: relative;
   padding-top: 600px;
@@ -2148,4 +2148,4 @@ label {
 
 .is-hidden {
   display: none;
-}
+}/*# sourceMappingURL=main.css.map */
