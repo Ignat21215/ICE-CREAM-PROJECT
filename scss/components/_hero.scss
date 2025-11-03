@@ -1,5 +1,5 @@
-@use "../utils/placeholders" as *;
-@use "../utils/variables" as *;
+@use '../utils/placeholders' as *;
+@use '../utils/variables' as *;
 
 .hero {
   background: url(../images/ice-creams-faces.png) top 14px left 652px,
@@ -37,14 +37,12 @@
     text-decoration: underline;
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0;
     padding: 12px 21px 11px 22px;
     margin-left: 12px;
 
     &:hover {
       color: $btn-hover;
     }
-
     &:focus {
       color: $light-txt-color;
     }
@@ -54,7 +52,6 @@
     width: 200px;
     font-size: 14px;
     font-family: $fourth-family;
-    letter-spacing: 0;
     line-height: 1.4;
     padding-bottom: 24px;
   }
@@ -101,20 +98,19 @@
 
     &-desc {
       font-size: 14px;
-      letter-spacing: 0;
       color: $light-txt-color;
     }
   }
 
   &__buy {
     padding: 32px 54px;
+
     &__title {
       font-size: 20px;
       font-weight: 400;
       font-family: $second-family;
       color: $dark-txt-color;
       line-height: 28px;
-      letter-spacing: 0;
       text-align: center;
       padding-bottom: 113px;
     }
@@ -125,6 +121,7 @@
       padding-bottom: 40px;
       justify-content: center;
     }
+
     &__item {
       padding: 95px 13px 20px 13px;
       border: 2px solid $buy-green-border;
@@ -134,12 +131,10 @@
       &--padding {
         padding-inline: 16px;
       }
-
       &--yellow {
         background-color: $yellow-card-bg;
         border-color: $yellow-card-bg;
       }
-
       &--orange {
         border-color: $card-orange-bg;
       }
@@ -191,41 +186,29 @@
       padding-bottom: 32px;
     }
 
-    &__input {
+    &__input,
+    &__textarea {
       width: 368px;
       padding: 11px 16px;
       border: 1px solid $bg-color;
       border-radius: 10px;
       background-color: $input-bg;
       margin: 0 auto;
+    }
 
-      &::placeholder {
-        font-size: 14px;
-        line-height: 1.4em;
-        letter-spacing: 0;
-        color: $dark-txt-color;
-        font-weight: 400;
-      }
+    &__input::placeholder,
+    &__textarea::placeholder {
+      font-size: 14px;
+      line-height: 1.4em;
+      color: $dark-txt-color;
+      font-weight: 400;
     }
 
     &__textarea {
-      margin: 0 auto;
-      border: 1px solid $bg-color;
-      border-radius: 10px;
-      background-color: $input-bg;
-      width: 368px;
-      padding: 11px 16px;
       height: 84px;
       resize: none;
-
-      &::placeholder {
-        font-size: 14px;
-        line-height: 1.4em;
-        letter-spacing: 0;
-        color: $dark-txt-color;
-        font-weight: 400;
-      }
     }
+
     &__button {
       display: flex;
       margin: 0 auto;
@@ -252,38 +235,29 @@
     &__list {
       right: 32px;
     }
-
     &__title {
       font-size: 26px;
       width: 247px;
       padding-bottom: 24px;
     }
-
     &__desc {
       font-size: 12px;
       padding-bottom: 29px;
       width: 165px;
     }
-
     &__link {
       font-size: 12px;
     }
-
-    &__item {
-      &__title {
-        font-size: 28px;
-      }
-
-      &__desc {
-        font-size: 8px;
-      }
+    &__item__title {
+      font-size: 28px;
     }
-
+    &__item__desc {
+      font-size: 8px;
+    }
     &__txt-wrapper {
       padding-top: 27px;
       padding-bottom: 12px;
     }
-
     &__btn {
       margin-bottom: 12px;
     }
@@ -292,52 +266,9 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding-bottom: 12px;
-    background: url(../images/ice-creams-faces@2x.png) top 6px left 408px,
-      url(../images/dots@2x.png) bottom;
-    background-repeat: no-repeat;
-    background-color: $bg-color;
-
-    &__list {
-      right: 32px;
-    }
-
-    &__title {
-      font-size: 26px;
-      width: 247px;
-      padding-bottom: 24px;
-    }
-
-    &__desc {
-      font-size: 12px;
-      padding-bottom: 29px;
-      width: 165px;
-    }
-
-    &__link {
-      font-size: 12px;
-    }
-
-    &__item {
-      &__title {
-        font-size: 28px;
-      }
-
-      &__desc {
-        font-size: 8px;
-      }
-    }
-
-    &__txt-wrapper {
-      padding-top: 27px;
-      padding-bottom: 12px;
-    }
-
-    &__btn {
-      margin-bottom: 12px;
-    }
-
-    &__img, &__desc, &__arrow-link {
+    &__img,
+    &__desc,
+    &__arrow-link {
       display: none;
     }
   }

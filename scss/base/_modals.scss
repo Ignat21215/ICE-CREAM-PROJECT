@@ -1,5 +1,5 @@
-@use "../utils/placeholders" as *;
-@use "../utils/variables" as *;
+@use '../utils/placeholders' as *;
+@use '../utils/variables' as *;
 
 .modal-backdrop {
   position: fixed;
@@ -87,6 +87,7 @@
   }
 
   &__desc {
+    color: $dark-txt-color;
     font-size: 12px;
     text-align: center;
     font-family: $font-family;

@@ -3,112 +3,112 @@
 
 input[type='checkbox'],
 label {
-	display: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
-	nav {
-		order: 1;
-	}
+  nav {
+    order: 1;
+  }
 
-	label {
-		display: block;
-	}
+  label {
+    display: block;
+  }
 
-	label {
-		padding: 8px 4px;
-	}
+  label {
+    padding: 8px 4px;
+  }
 
-	label span,
-	label span::before,
-	label span::after {
-		content: '';
-		display: block;
-		width: 24px;
-		height: 2.67px;
-		background: $burger-line-color;
-		transition: 0.3s;
-		position: relative;
-	}
+  label span,
+  label span::before,
+  label span::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2.67px;
+    background: $burger-line-color;
+    transition: 0.3s;
+    position: relative;
+  }
 
-	label span::before {
-		top: -8px;
-		position: absolute;
-	}
+  label span::before {
+    top: -8px;
+    position: absolute;
+  }
 
-	label span::after {
-		top: 8px;
-		position: absolute;
-	}
+  label span::after {
+    top: 8px;
+    position: absolute;
+  }
 
-	.header__nav {
-		display: none;
-	}
+  .header__nav {
+    display: none;
+  }
 
-	#toggle:checked ~ .header__nav {
-		display: flex;
-		flex-direction: column;
-	}
+  #toggle:checked ~ .header__nav {
+    display: flex;
+    flex-direction: column;
+  }
 
-	.header__nav {
-		position: absolute;
-		z-index: 2;
-		top: 0px;
-		left: 0;
-		width: 100%;
-		background: $bg-color;
-		height: 796px;
-		padding-top: 140px;
-		padding-bottom: 528px;
-	}
+  .header__nav {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: $bg-color;
+    height: 796px;
+    padding-top: 140px;
+    padding-bottom: 528px;
+  }
 
-	.header__list {
-		display: flex;
-		gap: 40px;
-		flex-direction: column;
-		margin: 0 auto;
-	}
+  .header__list {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
-	.header__link {
-		color: $light-txt-color;
-		font-size: 48px;
-		letter-spacing: 0;
-		font-weight: 700;
-		max-width: 385px;
-		display: flex;
-		justify-content: center;
+  .header__link {
+    color: $light-txt-color;
+    font-size: 48px;
+    letter-spacing: 0;
+    font-weight: 700;
+    max-width: 385px;
+    display: flex;
+    justify-content: center;
 
-		&:hover {
-			color: $dark-txt-color;
-		}
-	}
+    &:hover {
+      color: $dark-txt-color;
+    }
+  }
 
-	input[type='checkbox']:checked ~ label span {
-		transform: rotate(-45deg);
-	}
-	input[type='checkbox']:checked ~ label span::before {
-		top: 0;
-		transform: rotate(0);
-	}
-	input[type='checkbox']:checked ~ label span::after {
-		top: 0;
-		transform: rotate(90deg);
-	}
+  input[type='checkbox']:checked ~ label span {
+    transform: rotate(-45deg);
+  }
+  input[type='checkbox']:checked ~ label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type='checkbox']:checked ~ label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
 
-	input[type='checkbox']:checked ~ label {
-		position: absolute;
-		right: 32px;
-		top: 32px;
-		z-index: 3;
-	}
+  input[type='checkbox']:checked ~ label {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    z-index: 3;
+  }
 
-	input[type='checkbox']:checked ~ .logo {
-		position: absolute;
-		top: 20px;
-		left: 32px;
-	}
+  input[type='checkbox']:checked ~ .logo {
+    position: absolute;
+    top: 20px;
+    left: 32px;
+  }
 
-	.logo {
-		z-index: 3;
-	}
+  .logo {
+    z-index: 3;
+  }
 }

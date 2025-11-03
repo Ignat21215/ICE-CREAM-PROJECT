@@ -21,7 +21,6 @@
     background-color: #fff;
     padding: 40px;
     border-radius: 24px;
-    // box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
     transform: translateY(-128px);
     max-width: 368px;
   }
@@ -37,6 +36,7 @@
     margin-bottom: 32px;
     line-height: 183%;
     font-weight: 500;
+
     &:hover {
       text-decoration: underline;
     }
@@ -54,7 +54,6 @@
     font-weight: 500;
     font-size: 16px;
     border-bottom: 1px solid rgba(225, 225, 225, 1);
-    width: 100%;
   }
 
   &__text-day {
@@ -66,12 +65,13 @@
   }
 
   &__phone {
+    padding-top: 32px;
+    padding-bottom: 5px;
     color: $dark-txt-color;
     font-weight: 500;
     font-size: 16px;
-    padding-top: 32px;
-    padding-bottom: 5px;
   }
+
   &__email {
     color: $dark-txt-color;
     font-weight: 500;
@@ -106,13 +106,10 @@
     align-items: center;
     gap: 5px;
     font-weight: 600;
-    transition: background-color ease-in 0.3s;
     text-align: center;
+    transition: background-color ease-in 0.3s;
 
-    &:hover {
-      background-color: $btn-hover;
-    }
-
+    &:hover,
     &:focus {
       background-color: $btn-hover;
       color: #fff;
@@ -133,12 +130,9 @@
     transition: border ease-in 0.3s;
     text-align: center;
 
-    &:hover {
-      border: 2px solid $btn-hover;
-    }
-
+    &:hover,
     &:focus {
-      border: 2px solid $btn-hover;
+      border-color: $btn-hover;
       color: #fff;
       fill: #fff;
     }
@@ -150,6 +144,7 @@
     align-items: center;
     gap: 32px;
   }
+
   &__modal-title {
     font-family: $second-family;
     color: $dark-txt-color;
@@ -157,6 +152,7 @@
     text-align: center;
     padding-top: 12px;
   }
+
   &__modal-button {
     padding: 12px 34px;
     border-radius: 10px;
@@ -166,18 +162,15 @@
     align-items: center;
     gap: 5px;
     font-weight: 600;
-    transition: background-color ease-in 0.3s;
     text-align: center;
     margin-bottom: 12px;
-  }
+    transition: background-color ease-in 0.3s;
 
-  &__modal-button:hover {
-    background-color: $btn-hover;
-  }
-
-  &__modal-button:focus {
-    background-color: $btn-hover;
-    color: #fff;
-    fill: #fff;
+    &:hover,
+    &:focus {
+      background-color: $btn-hover;
+      color: #fff;
+      fill: #fff;
+    }
   }
 }

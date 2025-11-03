@@ -50,10 +50,6 @@
 		font-size: 16px;
 		font-weight: 500;
 		flex: 0 0 100%;
-
-		// &.slider-hidden {
-		//   display: none;
-		// }
 	}
 
 	&__user-img {
@@ -102,16 +98,8 @@
 	}
 
 	&__title {
-		font-size: 20px;
-		font-weight: 400;
-		font-family: $second-family;
-		color: $dark-txt-color;
-		line-height: 28px;
-		letter-spacing: 0;
-		text-align: center;
 		padding-bottom: 24px;
 		max-width: 322px;
-		text-align: center;
 	}
 
 	&__desc {
@@ -120,6 +108,7 @@
 		font-family: $font-family;
 		padding-bottom: 32px;
 	}
+
 	&__form {
 		display: flex;
 		gap: 16px;
@@ -162,6 +151,7 @@
 			font-weight: 400;
 		}
 	}
+
 	&__button {
 		display: flex;
 		margin: 0 auto;
