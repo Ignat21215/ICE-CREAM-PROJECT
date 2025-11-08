@@ -112,3 +112,21 @@ label {
     z-index: 3;
   }
 }
+
+@media (max-width: 480px) {
+  .header__nav {
+    display: flex;
+  }
+
+  .header__wrapper {
+    display: none;
+  }
+
+  #toggle:checked ~ .header__wrapper {
+    display: flex;
+  }
+
+  .hero__btn {
+    z-index: 2;
+  }
+}

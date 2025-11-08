@@ -105,6 +105,7 @@
   }
 
   &__link {
+    display: flex;
     justify-content: center;
   }
 
@@ -344,9 +345,8 @@
       padding-inline: 60px;
       padding-top: 123px;
       padding-bottom: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      width: 320px;
+      margin: 0 auto;
 
       &-wrapper {
         width: 200px;
@@ -364,6 +364,7 @@
       &-title {
         font-size: 20px;
         max-width: 155px;
+        margin: 0 auto;
       }
 
       &-container {
@@ -376,6 +377,7 @@
     &__desc {
       font-size: 14px;
       padding-bottom: 61px;
+      width: 200px;
       margin: 0;
 
       &--first {
@@ -384,7 +386,7 @@
     }
 
     &__link {
-      display: block;
+      display: inline-block;
     }
 
     &__img {

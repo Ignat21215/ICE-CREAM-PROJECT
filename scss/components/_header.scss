@@ -79,3 +79,13 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .header {
+    padding-bottom: 40px;
+
+    &__container {
+      align-items: center;
+    }
+  }
+}

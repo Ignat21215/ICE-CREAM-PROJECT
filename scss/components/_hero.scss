@@ -1,13 +1,26 @@
-@use '../utils/placeholders' as *;
-@use '../utils/variables' as *;
+@use "../utils/placeholders" as *;
+@use "../utils/variables" as *;
 
 .hero {
   background: url(../images/ice-creams-faces.png) top 14px left 652px,
     url(../images/dots.png) bottom;
   background-repeat: no-repeat;
   background-color: $bg-color;
-  position: relative;
   padding-bottom: 65px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background: url(../images/ice-creams-faces@2x.png) top 14px left 652px,
+        url(../images/dots.png@2x) bottom;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__title {
     color: $light-txt-color;
@@ -77,9 +90,6 @@
   }
 
   &__list {
-    position: absolute;
-    right: 16px;
-    top: 8px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -227,8 +237,8 @@
 @media (max-width: 768px) {
   .hero {
     padding-bottom: 12px;
-    background: url(../images/ice-creams-faces@2x.png) top 6px left 408px,
-      url(../images/dots@2x.png) bottom;
+    background: url(../images/ice-creams-faces-tablet@2x.png) top 6px left 408px,
+      url(../images/dots-tablet@2x.png) bottom;
     background-repeat: no-repeat;
     background-color: $bg-color;
 
@@ -247,6 +257,8 @@
     }
     &__link {
       font-size: 12px;
+      padding-block: 7px;
+      padding-inline: 5px;
     }
     &__item__title {
       font-size: 28px;
@@ -260,15 +272,28 @@
     }
     &__btn {
       margin-bottom: 12px;
+      padding: 11px 26px;
+      font-size: 14px;
     }
   }
 }
 
 @media (max-width: 480px) {
   .hero {
+    background: url(../images/ice-creams-faces-small.png) top 50px left 242px,
+      url(../images/dots-small.png) bottom right;
+    background-repeat: no-repeat;
+    background-color: $bg-color;
+    padding-bottom: 150px;
+
+    &__title {
+      padding-bottom: 32px;
+    }
+
     &__img,
     &__desc,
-    &__arrow-link {
+    &__arrow-link,
+    &__list {
       display: none;
     }
   }

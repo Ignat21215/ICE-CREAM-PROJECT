@@ -9,24 +9,27 @@ body {
 }
 
 .container {
-  max-width: 1168px;
+  max-width: 1200px;
+  padding-inline: 16px;
   margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 705px;
+    max-width: 768px;
+    padding-inline: 32px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    max-width: 440px;
+    max-width: 480px;
+    padding-inline: 20px;
   }
 }
 
 @media (max-width: 320px) {
   .container {
-    max-width: 280px;
+    max-width: 320px;
   }
 }
