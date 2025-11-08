@@ -158,23 +158,23 @@ body {
 }
 
 .container {
-  width: 1168px;
+  max-width: 1168px;
   margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 705px;
+    max-width: 705px;
   }
 }
 @media (max-width: 480px) {
   .container {
-    width: 440px;
+    max-width: 440px;
   }
 }
 @media (max-width: 320px) {
   .container {
-    width: 280px;
+    max-width: 280px;
   }
 }
 .button {
@@ -827,6 +827,7 @@ label {
      object-fit: cover;
   position: relative;
   z-index: 2;
+  max-width: none;
 }
 .how-made__text-wrapper {
   max-width: 463px;
@@ -899,6 +900,7 @@ label {
   font-size: 16px;
   font-weight: 400;
   color: rgb(252, 252, 252);
+  max-width: 368px;
   text-align: center;
   padding-top: 12px;
   line-height: 176%;
@@ -964,6 +966,122 @@ label {
   padding-bottom: 12px;
 }
 
+@media (max-width: 768px) {
+  .how-made__subtitle {
+    font-size: 22px;
+  }
+  .how-made__title {
+    font-size: 34px;
+  }
+  .how-made__image-wrapper {
+    width: 330px;
+    height: 330px;
+  }
+  .how-made__image-wrapper::before {
+    top: -26px;
+    width: 330px;
+    height: 330px;
+  }
+  .how-made__image {
+    width: 330px;
+    height: 330px;
+  }
+  .how-made__content {
+    gap: 38px;
+  }
+  .how-made__text {
+    font-size: 12px;
+    max-width: 338px;
+  }
+  .how-made__stat-title {
+    font-size: 48px;
+    padding-top: 32px;
+  }
+  .how-made__stat-text {
+    font-size: 14px;
+    max-width: 152px;
+  }
+}
+@media (max-width: 480px) {
+  .how-made {
+    padding-bottom: 81px;
+  }
+  .how-made__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .how-made__subtitle {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .how-made__title {
+    font-size: 30px;
+    max-width: 200px;
+    padding-bottom: 54px;
+  }
+  .how-made__image-wrapper {
+    width: 279px;
+    height: 279px;
+  }
+  .how-made__image-wrapper::before {
+    top: -26px;
+    width: 279px;
+    height: 279px;
+  }
+  .how-made__image {
+    width: 279px;
+    height: 279px;
+  }
+  .how-made__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+  .how-made__text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .how-made__text {
+    max-width: 220px;
+    text-align: center;
+  }
+  .how-made__button {
+    margin-top: 24px;
+  }
+  .how-made__stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 32px;
+  }
+  .how-made__stat-title {
+    font-size: 36px;
+    padding-top: 32px;
+  }
+  .how-made__stat-text {
+    font-size: 12px;
+    max-width: 230px;
+  }
+}
 .products {
   background-image: url(../images/ice-creams-bg.png);
   background-position: center;
@@ -1410,7 +1528,7 @@ label {
   background-image: url(../images/hlib/desktop/ice-creams-bg.jpg);
   background-size: cover;
   position: relative;
-  padding-top: 600px;
+  padding-top: 464px;
   padding-bottom: 228px;
 }
 .response__container {
@@ -1426,13 +1544,16 @@ label {
           align-items: center;
 }
 .response__img {
-  width: 1013px;
+  width: 100%;
+  max-width: 1013px;
   max-height: 422px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 24px;
   position: absolute;
   top: -100px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .response__track {
   display: -webkit-box;
@@ -1491,7 +1612,16 @@ label {
 }
 .response__text {
   background-color: rgb(132, 161, 120);
-  padding: 42px 109px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  padding: 43px 5vw;
+  max-width: 968px;
+  max-height: 138px;
   border-radius: 24px;
   text-align: center;
   color: rgb(252, 252, 252);
@@ -1652,6 +1782,55 @@ label {
   letter-spacing: 0;
 }
 
+@media (max-width: 768px) {
+  .response {
+    padding-top: 283px;
+  }
+  .response__img {
+    max-width: 704px;
+    max-height: 327px;
+    top: -144px;
+  }
+  .response__text {
+    font-size: 14px;
+    max-width: 705px;
+    max-height: 138px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .response {
+    padding-top: 235px;
+  }
+  .response__img {
+    top: -49px;
+    max-width: 440px;
+    max-height: 204px;
+  }
+  .response__text {
+    font-size: 12px;
+    max-width: 280px;
+    max-height: 256px;
+  }
+  .response__user-name {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .response {
+    padding-top: 178px;
+  }
+  .response__img {
+    top: -32px;
+    max-width: 280px;
+    max-height: 130px;
+  }
+}
 .cards {
   background-color: rgb(132, 161, 120);
   color: rgb(19, 19, 19);
