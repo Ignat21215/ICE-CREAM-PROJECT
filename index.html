@@ -1,772 +1,829 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ice Cream</title>
-		<link rel="stylesheet" href="./css/main.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<header class="header">
-			<div class="container header__container">
-				<a href="index.html" class="logo">
-					<picture>
-						<img src="./images/logo.png" alt="logo" class="logo__img" />
-						<source src="./images/logo@2x.png" />
-						<source src="./images/logo@3x.png" />
-						<source src="./images/logo@4x.png" />
-					</picture>
-				</a>
-				<div class="header__wrapper">
-					<input type="checkbox" id="toggle" />
-					<label for="toggle">
-						<span class="toggle-btn"></span>
-					</label>
-					<nav class="header__nav">
-						<ul class="header__list">
-							<li class="header__item">
-								<a href="index.html" class="header__link">Home</a>
-							</li>
-							<li class="header__item">
-								<a href="#made" class="header__link">How it’s made?</a>
-							</li>
-							<li class="header__item">
-								<a href="#products" class="header__link">Our products</a>
-							</li>
-							<li class="header__item">
-								<a href="#contact" class="header__link">Contact</a>
-							</li>
-						</ul>
-					</nav>
-					<button
-						class="header__btn button"
-						type="button"
-						data-open-modal="buy"
-					>
-						Buy now
-						<svg class="header__btn-icon">
-							<use href="./images/symbol-defs.svg#icon-short-arrow"></use>
-						</svg>
-					</button>
-				</div>
-			</div>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html" class="logo">
+          <picture>
+            <img src="./images/logo.png" alt="logo" class="logo__img" />
+            <source src="./images/logo@2x.png" />
+            <source src="./images/logo@3x.png" />
+            <source src="./images/logo@4x.png" />
+          </picture>
+        </a>
+        <div class="header__wrapper">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle">
+            <span class="toggle-btn"></span>
+          </label>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="index.html" class="header__link">Home</a>
+              </li>
+              <li class="header__item">
+                <a href="#made" class="header__link">How it’s made?</a>
+              </li>
+              <li class="header__item">
+                <a href="#products" class="header__link">Our products</a>
+              </li>
+              <li class="header__item">
+                <a href="#contact" class="header__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="header__btn button"
+            type="button"
+            data-open-modal="buy"
+          >
+            Buy now
+            <svg class="header__btn-icon">
+              <use href="./images/symbol-defs.svg#icon-short-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
 
-		<main class="main">
-			<section class="hero">
-				<div class="container">
-					<h1 class="hero__title">ice cream made with passion</h1>
-					<button
-						class="hero__btn button--hover"
-						type="button"
-						data-open-modal="buy"
-					>
-						Products
-					</button>
-					<a href="#made" class="hero__link">How it’s made?</a>
-					<div class="hero__wrapper">
-						<picture>
-							<img
-								src="./images/plate-of-ice-cream.png"
-								alt="ice cream"
-								class="hero__img"
-							/>
-							<source srcset="./images/plate-of-ice-cream@2x.png" />
-						</picture>
-						<div class="hero__txt-wrapper">
-							<p class="hero__desc">
-								Indulge in a scoop of ice cream made with passion and treat your
-								taste buds to an unforgettable experience!
-							</p>
-							<a href="#" class="hero__arrow-link"
-								><svg class="hero__icon">
-									<use href="./images/symbol-defs.svg#icon-long-arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<ul class="hero__list">
-						<li class="hero__item">
-							<h3 class="hero__item-title">16</h3>
-							<p class="hero__item-desc">cafes</p>
-						</li>
-						<li class="hero__item">
-							<h3 class="hero__item-title">23</h3>
-							<p class="hero__item-desc">food trucks</p>
-						</li>
-					</ul>
-				</div>
-			</section>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">ice cream made with passion</h1>
+          <button
+            class="hero__btn button--hover"
+            type="button"
+            data-open-modal="buy"
+          >
+            Products
+          </button>
+          <a href="#made" class="hero__link">How it’s made?</a>
+          <div class="hero__wrapper">
+            <picture>
+              <img
+                src="./images/plate-of-ice-cream.png"
+                alt="ice cream"
+                class="hero__img"
+              />
+              <source srcset="./images/plate-of-ice-cream@2x.png" />
+            </picture>
+            <div class="hero__txt-wrapper">
+              <p class="hero__desc">
+                Indulge in a scoop of ice cream made with passion and treat your
+                taste buds to an unforgettable experience!
+              </p>
+              <a href="#" class="hero__arrow-link"
+                ><svg class="hero__icon">
+                  <use href="./images/symbol-defs.svg#icon-long-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <h3 class="hero__item-title">16</h3>
+              <p class="hero__item-desc">cafes</p>
+            </li>
+            <li class="hero__item">
+              <h3 class="hero__item-title">23</h3>
+              <p class="hero__item-desc">food trucks</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-			<section class="products" id="products">
-				<div class="container">
-					<p class="products__subtitle">100% natural</p>
-					<h2 class="products__title">products</h2>
-					<ul class="products__list">
-						<li class="products__item">
-							<div class="products__item-container">
-								<div class="products__item-wrapper">
-									<picture>
-										<img
-											src="./images/ice-cream-hand.png"
-											alt="ice-creams"
-											class="products__img"
-										/>
-										<source srcset="./images/ice-cream-hand@2x.png" />
-										<source srcset="./images/ice-cream-hand@3x.png" />
-										<source srcset="./images/ice-cream-hand@4x.png" />
-									</picture>
-								</div>
-							</div>
-							<h3 class="products__item-title">ice cream</h3>
-							<p class="products__desc products__desc--first">
-								Soft ice cream with a delicate taste. Made with milk, cream,
-								sugar and natural stabilizer
-							</p>
-							<a
-								href="#"
-								class="products__link modal__open"
-								data-open-modal="products-modal"
-							>
-								<svg class="products__icon">
-									<use href="./images/symbol-defs.svg#icon-long-arrow"></use>
-								</svg>
-							</a>
-						</li>
+      <section class="products" id="products">
+        <div class="container">
+          <p class="products__subtitle">100% natural</p>
+          <h2 class="products__title">products</h2>
+          <ul class="products__list">
+            <li class="products__item">
+              <div class="products__item-container">
+                <div class="products__item-wrapper">
+                  <picture>
+                    <img
+                      src="./images/ice-cream-hand.png"
+                      alt="ice-creams"
+                      class="products__img"
+                    />
+                    <source srcset="./images/ice-cream-hand@2x.png" />
+                    <source srcset="./images/ice-cream-hand@3x.png" />
+                    <source srcset="./images/ice-cream-hand@4x.png" />
+                  </picture>
+                </div>
+              </div>
+              <h3 class="products__item-title">ice cream</h3>
+              <p class="products__desc products__desc--first">
+                Soft ice cream with a delicate taste. Made with milk, cream,
+                sugar and natural stabilizer
+              </p>
+              <a
+                href="#"
+                class="products__link modal__open"
+                data-open-modal="products-modal"
+              >
+                <svg class="products__icon">
+                  <use href="./images/symbol-defs.svg#icon-long-arrow"></use>
+                </svg>
+              </a>
+            </li>
 
-						<li class="products__item products__item--yellow">
-							<div class="products__item-container">
-								<div
-									class="products__item-wrapper products__item-wrapper--yellow"
-								>
-									<picture>
-										<img
-											src="./images/cocktail.png"
-											alt="cocktail"
-											class="products__img"
-										/>
-										<source srcset="./images/cocktail@2x.png" />
-										<source srcset="./images/cocktail@3x.png" />
-										<source srcset="./images/cocktail@3x.png" />
-									</picture>
-								</div>
-							</div>
-							<h3 class="products__item-title">ice coffee</h3>
-							<p class="products__desc">
-								Fragrant invigorating drink created from 100% natural
-								ingredients without the use of preservatives and flavor
-								enhancers
-							</p>
-							<a
-								href="#"
-								class="products__link modal__open"
-								data-open-modal="products-modal"
-							>
-								<svg class="products__icon">
-									<use href="./images/symbol-defs.svg#icon-long-arrow"></use>
-								</svg>
-							</a>
-						</li>
+            <li class="products__item products__item--yellow">
+              <div class="products__item-container">
+                <div
+                  class="products__item-wrapper products__item-wrapper--yellow"
+                >
+                  <picture>
+                    <img
+                      src="./images/cocktail.png"
+                      alt="cocktail"
+                      class="products__img"
+                    />
+                    <source srcset="./images/cocktail@2x.png" />
+                    <source srcset="./images/cocktail@3x.png" />
+                    <source srcset="./images/cocktail@3x.png" />
+                  </picture>
+                </div>
+              </div>
+              <h3 class="products__item-title">ice coffee</h3>
+              <p class="products__desc">
+                Fragrant invigorating drink created from 100% natural
+                ingredients without the use of preservatives and flavor
+                enhancers
+              </p>
+              <a
+                href="#"
+                class="products__link modal__open"
+                data-open-modal="products-modal"
+              >
+                <svg class="products__icon">
+                  <use href="./images/symbol-defs.svg#icon-long-arrow"></use>
+                </svg>
+              </a>
+            </li>
 
-						<li class="products__item products__item--brown">
-							<div class="products__item-container">
-								<div
-									class="products__item-wrapper products__item-wrapper--brown"
-								>
-									<picture>
-										<img
-											src="./images/milkshake.png"
-											alt="oreo-cocktail"
-											class="products__img"
-										/>
-										<source src="./images/milkshake@2x.png" />
-										<source src="./images/milkshake@3x.png" />
-										<source src="./images/milkshake@4x.png" />
-									</picture>
-								</div>
-							</div>
-							<h3 class="products__item-title">milkshakes</h3>
-							<p class="products__desc">
-								Sweet drinks based on milk and ice cream, supplemented with
-								syrups, fruits, berries and other sweets of your choice
-							</p>
-							<a
-								href="#"
-								class="products__link modal__open"
-								data-open-modal="products-modal"
-							>
-								<svg class="products__icon">
-									<use href="./images/symbol-defs.svg#icon-long-arrow"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
+            <li class="products__item products__item--brown">
+              <div class="products__item-container">
+                <div
+                  class="products__item-wrapper products__item-wrapper--brown"
+                >
+                  <picture>
+                    <img
+                      src="./images/milkshake.png"
+                      alt="oreo-cocktail"
+                      class="products__img"
+                    />
+                    <source src="./images/milkshake@2x.png" />
+                    <source src="./images/milkshake@3x.png" />
+                    <source src="./images/milkshake@4x.png" />
+                  </picture>
+                </div>
+              </div>
+              <h3 class="products__item-title">milkshakes</h3>
+              <p class="products__desc">
+                Sweet drinks based on milk and ice cream, supplemented with
+                syrups, fruits, berries and other sweets of your choice
+              </p>
+              <a
+                href="#"
+                class="products__link modal__open"
+                data-open-modal="products-modal"
+              >
+                <svg class="products__icon">
+                  <use href="./images/symbol-defs.svg#icon-long-arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-				<!-- =================MODAL============================ -->
+        <div
+          class="modal-backdrop is-hidden"
+          data-modal="products-modal"
+          data-action="backdrop"
+        >
+          <div class="products__modal modal">
+            <button class="btn modal__close-btn" data-close-modal>
+              <svg class="modal__close">
+                <use href="./images/symbol-defs.svg#icon-close-button"></use>
+              </svg>
+            </button>
+            <h2 class="products__modal-title modal__title">
+              Chololate icecream
+            </h2>
+            <div class="products__modal-wrapper">
+              <img
+                src="images/hlib/desktop/chocolate.jpg"
+                alt="chocolate ice cream"
+                class="products__modal-img"
+              />
+            </div>
+            <ul class="products__modal-list">
+              <li class="products__modal-item">
+                <h3 class="products__modal-nutrition">320</h3>
+                <p class="products__modal-desc">kcal</p>
+              </li>
+              <li class="products__modal-item">
+                <h3 class="products__modal-nutrition">4g</h3>
+                <p class="products__modal-desc">Protein</p>
+              </li>
+              <li class="products__modal-item">
+                <h3 class="products__modal-nutrition">8,2g</h3>
+                <p class="products__modal-desc">Fats</p>
+              </li>
+              <li class="products__modal-item">
+                <h3 class="products__modal-nutrition">40,4g</h3>
+                <p class="products__modal-desc">Carbs</p>
+              </li>
+            </ul>
+            <h3 class="products__modal-ingredients__title">Ingredients</h3>
+            <ul class="products__modal-ingredients">
+              <li class="products__modal-ingredients__item">
+                <p class="modal__desc">Milk</p>
+                <p class="modal__desc">100ml</p>
+              </li>
+              <li class="products__modal-ingredients__item">
+                <p class="modal__desc">Belgian chocolate</p>
+                <p class="modal__desc">20g</p>
+              </li>
+              <li class="products__modal-ingredients__item">
+                <p class="modal__desc">Cream</p>
+                <p class="modal__desc">150 ml</p>
+              </li>
+              <li class="products__modal-ingredients__item">
+                <p class="modal__desc">Cocoa powder</p>
+                <p class="modal__desc">30g</p>
+              </li>
+              <li class="products__modal-ingredients__item">
+                <p class="modal__desc">Sugar</p>
+                <p class="modal__desc">40g</p>
+              </li>
+              <li class="products__modal-ingredients__item">
+                <p class="modal__desc">Vanilla sugar</p>
+                <p class="modal__desc">10g</p>
+              </li>
+            </ul>
+            <form class="products__modal-form">
+              <input type="text" class="modal__input" placeholder="Name" />
+              <input type="tel" class="modal__input" placeholder="Phone" />
+              <textarea
+                class="modal__textarea"
+                placeholder="Comment"
+              ></textarea>
+              <button class="modal__button button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
-				<div
-					class="modal-backdrop is-hidden"
-					data-modal="products-modal"
-					data-action="backdrop"
-				>
-					<div class="products__modal modal">
-						<button class="btn modal__close-btn" data-close-modal>
-							<svg class="modal__close">
-								<use href="./images/symbol-defs.svg#icon-close-button"></use>
-							</svg>
-						</button>
-						<h2 class="products__modal-title modal__title">
-							Chololate icecream
-						</h2>
-						<div class="products__modal-wrapper">
-							<img
-								src="images/hlib/desktop/chocolate.jpg"
-								alt="chocolate ice cream"
-								class="products__modal-img"
-							/>
-						</div>
-						<ul class="products__modal-list">
-							<li class="products__modal-item">
-								<h3 class="products__modal-nutrition">320</h3>
-								<p class="products__modal-desc">kcal</p>
-							</li>
-							<li class="products__modal-item">
-								<h3 class="products__modal-nutrition">4g</h3>
-								<p class="products__modal-desc">Protein</p>
-							</li>
-							<li class="products__modal-item">
-								<h3 class="products__modal-nutrition">8,2g</h3>
-								<p class="products__modal-desc">Fats</p>
-							</li>
-							<li class="products__modal-item">
-								<h3 class="products__modal-nutrition">40,4g</h3>
-								<p class="products__modal-desc">Carbs</p>
-							</li>
-						</ul>
-						<h3 class="products__modal-ingredients__title">Ingredients</h3>
-						<ul class="products__modal-ingredients">
-							<li class="products__modal-ingredients__item">
-								<p class="modal__desc">Milk</p>
-								<p class="modal__desc">100ml</p>
-							</li>
-							<li class="products__modal-ingredients__item">
-								<p class="modal__desc">Belgian chocolate</p>
-								<p class="modal__desc">20g</p>
-							</li>
-							<li class="products__modal-ingredients__item">
-								<p class="modal__desc">Cream</p>
-								<p class="modal__desc">150 ml</p>
-							</li>
-							<li class="products__modal-ingredients__item">
-								<p class="modal__desc">Cocoa powder</p>
-								<p class="modal__desc">30g</p>
-							</li>
-							<li class="products__modal-ingredients__item">
-								<p class="modal__desc">Sugar</p>
-								<p class="modal__desc">40g</p>
-							</li>
-							<li class="products__modal-ingredients__item">
-								<p class="modal__desc">Vanilla sugar</p>
-								<p class="modal__desc">10g</p>
-							</li>
-						</ul>
-						<form class="products__modal-form">
-							<input type="text" class="modal__input" placeholder="Name" />
-							<input type="tel" class="modal__input" placeholder="Phone" />
-							<textarea
-								class="modal__textarea"
-								placeholder="Comment"
-							></textarea>
-							<button class="modal__button button">Submit</button>
-						</form>
-					</div>
-				</div>
-			</section>
+      <section class="how-made" id="made">
+        <div class="how-made__container container">
+          <h4 class="how-made__subtitle">tradition and love</h4>
+          <h2 class="how-made__title">how it’s made?</h2>
 
-			<section class="how-made" id="made">
-				<div class="how-made__container container">
-					<h4 class="how-made__subtitle">tradition and love</h4>
-					<h2 class="how-made__title">how it’s made?</h2>
+          <div class="how-made__content">
+            <picture class="how-made__image-wrapper">
+              <source
+                media="(min-width: 1168px)"
+                srcset="
+                  images/hlib/desktop/cow.jpg   1x,
+                  images/hlib/desktop/cow@2.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 705px)"
+                srcset="
+                  images/hlib/tablet/cow-tablet.jpg   1x,
+                  images/hlib/tablet/cow-tablet@2.jpg 2x
+                "
+              />
+              <img
+                src="images/hlib/mobile/cow-mobile.jpg"
+                srcset="
+                  images/hlib/mobile/cow-mobile.jpg    1x,
+                  images/hlib/mobile/cow-mobille@2.jpg 2x
+                "
+                alt="cow"
+                class="how-made__image"
+              />
+            </picture>
 
-					<div class="how-made__content">
-						<div class="how-made__image-wrapper">
-							<img
-								src="images/hlib/desktop/cow.jpg"
-								alt=""
-								class="how-made__image"
-							/>
-						</div>
-						<div class="how-made__text-wrapper">
-							<p class="how-made__text">
-								Ice is a place where you will become not only a little happier,
-								but also healthier. Health is the main value for us, and we
-								follow it when creating our handmade desserts.
-							</p>
-							<p class="how-made__text">
-								We use traditional recipes and 100% natural ingredients. Our
-								products are so natural that they can be given to children from
-								the age of three years. Sweets lovers can expect 55 types of ice
-								cream, 15 types of coffee and 23 milkshakes.
-							</p>
-							<p class="how-made__text how-made__text--highlight">
-								This is enough to choose ice cream and coffee for any mood!
-							</p>
+            <div class="how-made__text-wrapper">
+              <p class="how-made__text">
+                Ice is a place where you will become not only a little happier,
+                but also healthier. Health is the main value for us, and we
+                follow it when creating our handmade desserts.
+              </p>
+              <p class="how-made__text">
+                We use traditional recipes and 100% natural ingredients. Our
+                products are so natural that they can be given to children from
+                the age of three years. Sweets lovers can expect 55 types of ice
+                cream, 15 types of coffee and 23 milkshakes.
+              </p>
+              <p class="how-made__text how-made__text--highlight">
+                This is enough to choose ice cream and coffee for any mood!
+              </p>
 
-							<button
-								class="how-made__button button"
-								data-open-modal="how-made"
-							>
-								Read more
-								<svg class="how-made__button-icon" width="12" height="12">
-									<use href="images/symbol-defs.svg#icon-short-arrow"></use>
-								</svg>
-							</button>
-						</div>
-					</div>
+              <button
+                class="how-made__button button"
+                data-open-modal="how-made"
+              >
+                Read more
+                <svg class="how-made__button-icon" width="12" height="12">
+                  <use href="images/symbol-defs.svg#icon-short-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
 
-					<ul class="how-made__stats">
-						<li class="how-made__stat">
-							<div class="how-made__icon">
-								<svg width="36" height="36">
-									<use href="images/symbol-defs.svg#icon-cow"></use>
-								</svg>
-							</div>
-							<h4 class="how-made__stat-title">721</h4>
-							<p class="how-made__stat-text">
-								Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-							</p>
-						</li>
-						<li class="how-made__stat">
-							<div class="how-made__icon">
-								<svg width="36" height="36">
-									<use href="images/symbol-defs.svg#icon-weight"></use>
-								</svg>
-							</div>
-							<h4 class="how-made__stat-title">16kg</h4>
-							<p class="how-made__stat-text">
-								Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-							</p>
-						</li>
-						<li class="how-made__stat">
-							<div class="how-made__icon">
-								<svg width="36" height="36">
-									<use href="images/symbol-defs.svg#icon-ice-cream"></use>
-								</svg>
-							</div>
-							<h4 class="how-made__stat-title">84</h4>
-							<p class="how-made__stat-text">
-								Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-							</p>
-						</li>
-					</ul>
-				</div>
-				<div
-					class="modal-backdrop is-hidden"
-					data-action="backdrop"
-					data-modal="how-made"
-				>
-					<div class="how-made__modal modal">
-						<button class="modal__close-btn" data-close-modal>
-							<svg>
-								<use href="images/symbol-defs.svg#icon-close-button"></use>
-							</svg>
-						</button>
-						<h3 class="modal__title">How it’s made?</h3>
-						<div class="how-made__video">
-							<svg class="how-made__modal-play-icon" width="36" height="36">
-								<use href="images/symbol-defs.svg#icon-play-button"></use>
-							</svg>
-						</div>
-						<p class="how-made__modal-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-					</div>
-				</div>
-			</section>
+          <ul class="how-made__stats">
+            <li class="how-made__stat">
+              <div class="how-made__icon">
+                <svg width="36" height="36">
+                  <use href="images/symbol-defs.svg#icon-cow"></use>
+                </svg>
+              </div>
+              <h4 class="how-made__stat-title">721</h4>
+              <p class="how-made__stat-text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="how-made__stat">
+              <div class="how-made__icon">
+                <svg width="36" height="36">
+                  <use href="images/symbol-defs.svg#icon-weight"></use>
+                </svg>
+              </div>
+              <h4 class="how-made__stat-title">16kg</h4>
+              <p class="how-made__stat-text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+            <li class="how-made__stat">
+              <div class="how-made__icon">
+                <svg width="36" height="36">
+                  <use href="images/symbol-defs.svg#icon-ice-cream"></use>
+                </svg>
+              </div>
+              <h4 class="how-made__stat-title">84</h4>
+              <p class="how-made__stat-text">
+                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="modal-backdrop is-hidden"
+          data-action="backdrop"
+          data-modal="how-made"
+        >
+          <div class="how-made__modal modal">
+            <button class="modal__close-btn" data-close-modal>
+              <svg>
+                <use href="images/symbol-defs.svg#icon-close-button"></use>
+              </svg>
+            </button>
+            <h3 class="modal__title">How it’s made?</h3>
+            <div class="how-made__video">
+              <svg class="how-made__modal-play-icon" width="36" height="36">
+                <use href="images/symbol-defs.svg#icon-play-button"></use>
+              </svg>
+            </div>
+            <p class="how-made__modal-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </section>
 
-			<section class="response">
-				<div class="response__container container">
-					<img
-						src="images/hlib/desktop/ice-creams-on-table.jpg"
-						alt=""
-						class="response__img"
-					/>
-					<div class="response__track">
-						<ul class="response__list">
-							<li class="response__item">
-								<img
-									src="images/hlib/desktop/woman.jpg"
-									alt="woman"
-									class="response__user-img"
-								/>
-								<p class="response__text">
-									I love visiting your cafe. You prepare the most delicious ice
-									cream in Los Angeles! In addition, you have beautiful serving,
-									cozy atmosphere and polite staff.
-								</p>
-								<h3 class="response__user-name">Emily, Los Angeles</h3>
-							</li>
-							<li class="response__item slider-hidden">
-								<img
-									src="images/hlib/desktop/man.jpg"
-									alt="man"
-									class="response__user-img"
-								/>
-								<p class="response__text">
-									Every day we come to you with friends after classes in
-									college. We love your ice cream and casual atmosphere!
-								</p>
-								<h3 class="response__user-name">Bryan, New-York</h3>
-							</li>
-							<li class="response__item slider-hidden">
-								<img
-									src="images/hlib/desktop/woman2.jpg"
-									alt="woman"
-									class="response__user-img"
-								/>
-								<p class="response__text">
-									Ice cream is my passion! I love your chocolate hazelnut ice
-									cream! And I really like the excellent service - always served
-									politely and quickly!
-								</p>
-								<h3 class="response__user-name">Diana, Chicago</h3>
-							</li>
-						</ul>
-						<ul class="response__pagination">
-							<li role="presentation">
-								<button
-									class="response__pagination-btn is-active"
-									type="button"
-									onclick="changeSlide(0)"
-								></button>
-							</li>
-							<li role="presentation">
-								<button
-									class="response__pagination-btn"
-									type="button"
-									onclick="changeSlide(1)"
-								></button>
-							</li>
-							<li role="presentation">
-								<button
-									class="response__pagination-btn"
-									type="button"
-									onclick="changeSlide(2)"
-								></button>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+      <section class="response">
+        <div class="response__container container">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                images/hlib/desktop/ice-creams-on-table.jpg   1x,
+                images/hlib/desktop/ice-creams-on-table@2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 705px)"
+              srcset="
+                images/hlib/tablet/ice-creams-on-table-tablet.jpg   1x,
+                images/hlib/tablet/ice-creams-on-table-tablet@2.jpg 2x
+              "
+            />
+            <img
+              class="response__img"
+              src="images/hlib/mobile/ice-creams-on-table-mobile.jpg"
+              srcset="
+                images/hlib/mobile/ice-creams-on-table-mobile.jpg   1x,
+                images/hlib/mobile/ice-creams-on-table-mobile@2.jpg 2x
+              "
+              alt="ice creams on table"
+            />
+          </picture>
 
-			<section class="cards">
-				<div class="cards__container container">
-					<ul class="cards__list">
-						<li class="cards__item">
-							<h2 class="cards__title">CAFE</h2>
-							<h3 class="cards__subtitle">Chicago</h3>
-							<div class="cards__wrapper">
-								<a
-									href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
-									class="cards__address"
-								>
-									10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
-								</a>
-							</div>
-							<div class="cards__time-wrapper">
-								<div class="cards__text">
-									<p class="cards__text-day">Monday - Friday</p>
-									<time datetime="06:00" class="cards__time">06:00 AM</time> -
-									<time datetime="22:00" class="cards__time">10:00 PM</time>
-								</div>
-								<div class="cards__text">
-									<p class="cards__text-day">Saturday - Sunday</p>
-									<time datetime="08:00" class="cards__time">08:00 AM</time> -
-									<time datetime="16:00" class="cards__time">16:00 PM</time>
-								</div>
-							</div>
-							<a href="tel:61383766284" class="cards__phone"
-								>+61(0) 383 766 284</a
-							>
-							<a href="mailto:noreply@envato.com" class="cards__email"
-								>noreply@envato.com</a
-							>
-						</li>
-						<li class="cards__item">
-							<h2 class="cards__title">FOODTRUCK</h2>
-							<h3 class="cards__subtitle">Los Angeles</h3>
-							<div class="cards__wrapper">
-								<a
-									href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
-									class="cards__address"
-								>
-									10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
-								</a>
-							</div>
-							<div class="cards__time-wrapper">
-								<div class="cards__text">
-									<p class="cards__text-day">Monday - Friday</p>
-									<time datetime="06:00" class="cards__time">06:00 AM</time> -
-									<time datetime="22:00" class="cards__time">10:00 PM</time>
-								</div>
-								<div class="cards__text">
-									<p class="cards__text-day">Saturday - Sunday</p>
-									<time datetime="08:00" class="cards__time">08:00 AM</time> -
-									<time datetime="16:00" class="cards__time">16:00 PM</time>
-								</div>
-							</div>
-							<a href="tel:61383766284" class="cards__phone"
-								>+61(0) 383 766 284</a
-							>
-							<a href="mailto:noreply@envato.com" class="cards__email"
-								>noreply@envato.com</a
-							>
-						</li>
-						<li class="cards__item">
-							<h2 class="cards__title">CAFE</h2>
-							<h3 class="cards__subtitle">New York</h3>
-							<div class="cards__wrapper">
-								<a
-									href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
-									class="cards__address"
-								>
-									10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
-								</a>
-							</div>
-							<div class="cards__time-wrapper">
-								<div class="cards__text">
-									<p class="cards__text-day">Monday - Friday</p>
-									<time datetime="06:00" class="cards__time">06:00 AM</time> -
-									<time datetime="22:00" class="cards__time">10:00 PM</time>
-								</div>
-								<div class="cards__text">
-									<p class="cards__text-day">Saturday - Sunday</p>
-									<time datetime="08:00" class="cards__time">08:00 AM</time> -
-									<time datetime="16:00" class="cards__time">16:00 PM</time>
-								</div>
-							</div>
-							<a href="tel:61383766284" class="cards__phone"
-								>+61(0) 383 766 284</a
-							>
-							<a href="mailto:noreply@envato.com" class="cards__email"
-								>noreply@envato.com</a
-							>
-						</li>
-					</ul>
+          <div class="response__track">
+            <ul class="response__list">
+              <li class="response__item">
+                <picture>
+                  <img
+                    class="response__user-img"
+                    src="images/hlib/desktop/woman.jpg"
+                    srcset="
+                      images/hlib/desktop/woman.jpg   1x,
+                      images/hlib/desktop/woman@2.jpg 2x
+                    "
+                    alt="woman"
+                  />
+                </picture>
+                <p class="response__text">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
+                </p>
+                <h3 class="response__user-name">Emily, Los Angeles</h3>
+              </li>
 
-					<div class="cards__actions">
-						<button
-							type="button"
-							class="cards__button cards__button--primary"
-							data-open-modal="locations"
-						>
-							Our Locations
-							<svg width="12" height="12" class="cards__button-icon">
-								<use href="images/symbol-defs.svg#icon-short-arrow"></use>
-							</svg>
-						</button>
+              <li class="response__item slider-hidden">
+                <picture>
+                  <img
+                    class="response__user-img"
+                    src="images/hlib/desktop/man.jpg"
+                    srcset="
+                      images/hlib/desktop/man.jpg   1x,
+                      images/hlib/desktop/man@2.jpg 2x
+                    "
+                    alt="man"
+                  />
+                </picture>
+                <p class="response__text">
+                  Every day we come to you with friends after classes in
+                  college. We love your ice cream and casual atmosphere!
+                </p>
+                <h3 class="response__user-name">Bryan, New-York</h3>
+              </li>
 
-						<button
-							type="button"
-							class="cards__button cards__button--secondary button--hover"
-							data-open-modal="franchise"
-						>
-							Franchise
-							<svg width="12" height="12" class="cards__button-icon">
-								<use href="images/symbol-defs.svg#icon-short-arrow"></use>
-							</svg>
-						</button>
-					</div>
-				</div>
-				<div
-					class="modal-backdrop is-hidden"
-					data-action="backdrop"
-					data-modal="locations"
-				>
-					<div class="cards__modal modal">
-						<button class="modal__close-btn" data-close-modal>
-							<svg>
-								<use href="images/symbol-defs.svg#icon-close-button"></use>
-							</svg>
-						</button>
-						<h2 class="modal__title">Our Locations</h2>
-						<iframe
-							class="cards__modal-map"
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26469.123456789!2d34.557!3d49.589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDM1JzU5LjAiTiAzNMKwMzMnMjcuMCJF!5e0!3m2!1sen!2sua!4v1696234567890!5m2!1sen!2sua"
-							width="100%"
-							height="260"
-							loading="lazy"
-							style="border-radius: 10px"
-						></iframe>
-						<a
-							href="https://www.google.com/maps/place/Poltava/"
-							target="_blank"
-						>
-							<button class="modal__button button">Open map</button></a
-						>
-					</div>
-				</div>
-			</section>
+              <li class="response__item slider-hidden">
+                <picture>
+                  <img
+                    class="response__user-img"
+                    src="images/hlib/desktop/woman2.jpg"
+                    srcset="
+                      images/hlib/desktop/woman2.jpg   1x,
+                      images/hlib/desktop/woman2@2.jpg 2x
+                    "
+                    alt="woman"
+                  />
+                </picture>
+                <p class="response__text">
+                  Ice cream is my passion! I love your chocolate hazelnut ice
+                  cream! And I really like the excellent service - always served
+                  politely and quickly!
+                </p>
+                <h3 class="response__user-name">Diana, Chicago</h3>
+              </li>
+            </ul>
+            <ul class="response__pagination">
+              <li role="presentation">
+                <button
+                  class="response__pagination-btn is-active"
+                  type="button"
+                  onclick="changeSlide(0)"
+                ></button>
+              </li>
+              <li role="presentation">
+                <button
+                  class="response__pagination-btn"
+                  type="button"
+                  onclick="changeSlide(1)"
+                ></button>
+              </li>
+              <li role="presentation">
+                <button
+                  class="response__pagination-btn"
+                  type="button"
+                  onclick="changeSlide(2)"
+                ></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="cards__container container">
+          <ul class="cards__list">
+            <li class="cards__item">
+              <h2 class="cards__title">CAFE</h2>
+              <h3 class="cards__subtitle">Chicago</h3>
+              <div class="cards__wrapper">
+                <a
+                  href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
+                  class="cards__address"
+                >
+                  10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+                </a>
+              </div>
+              <div class="cards__time-wrapper">
+                <div class="cards__text">
+                  <p class="cards__text-day">Monday - Friday</p>
+                  <time datetime="06:00" class="cards__time">06:00 AM</time> -
+                  <time datetime="22:00" class="cards__time">10:00 PM</time>
+                </div>
+                <div class="cards__text">
+                  <p class="cards__text-day">Saturday - Sunday</p>
+                  <time datetime="08:00" class="cards__time">08:00 AM</time> -
+                  <time datetime="16:00" class="cards__time">16:00 PM</time>
+                </div>
+              </div>
+              <a href="tel:61383766284" class="cards__phone"
+                >+61(0) 383 766 284</a
+              >
+              <a href="mailto:noreply@envato.com" class="cards__email"
+                >noreply@envato.com</a
+              >
+            </li>
+            <li class="cards__item">
+              <h2 class="cards__title">FOODTRUCK</h2>
+              <h3 class="cards__subtitle">Los Angeles</h3>
+              <div class="cards__wrapper">
+                <a
+                  href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
+                  class="cards__address"
+                >
+                  10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+                </a>
+              </div>
+              <div class="cards__time-wrapper">
+                <div class="cards__text">
+                  <p class="cards__text-day">Monday - Friday</p>
+                  <time datetime="06:00" class="cards__time">06:00 AM</time> -
+                  <time datetime="22:00" class="cards__time">10:00 PM</time>
+                </div>
+                <div class="cards__text">
+                  <p class="cards__text-day">Saturday - Sunday</p>
+                  <time datetime="08:00" class="cards__time">08:00 AM</time> -
+                  <time datetime="16:00" class="cards__time">16:00 PM</time>
+                </div>
+              </div>
+              <a href="tel:61383766284" class="cards__phone"
+                >+61(0) 383 766 284</a
+              >
+              <a href="mailto:noreply@envato.com" class="cards__email"
+                >noreply@envato.com</a
+              >
+            </li>
+            <li class="cards__item">
+              <h2 class="cards__title">CAFE</h2>
+              <h3 class="cards__subtitle">New York</h3>
+              <div class="cards__wrapper">
+                <a
+                  href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
+                  class="cards__address"
+                >
+                  10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+                </a>
+              </div>
+              <div class="cards__time-wrapper">
+                <div class="cards__text">
+                  <p class="cards__text-day">Monday - Friday</p>
+                  <time datetime="06:00" class="cards__time">06:00 AM</time> -
+                  <time datetime="22:00" class="cards__time">10:00 PM</time>
+                </div>
+                <div class="cards__text">
+                  <p class="cards__text-day">Saturday - Sunday</p>
+                  <time datetime="08:00" class="cards__time">08:00 AM</time> -
+                  <time datetime="16:00" class="cards__time">16:00 PM</time>
+                </div>
+              </div>
+              <a href="tel:61383766284" class="cards__phone"
+                >+61(0) 383 766 284</a
+              >
+              <a href="mailto:noreply@envato.com" class="cards__email"
+                >noreply@envato.com</a
+              >
+            </li>
+          </ul>
 
-			<footer class="footer">
-				<div class="footer__container container">
-					<div class="footer__info">
-						<h3 class="footer__subtitle">homemade ice cream made</h3>
-						<h2 class="footer__title">with passion</h2>
-					</div>
+          <div class="cards__actions">
+            <button
+              type="button"
+              class="cards__button cards__button--primary"
+              data-open-modal="locations"
+            >
+              Our Locations
+              <svg width="12" height="12" class="cards__button-icon">
+                <use href="images/symbol-defs.svg#icon-short-arrow"></use>
+              </svg>
+            </button>
 
-					<div class="footer__contacts">
-						<ul class="footer__social-list">
-							<li class="footer__social-item">
-								<a href="#" class="footer__social-link">
-									<svg width="20" height="20" class="footer__social-icon">
-										<use href="images/symbol-defs.svg#icon-github"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="footer__social-item">
-								<a href="#" class="footer__social-link">
-									<svg width="20" height="20" class="footer__social-icon">
-										<use href="images/symbol-defs.svg#icon-telegram"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="footer__social-item">
-								<a href="#" class="footer__social-link">
-									<svg width="20" height="20" class="footer__social-icon">
-										<use href="images/symbol-defs.svg#icon-facebook"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
+            <button
+              type="button"
+              class="cards__button cards__button--secondary button--hover"
+              data-open-modal="franchise"
+            >
+              Franchise
+              <svg width="12" height="12" class="cards__button-icon">
+                <use href="images/symbol-defs.svg#icon-short-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div
+          class="modal-backdrop is-hidden"
+          data-action="backdrop"
+          data-modal="locations"
+        >
+          <div class="cards__modal modal">
+            <button class="modal__close-btn" data-close-modal>
+              <svg>
+                <use href="images/symbol-defs.svg#icon-close-button"></use>
+              </svg>
+            </button>
+            <h2 class="modal__title">Our Locations</h2>
+            <iframe
+              class="cards__modal-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26469.123456789!2d34.557!3d49.589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDM1JzU5LjAiTiAzNMKwMzMnMjcuMCJF!5e0!3m2!1sen!2sua!4v1696234567890!5m2!1sen!2sua"
+              width="100%"
+              height="260"
+              loading="lazy"
+              style="border-radius: 10px"
+            ></iframe>
+            <a
+              href="https://www.google.com/maps/place/Poltava/"
+              target="_blank"
+            >
+              <button class="modal__button button">Open map</button></a
+            >
+          </div>
+        </div>
+      </section>
 
-						<p class="footer__text">
-							Feel free to contact
-							<a class="footer__contact" href="tel:+610383766284"
-								>+61 (0) 383 766 284</a
-							>
-						</p>
-					</div>
-				</div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__info">
+            <h3 class="footer__subtitle">homemade ice cream made</h3>
+            <h2 class="footer__title">with passion</h2>
+          </div>
 
-				<div class="footer__bottom">
-					<p class="footer__copyright">
-						© 2022 - IceCream. All Rights Reserved.
-					</p>
-				</div>
-			</footer>
-			<div
-				class="modal-backdrop is-hidden"
-				data-action="backdrop"
-				data-modal="franchise"
-			>
-				<div class="franchise__modal modal">
-					<button class="modal__close-btn" data-close-modal>
-						<svg class="modal__close-btn__icon">
-							<use href="images/symbol-defs.svg#icon-close-button"></use>
-						</svg>
-					</button>
-					<h2 class="franchise__title modal__title">
-						Thank you for your interest in owning an Ice Cream shop
-					</h2>
-					<p class="franchise__desc">
-						Due to the overwhelming volume of franchise requests we are not
-						accepting new franchisee applications at this time. Once the
-						application process resumes, we will contact you for further
-						information. Please fill out the contact information below and we
-						will reach out for additional information. We appreciate your
-						patience.
-					</p>
+          <div class="footer__contacts">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg width="20" height="20" class="footer__social-icon">
+                    <use href="images/symbol-defs.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg width="20" height="20" class="footer__social-icon">
+                    <use href="images/symbol-defs.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg width="20" height="20" class="footer__social-icon">
+                    <use href="images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
 
-					<form class="modal__form">
-						<input type="text" class="modal__input" placeholder="Name" />
-						<input type="tel" class="modal__input" placeholder="Phone" />
-						<input type="email" class="modal__input" placeholder="Email" />
-						<textarea class="modal__textarea" placeholder="Comment"></textarea>
-					</form>
-					<button class="modal__button button" type="button">Submit</button>
-				</div>
-			</div>
+            <p class="footer__text">
+              Feel free to contact
+              <a class="footer__contact" href="tel:+610383766284"
+                >+61 (0) 383 766 284</a
+              >
+            </p>
+          </div>
+        </div>
 
-			<div
-				class="modal-backdrop is-hidden"
-				data-action="backdrop"
-				data-modal="buy"
-			>
-				<div class="hero__modal modal buy">
-					<button class="modal__close-btn" data-close-modal>
-						<svg class="modal__close-btn__icon">
-							<use href="images/symbol-defs.svg#icon-close-button"></use>
-						</svg>
-					</button>
-					<h2 class="hero__buy__title modal__title">Buy now</h2>
-					<ul class="hero__buy__list">
-						<li class="hero__buy__item buy__item--padding">
-							<div class="hero__buy__img-wrapper">
-								<img
-									src="images/ice-creams-hand.jpg"
-									alt=""
-									class="hero__buy__img"
-								/>
-							</div>
-							<h3 class="hero__buy__item-title">ice cream</h3>
-						</li>
-						<li class="hero__buy__item hero__buy__item--yellow">
-							<div
-								class="hero__buy__img-wrapper hero__buy__img-wrapper--yellow"
-							>
-								<img src="images/cocktail.jpg" alt="" class="hero__buy__img" />
-							</div>
-							<h3 class="hero__buy__item-title">ice coffee</h3>
-						</li>
-						<li class="hero__buy__item hero__buy__item--orange">
-							<div
-								class="hero__buy__img-wrapper hero__buy__img-wrapper--orange"
-							>
-								<img
-									src="images/oreo-cocktail.jpg"
-									alt=""
-									class="hero__buy__img"
-								/>
-							</div>
-							<h3 class="hero__buy__item-title">milkshake</h3>
-						</li>
-					</ul>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © 2022 - IceCream. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+      <div
+        class="modal-backdrop is-hidden"
+        data-action="backdrop"
+        data-modal="franchise"
+      >
+        <div class="franchise__modal modal">
+          <button class="modal__close-btn" data-close-modal>
+            <svg class="modal__close-btn__icon">
+              <use href="images/symbol-defs.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <h2 class="franchise__title modal__title">
+            Thank you for your interest in owning an Ice Cream shop
+          </h2>
+          <p class="franchise__desc">
+            Due to the overwhelming volume of franchise requests we are not
+            accepting new franchisee applications at this time. Once the
+            application process resumes, we will contact you for further
+            information. Please fill out the contact information below and we
+            will reach out for additional information. We appreciate your
+            patience.
+          </p>
 
-					<form class="hero__modal__form">
-						<input type="text" class="hero__modal__input" placeholder="Name" />
-						<input type="tel" class="hero__modal__input" placeholder="Phone" />
-						<textarea
-							class="hero__modal__textarea"
-							placeholder="Comment"
-						></textarea>
-					</form>
-					<button class="hero__modal__button button" type="button">
-						Submit
-					</button>
-				</div>
-			</div>
-		</main>
+          <form class="modal__form">
+            <input type="text" class="modal__input" placeholder="Name" />
+            <input type="tel" class="modal__input" placeholder="Phone" />
+            <input type="email" class="modal__input" placeholder="Email" />
+            <textarea class="modal__textarea" placeholder="Comment"></textarea>
+          </form>
+          <button class="modal__button button" type="button">Submit</button>
+        </div>
+      </div>
 
-		<script src="./js/modal.js"></script>
-		<script src="./js/slider.js"></script>
-	</body>
+      <div
+        class="modal-backdrop is-hidden"
+        data-action="backdrop"
+        data-modal="buy"
+      >
+        <div class="hero__modal modal buy">
+          <button class="modal__close-btn" data-close-modal>
+            <svg class="modal__close-btn__icon">
+              <use href="images/symbol-defs.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <h2 class="hero__buy__title modal__title">Buy now</h2>
+          <ul class="hero__buy__list">
+            <li class="hero__buy__item buy__item--padding">
+              <div class="hero__buy__img-wrapper">
+                <img
+                  src="images/ice-creams-hand.jpg"
+                  alt=""
+                  class="hero__buy__img"
+                />
+              </div>
+              <h3 class="hero__buy__item-title">ice cream</h3>
+            </li>
+            <li class="hero__buy__item hero__buy__item--yellow">
+              <div
+                class="hero__buy__img-wrapper hero__buy__img-wrapper--yellow"
+              >
+                <img src="images/cocktail.jpg" alt="" class="hero__buy__img" />
+              </div>
+              <h3 class="hero__buy__item-title">ice coffee</h3>
+            </li>
+            <li class="hero__buy__item hero__buy__item--orange">
+              <div
+                class="hero__buy__img-wrapper hero__buy__img-wrapper--orange"
+              >
+                <img
+                  src="images/oreo-cocktail.jpg"
+                  alt=""
+                  class="hero__buy__img"
+                />
+              </div>
+              <h3 class="hero__buy__item-title">milkshake</h3>
+            </li>
+          </ul>
+
+          <form class="hero__modal__form">
+            <input type="text" class="hero__modal__input" placeholder="Name" />
+            <input type="tel" class="hero__modal__input" placeholder="Phone" />
+            <textarea
+              class="hero__modal__textarea"
+              placeholder="Comment"
+            ></textarea>
+          </form>
+          <button class="hero__modal__button button" type="button">
+            Submit
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
 </html>

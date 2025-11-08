@@ -1,5 +1,5 @@
-@use "../utils/placeholders" as *;
-@use "../utils/variables" as *;
+@use '../utils/placeholders' as *;
+@use '../utils/variables' as *;
 
 .button {
   background-color: $accent-color;
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 768px) {
-    .button {
-        font-size: 12px;
-    }
+  .button {
+    font-size: 12px;
+  }
 }
