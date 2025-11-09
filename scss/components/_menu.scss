@@ -1,7 +1,7 @@
-@use '../utils/placeholders' as *;
-@use '../utils/variables' as *;
+@use "../utils/placeholders" as *;
+@use "../utils/variables" as *;
 
-input[type='checkbox'],
+input[type="checkbox"],
 label {
   display: none;
 }
@@ -13,6 +13,9 @@ label {
 
   label {
     display: block;
+    position: absolute;
+    bottom: 29px;
+    right: 216px;
   }
 
   label {
@@ -22,7 +25,7 @@ label {
   label span,
   label span::before,
   label span::after {
-    content: '';
+    content: "";
     display: block;
     width: 24px;
     height: 2.67px;
@@ -83,39 +86,72 @@ label {
     }
   }
 
-  input[type='checkbox']:checked ~ label span {
+  input[type="checkbox"]:checked ~ label span {
     transform: rotate(-45deg);
   }
-  input[type='checkbox']:checked ~ label span::before {
+  input[type="checkbox"]:checked ~ label span::before {
     top: 0;
     transform: rotate(0);
   }
-  input[type='checkbox']:checked ~ label span::after {
+  input[type="checkbox"]:checked ~ label span::after {
     top: 0;
     transform: rotate(90deg);
   }
 
-  input[type='checkbox']:checked ~ label {
+  input[type="checkbox"]:checked ~ label {
     position: absolute;
     right: 32px;
     top: 32px;
     z-index: 3;
   }
 
-  input[type='checkbox']:checked ~ .logo {
+  input[type="checkbox"]:checked ~ .logo {
     position: absolute;
     top: 20px;
     left: 32px;
+    padding: 0;
   }
 
   .logo {
     z-index: 3;
+
+    &__img {
+      max-width: 48px;
+      height: 44px;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .header__nav {
     display: flex;
+    position: static;
+    background: 0;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header__wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: $bg-color;
+    height: 600px;
+    padding-top: 104px;
+    padding-bottom: 88px;
+  }
+
+  .header {
+    &__list {
+      gap: 32px;
+    }
+
+    &__link {
+      font-size: 32px;
+    }
   }
 
   .header__wrapper {
@@ -126,7 +162,16 @@ label {
     display: flex;
   }
 
-  .hero__btn {
-    z-index: 2;
+  .header__wrapper {
+    flex-direction: column-reverse;
+    gap: 114px;
+  }
+
+  #toggle:checked ~ .hero__btn {
+    z-index: 3;
+  }
+
+  label {
+    position: static;
   }
 }

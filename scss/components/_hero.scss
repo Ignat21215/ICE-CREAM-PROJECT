@@ -1,25 +1,31 @@
 @use "../utils/placeholders" as *;
 @use "../utils/variables" as *;
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background: url(../images/dots@2x.png) bottom;
+  }
+}
+
 .hero {
-  background: url(../images/ice-creams-faces.png) top 14px left 652px,
-    url(../images/dots.png) bottom;
+  background: url(../images/dots.png) bottom;
   background-repeat: no-repeat;
   background-color: $bg-color;
   padding-bottom: 65px;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background: url(../images/ice-creams-faces@2x.png) top 14px left 652px,
-        url(../images/dots.png@2x) bottom;
-    }
-  }
+  position: relative;
 
   &__container {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__faces-img {
+    position: absolute;
+    top: 14px;
+    right: 92px;
+    height: 560px;
   }
 
   &__title {
@@ -155,6 +161,7 @@
         text-transform: uppercase;
         font-weight: 700;
         white-space: nowrap;
+        height: 20px;
       }
     }
 
@@ -169,7 +176,7 @@
         position: absolute;
         width: 132px;
         height: 132px;
-        top: -63px;
+        top: -56px;
         left: 0;
         border-radius: 100%;
         background-color: $card-rect-bg-green;
@@ -237,8 +244,7 @@
 @media (max-width: 768px) {
   .hero {
     padding-bottom: 12px;
-    background: url(../images/ice-creams-faces-tablet@2x.png) top 6px left 408px,
-      url(../images/dots-tablet@2x.png) bottom;
+    background: url(../images/dots-tablet.png) bottom;
     background-repeat: no-repeat;
     background-color: $bg-color;
 
@@ -275,16 +281,33 @@
       padding: 11px 26px;
       font-size: 14px;
     }
+    &__faces-img {
+      top: 6px;
+      height: 329px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background: url(../images/dots-tablet@2x.png) bottom;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    background: url(../images/ice-creams-faces-small.png) top 50px left 242px,
-      url(../images/dots-small.png) bottom right;
+    background: url(../images/dots-small.png) bottom right;
     background-repeat: no-repeat;
     background-color: $bg-color;
     padding-bottom: 150px;
+
+    &__faces-img {
+      right: 20px;
+      top: 50px;
+      height: 267px;
+    }
 
     &__title {
       padding-bottom: 32px;
@@ -295,6 +318,34 @@
     &__arrow-link,
     &__list {
       display: none;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background: url(../images/dots-small@2x.png) bottom right;
+      background-repeat: no-repeat;
+      background-color: $bg-color;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    background: url(../images/dots-mobile.png) bottom;
+    background-repeat: no-repeat;
+    background-color: $bg-color;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background: url(../images/dots-mobile@3x.png) bottom;
+      background-repeat: no-repeat;
+      background-color: $bg-color;
     }
   }
 }

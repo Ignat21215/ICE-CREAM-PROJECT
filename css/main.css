@@ -359,6 +359,7 @@ body {
   .header {
     padding-top: 20px;
     padding-bottom: 14px;
+    position: relative;
   }
   .header__container {
     -webkit-box-pack: justify;
@@ -387,16 +388,17 @@ body {
             align-items: center;
   }
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background: url(../images/dots@2x.png) bottom;
+  }
+}
 .hero {
-  background: url(../images/ice-creams-faces.png) top 14px left 652px, url(../images/dots.png) bottom;
+  background: url(../images/dots.png) bottom;
   background-repeat: no-repeat;
   background-color: rgb(132, 161, 120);
   padding-bottom: 65px;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .hero {
-    background: url(../images/ice-creams-faces@2x.png) top 14px left 652px, url(../images/dots.png@2x) bottom;
-  }
+  position: relative;
 }
 .hero__container {
   display: -webkit-box;
@@ -405,6 +407,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.hero__faces-img {
+  position: absolute;
+  top: 14px;
+  right: 92px;
+  height: 560px;
 }
 .hero__title {
   color: rgb(252, 252, 252);
@@ -537,6 +545,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   white-space: nowrap;
+  height: 20px;
 }
 .hero__buy__img {
   position: absolute;
@@ -549,7 +558,7 @@ body {
   position: absolute;
   width: 132px;
   height: 132px;
-  top: -63px;
+  top: -56px;
   left: 0;
   border-radius: 100%;
   background-color: rgba(156, 190, 143, 0.7);
@@ -637,7 +646,7 @@ body {
 @media (max-width: 768px) {
   .hero {
     padding-bottom: 12px;
-    background: url(../images/ice-creams-faces-tablet@2x.png) top 6px left 408px, url(../images/dots-tablet@2x.png) bottom;
+    background: url(../images/dots-tablet.png) bottom;
     background-repeat: no-repeat;
     background-color: rgb(132, 161, 120);
   }
@@ -674,19 +683,54 @@ body {
     padding: 11px 26px;
     font-size: 14px;
   }
+  .hero__faces-img {
+    top: 6px;
+    height: 329px;
+  }
+}
+@media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background: url(../images/dots-tablet@2x.png) bottom;
+  }
 }
 @media (max-width: 480px) {
   .hero {
-    background: url(../images/ice-creams-faces-small.png) top 50px left 242px, url(../images/dots-small.png) bottom right;
+    background: url(../images/dots-small.png) bottom right;
     background-repeat: no-repeat;
     background-color: rgb(132, 161, 120);
     padding-bottom: 150px;
+  }
+  .hero__faces-img {
+    right: 20px;
+    top: 50px;
+    height: 267px;
   }
   .hero__title {
     padding-bottom: 32px;
   }
   .hero__img, .hero__desc, .hero__arrow-link, .hero__list {
     display: none;
+  }
+}
+@media (max-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) and (min-resolution: 192dpi), (max-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background: url(../images/dots-small@2x.png) bottom right;
+    background-repeat: no-repeat;
+    background-color: rgb(132, 161, 120);
+  }
+}
+@media (max-width: 320px) {
+  .hero {
+    background: url(../images/dots-mobile.png) bottom;
+    background-repeat: no-repeat;
+    background-color: rgb(132, 161, 120);
+  }
+}
+@media (max-width: 320px) and (min-device-pixel-ratio: 2), (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 320px) and (min-resolution: 192dpi), (max-width: 320px) and (min-resolution: 2dppx) {
+  .hero {
+    background: url(../images/dots-mobile@3x.png) bottom;
+    background-repeat: no-repeat;
+    background-color: rgb(132, 161, 120);
   }
 }
 input[type=checkbox],
@@ -702,6 +746,9 @@ label {
   }
   label {
     display: block;
+    position: absolute;
+    bottom: 29px;
+    right: 216px;
   }
   label {
     padding: 8px 4px;
@@ -800,9 +847,14 @@ label {
     position: absolute;
     top: 20px;
     left: 32px;
+    padding: 0;
   }
   .logo {
     z-index: 3;
+  }
+  .logo__img {
+    max-width: 48px;
+    height: 44px;
   }
 }
 @media (max-width: 480px) {
@@ -810,6 +862,28 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: static;
+    background: 0;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header__wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: rgb(132, 161, 120);
+    height: 600px;
+    padding-top: 104px;
+    padding-bottom: 88px;
+  }
+  .header__list {
+    gap: 32px;
+  }
+  .header__link {
+    font-size: 32px;
   }
   .header__wrapper {
     display: none;
@@ -819,8 +893,18 @@ label {
     display: -ms-flexbox;
     display: flex;
   }
-  .hero__btn {
-    z-index: 2;
+  .header__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 114px;
+  }
+  #toggle:checked ~ .hero__btn {
+    z-index: 3;
+  }
+  label {
+    position: static;
   }
 }
 .how-made {

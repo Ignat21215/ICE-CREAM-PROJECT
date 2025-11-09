@@ -67,19 +67,28 @@
             <ul class="hero__buy__list">
               <li class="hero__buy__item buy__item--padding">
                 <div class="hero__buy__img-wrapper">
-                  <img src="images/ice-creams-hand.jpg" alt="" class="hero__buy__img" />
+                  <div>
+                    <source srcset="./images/ice-cream-hand-buy.png, ./images/ice-cream-hand-buy@2x.png" media="(max-width: 768px)">
+                    <img src="./images/ice-cream-hand-buy.png" alt="ice-cream" class="hero__buy__img" />
+                  </div>
                 </div>
                 <h3 class="hero__buy__item-title">ice cream</h3>
               </li>
               <li class="hero__buy__item hero__buy__item--yellow">
                 <div class="hero__buy__img-wrapper hero__buy__img-wrapper--yellow">
-                  <img src="images/cocktail.jpg" alt="" class="hero__buy__img" />
+                  <picture>
+                    <source srcset="./images/cocktail-buy.png, ./images/cocktail-buy@2x.png" media="(max-width: 768px)">
+                    <img src="./images/cocktail-buy.png" alt="cocktail" class="hero__buy__img" />
+                  </picture>
                 </div>
                 <h3 class="hero__buy__item-title">ice coffee</h3>
               </li>
               <li class="hero__buy__item hero__buy__item--orange">
                 <div class="hero__buy__img-wrapper hero__buy__img-wrapper--orange">
-                  <img src="images/oreo-cocktail.jpg" alt="" class="hero__buy__img" />
+                  <picture>
+                    <source srcset="./images/milkshake-buy.png, ./images/milkshake-buy@2x.png" media="(max-width: 768px)">
+                    <img src="./images/milkshake-buy.png" alt="milkshake" class="hero__buy__img" />
+                  </picture>
                 </div>
                 <h3 class="hero__buy__item-title">milkshake</h3>
               </li>
@@ -110,8 +119,8 @@
           <a href="#made" class="hero__link">How it’s made?</a>
           <div class="hero__wrapper">
             <picture>
-              <source srcset="./images/plate-of-ice-cream.png, ./images/plate-of-ice-cream@2x.png" />
-              <source srcset="./images/plate-of-ice-cream-tablet.png, ./images/plate-of-ice-cream-tablet@2x.png" />
+              <source srcset="./images/plate-of-ice-cream.png, ./images/plate-of-ice-cream@2x.png" media="(min-width: 1200px)"/>
+              <source srcset="./images/plate-of-ice-cream-tablet.png, ./images/plate-of-ice-cream-tablet@2x.png" media="(min-width: 481px)"/>
               <img src="./images/plate-of-ice-cream.png" alt="ice cream" class="hero__img" />
             </picture>
             <div class="hero__txt-wrapper">
@@ -126,6 +135,13 @@
             </div>
           </div>
         </div>
+        <picture>
+          <source srcset="./images/ice-creams-faces.png, ./images/ice-creams-faces@2x.png" media="(min-width: 1200px)">
+          <source srcset="./images/ice-creams-faces-tablet.png, ./images/ice-creams-faces-tablet@2x.png" media="(min-width: 768px)">
+          <source srcset="./images/ice-creams-faces-small.png, ./images/ice-creams-faces-small@2x.png" media="(min-width: 321px)">
+          <source srcset="./images/ice-creams-faces-mobile.png, ./images/ice-creams-faces-mobile@2x.png" media="(max-width: 320px)">
+          <img src="./images/ice-creams-faces.png" alt="ice-cream" class="hero__faces-img">
+        </picture>
         <ul class="hero__list">
           <li class="hero__item">
             <h3 class="hero__item-title">16</h3>
