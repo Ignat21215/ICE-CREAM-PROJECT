@@ -98,78 +98,10 @@
 }
 
 .franchise {
-	&__modal {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	&__title {
-		padding-bottom: 24px;
-		max-width: 322px;
-	}
+	padding: 32px 60px;
 
 	&__desc {
-		color: $dark-txt-color;
-		font-size: 16px;
-		font-family: $font-family;
 		padding-bottom: 32px;
-	}
-
-	&__form {
-		display: flex;
-		gap: 16px;
-		flex-direction: column;
-		padding-bottom: 32px;
-	}
-
-	&__input {
-		width: 368px;
-		padding: 11px 16px;
-		border: 1px solid $bg-color;
-		border-radius: 10px;
-		background-color: $input-bg;
-		margin: 0 auto;
-
-		&::placeholder {
-			font-size: 14px;
-			line-height: 1.4em;
-			letter-spacing: 0;
-			color: $dark-txt-color;
-			font-weight: 400;
-		}
-	}
-
-	&__textarea {
-		margin: 0 auto;
-		border: 1px solid $bg-color;
-		border-radius: 10px;
-		background-color: $input-bg;
-		width: 368px;
-		padding: 11px 16px;
-		height: 84px;
-		resize: none;
-
-		&::placeholder {
-			font-size: 14px;
-			line-height: 1.4em;
-			letter-spacing: 0;
-			color: $dark-txt-color;
-			font-weight: 400;
-		}
-	}
-
-	&__button {
-		display: flex;
-		margin: 0 auto;
-		background-color: $accent-color;
-		border: 0;
-		border-radius: 10px;
-		padding: 12px 34px;
-		color: $dark-txt-color;
-		font-size: 14px;
-		font-weight: 600;
-		letter-spacing: 0;
 	}
 }
 
@@ -227,5 +159,8 @@
 			max-width: 280px;
 			max-height: 130px;
 		}
+	}
+	.franchise {
+		padding: 28px;
 	}
 }

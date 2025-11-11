@@ -119,51 +119,6 @@
   }
 }
 
-.modal {
-  &__form {
-    display: flex;
-    gap: 16px;
-    flex-direction: column;
-    padding-bottom: 32px;
-  }
-
-  &__input,
-  &__textarea {
-    width: 368px;
-    padding: 11px 16px;
-    border: 1px solid $bg-color;
-    border-radius: 10px;
-    background-color: $input-bg;
-    margin: 0 auto;
-  }
-
-  &__input::placeholder,
-  &__textarea::placeholder {
-    font-size: 14px;
-    line-height: 1.4em;
-    color: $dark-txt-color;
-    font-weight: 400;
-  }
-
-  &__textarea {
-    height: 84px;
-    resize: none;
-  }
-
-  &__button {
-    display: flex;
-    margin: 0 auto;
-    background-color: $accent-color;
-    border: 0;
-    border-radius: 10px;
-    padding: 12px 34px;
-    color: $dark-txt-color;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-}
-
 @media (max-width: 768px) {
   .hero {
     padding-bottom: 12px;

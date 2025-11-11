@@ -677,74 +677,6 @@ body {
   color: rgb(252, 252, 252);
 }
 
-.modal__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 16px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 32px;
-}
-.modal__input, .modal__textarea {
-  width: 368px;
-  padding: 11px 16px;
-  border: 1px solid rgb(132, 161, 120);
-  border-radius: 10px;
-  background-color: rgba(248, 210, 78, 0.1);
-  margin: 0 auto;
-}
-.modal__input::-webkit-input-placeholder, .modal__textarea::-webkit-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.modal__input::-moz-placeholder, .modal__textarea::-moz-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.modal__input:-ms-input-placeholder, .modal__textarea:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.modal__input::-ms-input-placeholder, .modal__textarea::-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.modal__input::placeholder, .modal__textarea::placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.modal__textarea {
-  height: 84px;
-  resize: none;
-}
-.modal__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  background-color: rgb(248, 210, 78);
-  border: 0;
-  border-radius: 10px;
-  padding: 12px 34px;
-  color: rgb(19, 19, 19);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0;
-}
-
 @media (max-width: 768px) {
   .hero {
     padding-bottom: 12px;
@@ -1927,140 +1859,11 @@ label {
   background-color: rgb(132, 161, 120);
 }
 
-.franchise__modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.franchise__title {
-  padding-bottom: 24px;
-  max-width: 322px;
+.franchise {
+  padding: 32px 60px;
 }
 .franchise__desc {
-  color: rgb(19, 19, 19);
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
   padding-bottom: 32px;
-}
-.franchise__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 16px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 32px;
-}
-.franchise__input {
-  width: 368px;
-  padding: 11px 16px;
-  border: 1px solid rgb(132, 161, 120);
-  border-radius: 10px;
-  background-color: rgba(248, 210, 78, 0.1);
-  margin: 0 auto;
-}
-.franchise__input::-webkit-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__input::-moz-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__input:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__input::-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__input::placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea {
-  margin: 0 auto;
-  border: 1px solid rgb(132, 161, 120);
-  border-radius: 10px;
-  background-color: rgba(248, 210, 78, 0.1);
-  width: 368px;
-  padding: 11px 16px;
-  height: 84px;
-  resize: none;
-}
-.franchise__textarea::-webkit-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea::-moz-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea::-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea::placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  background-color: rgb(248, 210, 78);
-  border: 0;
-  border-radius: 10px;
-  padding: 12px 34px;
-  color: rgb(19, 19, 19);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0;
 }
 
 @media (max-width: 768px) {
@@ -2113,6 +1916,9 @@ label {
     top: -32px;
     max-width: 280px;
     max-height: 130px;
+  }
+  .franchise {
+    padding: 28px;
   }
 }
 .cards {
@@ -2420,6 +2226,11 @@ label {
   font-weight: 600;
   letter-spacing: 0;
 }
+.modal__desc {
+  color: rgb(19, 19, 19);
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
 .modal__textarea {
   margin: 0 auto;
   border: 1px solid rgb(132, 161, 120);
@@ -2563,9 +2374,114 @@ label {
   display: none;
 }
 
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 32px;
+}
+.modal__input, .modal__textarea {
+  width: 368px;
+  padding: 11px 16px;
+  border: 1px solid rgb(132, 161, 120);
+  border-radius: 10px;
+  background-color: rgba(248, 210, 78, 0.1);
+  margin: 0 auto;
+}
+.modal__input::-webkit-input-placeholder, .modal__textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__input::-moz-placeholder, .modal__textarea::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__input:-ms-input-placeholder, .modal__textarea:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__input::-ms-input-placeholder, .modal__textarea::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__input::placeholder, .modal__textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.4em;
+  color: rgb(19, 19, 19);
+  font-weight: 400;
+}
+.modal__textarea {
+  height: 84px;
+  resize: none;
+}
+.modal__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  background-color: rgb(248, 210, 78);
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 34px;
+  color: rgb(19, 19, 19);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
 @media (max-width: 320px) {
   .modal__close-btn__icon {
     width: 20px;
     height: 20px;
+  }
+  .modal__title {
+    font-size: 20px;
+  }
+  .modal__button {
+    font-size: 12px;
+  }
+  .modal__input, .modal__textarea {
+    padding-inline: 12px;
+    padding-block: 8px;
+    width: 224px;
+    height: 32px;
+  }
+  .modal__textarea {
+    height: 64px;
+  }
+  .modal__input::-webkit-input-placeholder, .modal__textarea::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .modal__input::-moz-placeholder, .modal__textarea::-moz-placeholder {
+    font-size: 12px;
+  }
+  .modal__input:-ms-input-placeholder, .modal__textarea:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .modal__input::-ms-input-placeholder, .modal__textarea::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .modal__input::placeholder, .modal__textarea::placeholder {
+    font-size: 12px;
+  }
+  .modal__form {
+    gap: 12px;
+    padding-bottom: 24px;
+  }
+  .modal__desc {
+    font-size: 14px;
   }
 }
