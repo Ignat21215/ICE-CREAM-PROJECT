@@ -2,6 +2,7 @@
 @use './utils/placeholders';
 @use './base/reset';
 @use './base/base';
+@use './base/modals';
 @use './components/buttons';
 @use './components/footer';
 @use './components/header';
@@ -11,5 +12,3 @@
 @use './components/products';
 @use './components/response';
 @use './components/cards';
-
-@use './base/modals';

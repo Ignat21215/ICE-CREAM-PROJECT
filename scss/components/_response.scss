@@ -100,8 +100,13 @@
 .franchise {
 	padding: 32px 60px;
 
+	&__title {
+		padding-bottom: 24px;
+	}
+
 	&__desc {
 		padding-bottom: 32px;
+		text-align: left;
 	}
 }
 
@@ -162,5 +167,13 @@
 	}
 	.franchise {
 		padding: 28px;
+
+		&__title {
+			padding-bottom: 20px;
+		}
+
+		&__desc {
+			padding-bottom: 24px;
+		}
 	}
 }

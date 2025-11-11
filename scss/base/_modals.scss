@@ -83,6 +83,7 @@
     gap: 16px;
     flex-direction: column;
     padding-bottom: 32px;
+    justify-content: center;
   }
 
   &__title {
@@ -201,6 +202,7 @@
     &__form {
       gap: 12px;
       padding-bottom: 24px;
+      margin: 0 auto;
     }
     &__desc {
       font-size: 14px;
