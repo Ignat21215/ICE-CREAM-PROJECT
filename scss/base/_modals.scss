@@ -96,8 +96,8 @@
 
 .modal__close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   background: none;
   border: none;
   cursor: pointer;
@@ -119,4 +119,11 @@
 
 .is-hidden {
   display: none;
+}
+
+@media (max-width: 320px) {
+  .modal__close-btn__icon {
+    width: 20px;
+    height: 20px;
+  }
 }

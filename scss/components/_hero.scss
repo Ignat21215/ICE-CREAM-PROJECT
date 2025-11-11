@@ -117,127 +117,50 @@
       color: $light-txt-color;
     }
   }
+}
 
-  &__buy {
-    padding: 32px 54px;
-
-    &__title {
-      font-size: 20px;
-      font-weight: 400;
-      font-family: $second-family;
-      color: $dark-txt-color;
-      line-height: 28px;
-      text-align: center;
-      padding-bottom: 113px;
-    }
-
-    &__list {
-      display: flex;
-      gap: 32px;
-      padding-bottom: 40px;
-      justify-content: center;
-    }
-
-    &__item {
-      padding: 95px 13px 20px 13px;
-      border: 2px solid $buy-green-border;
-      border-radius: 15px;
-      position: relative;
-
-      &--padding {
-        padding-inline: 16px;
-      }
-      &--yellow {
-        background-color: $yellow-card-bg;
-        border-color: $yellow-card-bg;
-      }
-      &--orange {
-        border-color: $card-orange-bg;
-      }
-
-      &-title {
-        color: $dark-txt-color;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 700;
-        white-space: nowrap;
-        height: 20px;
-      }
-    }
-
-    &__img {
-      position: absolute;
-      width: 132px;
-      height: 132px;
-      border-radius: 100%;
-      top: -7px;
-
-      &-wrapper {
-        position: absolute;
-        width: 132px;
-        height: 132px;
-        top: -56px;
-        left: 0;
-        border-radius: 100%;
-        background-color: $card-rect-bg-green;
-        box-shadow: 0px 5px 19px 0px $buy-wrapper-shadow;
-
-        &--yellow {
-          box-shadow: 0px 5px 19px 0px $card-rect-shadow-yellow;
-          background-color: $buy-wrapper-yellow-bg;
-        }
-
-        &--orange {
-          box-shadow: 0px 5px 19px 0px $card-rect-shadow-brown;
-          background-color: $card-orange-bg;
-        }
-      }
-    }
+.modal {
+  &__form {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding-bottom: 32px;
   }
 
-  &__modal {
-    &__form {
-      display: flex;
-      gap: 16px;
-      flex-direction: column;
-      padding-bottom: 32px;
-    }
+  &__input,
+  &__textarea {
+    width: 368px;
+    padding: 11px 16px;
+    border: 1px solid $bg-color;
+    border-radius: 10px;
+    background-color: $input-bg;
+    margin: 0 auto;
+  }
 
-    &__input,
-    &__textarea {
-      width: 368px;
-      padding: 11px 16px;
-      border: 1px solid $bg-color;
-      border-radius: 10px;
-      background-color: $input-bg;
-      margin: 0 auto;
-    }
+  &__input::placeholder,
+  &__textarea::placeholder {
+    font-size: 14px;
+    line-height: 1.4em;
+    color: $dark-txt-color;
+    font-weight: 400;
+  }
 
-    &__input::placeholder,
-    &__textarea::placeholder {
-      font-size: 14px;
-      line-height: 1.4em;
-      color: $dark-txt-color;
-      font-weight: 400;
-    }
+  &__textarea {
+    height: 84px;
+    resize: none;
+  }
 
-    &__textarea {
-      height: 84px;
-      resize: none;
-    }
-
-    &__button {
-      display: flex;
-      margin: 0 auto;
-      background-color: $accent-color;
-      border: 0;
-      border-radius: 10px;
-      padding: 12px 34px;
-      color: $dark-txt-color;
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0;
-    }
+  &__button {
+    display: flex;
+    margin: 0 auto;
+    background-color: $accent-color;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 34px;
+    color: $dark-txt-color;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
   }
 }
 
@@ -337,6 +260,13 @@
     background: url(../images/dots-mobile.png) bottom;
     background-repeat: no-repeat;
     background-color: $bg-color;
+    padding-bottom: 236px;
+
+    &__faces-img {
+      right: 60px;
+      top: 236px;
+      height: 217px;
+    }
   }
 
   @media (min-device-pixel-ratio: 2),

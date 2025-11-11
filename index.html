@@ -56,52 +56,53 @@
             <use href="./images/symbol-defs.svg#icon-short-arrow"></use>
           </svg>
         </button>
+
         <div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="buy">
-          <div class="hero__modal modal buy">
+          <div class="modal buy">
             <button class="modal__close-btn" data-close-modal>
-              <svg class="modal__close-btn__icon">
-                <use href="images/symbol-defs.svg#icon-close-button"></use>
-              </svg>
+                <svg class="modal__close-btn__icon">
+                  <use href="images/symbol-defs.svg#icon-close-button"></use>
+                </svg>
+              </button>
+            </svg>
             </button>
-            <h2 class="hero__buy__title modal__title">Buy now</h2>
-            <ul class="hero__buy__list">
-              <li class="hero__buy__item buy__item--padding">
-                <div class="hero__buy__img-wrapper">
-                  <div>
-                    <source srcset="./images/ice-cream-hand-buy.png, ./images/ice-cream-hand-buy@2x.png" media="(max-width: 768px)">
-                    <img src="./images/ice-cream-hand-buy.png" alt="ice-cream" class="hero__buy__img" />
-                  </div>
-                </div>
-                <h3 class="hero__buy__item-title">ice cream</h3>
-              </li>
-              <li class="hero__buy__item hero__buy__item--yellow">
-                <div class="hero__buy__img-wrapper hero__buy__img-wrapper--yellow">
+            <h2 class="buy__title">Buy now</h2>
+            <ul class="buy__list">
+              <li class="buy__item">
+                <div class="buy__img-wrapper">
                   <picture>
-                    <source srcset="./images/cocktail-buy.png, ./images/cocktail-buy@2x.png" media="(max-width: 768px)">
-                    <img src="./images/cocktail-buy.png" alt="cocktail" class="hero__buy__img" />
+                    <source srcset="./images/ice-cream-hand-buy.png, ./images/ice-cream-hand-buy@2x.png">
+                    <img src="./images/ice-cream-hand-buy.png" alt="ice-cream" class="buy__img" />
                   </picture>
                 </div>
-                <h3 class="hero__buy__item-title">ice coffee</h3>
+                <h3 class="buy__item-title buy__item-title--padding">ice cream</h3>
               </li>
-              <li class="hero__buy__item hero__buy__item--orange">
-                <div class="hero__buy__img-wrapper hero__buy__img-wrapper--orange">
+              <li class="buy__item buy__item--yellow">
+                <div class="buy__img-wrapper buy__img-wrapper--yellow">
                   <picture>
-                    <source srcset="./images/milkshake-buy.png, ./images/milkshake-buy@2x.png" media="(max-width: 768px)">
-                    <img src="./images/milkshake-buy.png" alt="milkshake" class="hero__buy__img" />
+                    <source srcset="./images/cocktail-buy.png, ./images/cocktail-buy@2x.png">
+                    <img src="./images/cocktail-buy.png" alt="cocktail" class="buy__img" />
                   </picture>
                 </div>
-                <h3 class="hero__buy__item-title">milkshake</h3>
+                <h3 class="buy__item-title">ice coffee</h3>
+              </li>
+              <li class="buy__item buy__item--orange">
+                <div class="buy__img-wrapper buy__img-wrapper--orange">
+                  <picture>
+                    <source srcset="./images/milkshake-buy.png, ./images/milkshake-buy@2x.png">
+                    <img src="./images/milkshake-buy.png" alt="milkshake" class="buy__img" />
+                  </picture>
+                </div>
+                <h3 class="buy__item-title">milkshake</h3>
               </li>
             </ul>
 
-            <form class="hero__modal__form">
-              <input type="text" class="hero__modal__input" placeholder="Name" />
-              <input type="tel" class="hero__modal__input" placeholder="Phone" />
-              <textarea class="hero__modal__textarea" placeholder="Comment"></textarea>
+            <form class="modal__form">
+              <input type="text" class="modal__input" placeholder="Name">
+              <input type="tel" class="modal__input" placeholder="Phone">
+              <textarea class="modal__textarea" placeholder="Comment"></textarea>
             </form>
-            <button class="hero__modal__button button" type="button">
-              Submit
-            </button>
+            <button class="modal__button button" type="button">Submit</button>
           </div>
         </div>
       </div>
@@ -119,8 +120,10 @@
           <a href="#made" class="hero__link">How it’s made?</a>
           <div class="hero__wrapper">
             <picture>
-              <source srcset="./images/plate-of-ice-cream.png, ./images/plate-of-ice-cream@2x.png" media="(min-width: 1200px)"/>
-              <source srcset="./images/plate-of-ice-cream-tablet.png, ./images/plate-of-ice-cream-tablet@2x.png" media="(min-width: 481px)"/>
+              <source srcset="./images/plate-of-ice-cream.png, ./images/plate-of-ice-cream@2x.png"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/plate-of-ice-cream-tablet.png, ./images/plate-of-ice-cream-tablet@2x.png"
+                media="(min-width: 481px)" />
               <img src="./images/plate-of-ice-cream.png" alt="ice cream" class="hero__img" />
             </picture>
             <div class="hero__txt-wrapper">
@@ -137,9 +140,12 @@
         </div>
         <picture>
           <source srcset="./images/ice-creams-faces.png, ./images/ice-creams-faces@2x.png" media="(min-width: 1200px)">
-          <source srcset="./images/ice-creams-faces-tablet.png, ./images/ice-creams-faces-tablet@2x.png" media="(min-width: 768px)">
-          <source srcset="./images/ice-creams-faces-small.png, ./images/ice-creams-faces-small@2x.png" media="(min-width: 321px)">
-          <source srcset="./images/ice-creams-faces-mobile.png, ./images/ice-creams-faces-mobile@2x.png" media="(max-width: 320px)">
+          <source srcset="./images/ice-creams-faces-tablet.png, ./images/ice-creams-faces-tablet@2x.png"
+            media="(min-width: 768px)">
+          <source srcset="./images/ice-creams-faces-small.png, ./images/ice-creams-faces-small@2x.png"
+            media="(min-width: 321px)">
+          <source srcset="./images/ice-creams-faces-mobile.png, ./images/ice-creams-faces-mobile@2x.png"
+            media="(max-width: 320px)">
           <img src="./images/ice-creams-faces.png" alt="ice-cream" class="hero__faces-img">
         </picture>
         <ul class="hero__list">

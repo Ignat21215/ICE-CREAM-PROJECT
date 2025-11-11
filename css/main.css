@@ -357,7 +357,7 @@ body {
 }
 .header {
   padding-top: 8px;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
   background-color: rgb(132, 161, 120);
 }
 .header__container {
@@ -418,6 +418,86 @@ body {
   height: 12px;
 }
 
+.buy {
+  padding: 32px 54px;
+  width: 568px;
+  height: 644px;
+  border-radius: 10px;
+  border: 2px solid rgb(248, 210, 78);
+}
+.buy__title {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Seymour One", sans-serif;
+  color: rgb(19, 19, 19);
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  padding-bottom: 113px;
+}
+.buy__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  padding-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.buy__item {
+  padding: 95px 13px 20px 13px;
+  border: 2px solid rgb(150, 175, 140);
+  border-radius: 15px;
+  position: relative;
+}
+.buy__item--yellow {
+  background-color: rgb(239, 212, 120);
+  border-color: rgb(239, 212, 120);
+}
+.buy__item--orange {
+  border-color: rgb(214, 147, 109);
+}
+.buy__item-title {
+  color: rgb(19, 19, 19);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.buy__item-title--padding {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.buy__img {
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  border-radius: 100%;
+  top: -7px;
+}
+.buy__img-wrapper {
+  position: absolute;
+  width: 132px;
+  height: 132px;
+  top: -63px;
+  left: 0px;
+  border-radius: 100%;
+  background-color: rgba(156, 190, 143, 0.7);
+  -webkit-box-shadow: 0px 5px 19px 0px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 5px 19px 0px rgba(10, 136, 23, 0.25);
+}
+.buy__img-wrapper--yellow {
+  -webkit-box-shadow: 0px 5px 19px 0px rgba(153, 114, 23, 0.25);
+          box-shadow: 0px 5px 19px 0px rgba(153, 114, 23, 0.25);
+  background-color: rgba(248, 210, 78, 0.7);
+}
+.buy__img-wrapper--orange {
+  -webkit-box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgb(214, 147, 109);
+}
+
 @media (max-width: 768px) {
   .header {
     padding-top: 20px;
@@ -449,6 +529,38 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .logo {
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  .buy {
+    padding: 28px;
+  }
+  .buy__title {
+    font-size: 16px;
+    padding-bottom: 83px;
+  }
+  .buy__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 82px;
+    padding-bottom: 32px;
+  }
+  .buy__item {
+    padding-top: 96px;
+    width: 132px;
+    margin: 0 auto;
+  }
+  .buy__item-title {
+    display: inline-block;
+  }
+  .buy__img-wrapper {
+    -webkit-transform: translateX(-1%);
+            transform: translateX(-1%);
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -564,81 +676,8 @@ body {
   font-size: 14px;
   color: rgb(252, 252, 252);
 }
-.hero__buy {
-  padding: 32px 54px;
-}
-.hero__buy__title {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Seymour One", sans-serif;
-  color: rgb(19, 19, 19);
-  line-height: 28px;
-  text-align: center;
-  padding-bottom: 113px;
-}
-.hero__buy__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 32px;
-  padding-bottom: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.hero__buy__item {
-  padding: 95px 13px 20px 13px;
-  border: 2px solid rgb(150, 175, 140);
-  border-radius: 15px;
-  position: relative;
-}
-.hero__buy__item--padding {
-  padding-inline: 16px;
-}
-.hero__buy__item--yellow {
-  background-color: rgb(239, 212, 120);
-  border-color: rgb(239, 212, 120);
-}
-.hero__buy__item--orange {
-  border-color: rgb(214, 147, 109);
-}
-.hero__buy__item-title {
-  color: rgb(19, 19, 19);
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 700;
-  white-space: nowrap;
-  height: 20px;
-}
-.hero__buy__img {
-  position: absolute;
-  width: 132px;
-  height: 132px;
-  border-radius: 100%;
-  top: -7px;
-}
-.hero__buy__img-wrapper {
-  position: absolute;
-  width: 132px;
-  height: 132px;
-  top: -56px;
-  left: 0;
-  border-radius: 100%;
-  background-color: rgba(156, 190, 143, 0.7);
-  -webkit-box-shadow: 0px 5px 19px 0px rgba(10, 136, 23, 0.25);
-          box-shadow: 0px 5px 19px 0px rgba(10, 136, 23, 0.25);
-}
-.hero__buy__img-wrapper--yellow {
-  -webkit-box-shadow: 0px 5px 19px 0px rgba(153, 114, 23, 0.25);
-          box-shadow: 0px 5px 19px 0px rgba(153, 114, 23, 0.25);
-  background-color: rgba(248, 210, 78, 0.7);
-}
-.hero__buy__img-wrapper--orange {
-  -webkit-box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.25);
-  background-color: rgb(214, 147, 109);
-}
-.hero__modal__form {
+
+.modal__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,7 +688,7 @@ body {
           flex-direction: column;
   padding-bottom: 32px;
 }
-.hero__modal__input, .hero__modal__textarea {
+.modal__input, .modal__textarea {
   width: 368px;
   padding: 11px 16px;
   border: 1px solid rgb(132, 161, 120);
@@ -657,41 +696,41 @@ body {
   background-color: rgba(248, 210, 78, 0.1);
   margin: 0 auto;
 }
-.hero__modal__input::-webkit-input-placeholder, .hero__modal__textarea::-webkit-input-placeholder {
+.modal__input::-webkit-input-placeholder, .modal__textarea::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
-.hero__modal__input::-moz-placeholder, .hero__modal__textarea::-moz-placeholder {
+.modal__input::-moz-placeholder, .modal__textarea::-moz-placeholder {
   font-size: 14px;
   line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
-.hero__modal__input:-ms-input-placeholder, .hero__modal__textarea:-ms-input-placeholder {
+.modal__input:-ms-input-placeholder, .modal__textarea:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
-.hero__modal__input::-ms-input-placeholder, .hero__modal__textarea::-ms-input-placeholder {
+.modal__input::-ms-input-placeholder, .modal__textarea::-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
-.hero__modal__input::placeholder, .hero__modal__textarea::placeholder {
+.modal__input::placeholder, .modal__textarea::placeholder {
   font-size: 14px;
   line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
-.hero__modal__textarea {
+.modal__textarea {
   height: 84px;
   resize: none;
 }
-.hero__modal__button {
+.modal__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,6 +826,12 @@ body {
     background: url(../images/dots-mobile.png) bottom;
     background-repeat: no-repeat;
     background-color: rgb(132, 161, 120);
+    padding-bottom: 236px;
+  }
+  .hero__faces-img {
+    right: 60px;
+    top: 236px;
+    height: 217px;
   }
 }
 @media (max-width: 320px) and (min-device-pixel-ratio: 2), (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 320px) and (min-resolution: 192dpi), (max-width: 320px) and (min-resolution: 2dppx) {
@@ -810,7 +855,7 @@ label {
   label {
     display: block;
     position: absolute;
-    bottom: 29px;
+    bottom: 25px;
     right: 216px;
   }
   label {
@@ -967,7 +1012,8 @@ label {
     z-index: 3;
   }
   label {
-    position: static;
+    top: 31px;
+    right: 20px;
   }
 }
 .how-made {
@@ -1280,6 +1326,14 @@ label {
   .how-made__stat-text {
     font-size: 12px;
     max-width: 230px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/ice-creams-bg@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .products {
@@ -1616,6 +1670,7 @@ label {
   .products__title {
     font-size: 34px;
     padding-bottom: 200px;
+    background-image: url(../images/ice-creams-bg-tablet.png);
   }
   .products__subtitle {
     font-size: 22px;
@@ -1660,7 +1715,15 @@ label {
     bottom: 12px;
   }
 }
+@media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/ice-creams-bg-tablet@2x.png);
+  }
+}
 @media (max-width: 480px) {
+  .products {
+    background-image: url(../images/ice-creams-bg-small.png);
+  }
   .products__title {
     font-size: 30px;
     padding-bottom: 150px;
@@ -1674,12 +1737,14 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .products__item {
     padding-inline: 60px;
     padding-top: 123px;
     padding-bottom: 16px;
-    width: 320px;
     margin: 0 auto;
   }
   .products__item-wrapper {
@@ -1718,6 +1783,25 @@ label {
   }
   .products__img {
     bottom: 12px;
+  }
+}
+@media (max-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) and (min-resolution: 192dpi), (max-width: 480px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/ice-creams-bg-small@2x.png);
+  }
+}
+@media (max-width: 320px) {
+  .products {
+    padding-bottom: 148px;
+  }
+  .products__item {
+    padding-inline: 40px;
+  }
+  .products__item-container {
+    left: 40px;
+  }
+  .products__desc {
+    padding-bottom: 101px;
   }
 }
 .response {
@@ -2450,8 +2534,8 @@ label {
 
 .modal__close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   background: none;
   border: none;
   cursor: pointer;
@@ -2477,4 +2561,11 @@ label {
 
 .is-hidden {
   display: none;
-}/*# sourceMappingURL=main.css.map */
+}
+
+@media (max-width: 320px) {
+  .modal__close-btn__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
