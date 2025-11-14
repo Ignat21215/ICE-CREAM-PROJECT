@@ -197,6 +197,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 999;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
 }
 
 .modal {
@@ -208,6 +210,12 @@ body {
   max-height: 90%;
   overflow-y: auto;
   position: relative;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
+  transition: opacity 300ms ease, -webkit-transform 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease;
+  transition: transform 300ms ease, opacity 300ms ease, -webkit-transform 300ms ease;
 }
 .modal__button {
   margin: 0 auto;
@@ -1580,12 +1588,6 @@ label {
     font-size: 12px;
     max-width: 230px;
   }
-  .how-made__video {
-    height: 199px;
-  }
-  .how-made__modal-text {
-    font-size: 14px;
-  }
 }
 .products {
   background-image: url(../images/ice-creams-bg.png);
@@ -2180,140 +2182,15 @@ label {
   background-color: rgb(132, 161, 120);
 }
 
-.franchise__modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.franchise {
+  padding: 32px 60px;
 }
 .franchise__title {
   padding-bottom: 24px;
-  max-width: 322px;
 }
 .franchise__desc {
-  color: rgb(19, 19, 19);
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
   padding-bottom: 32px;
-}
-.franchise__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 16px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 32px;
-}
-.franchise__input {
-  width: 368px;
-  padding: 11px 16px;
-  border: 1px solid rgb(132, 161, 120);
-  border-radius: 10px;
-  background-color: rgba(248, 210, 78, 0.1);
-  margin: 0 auto;
-}
-.franchise__input::-webkit-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__input::-moz-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__input:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__input::-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__input::placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea {
-  margin: 0 auto;
-  border: 1px solid rgb(132, 161, 120);
-  border-radius: 10px;
-  background-color: rgba(248, 210, 78, 0.1);
-  width: 368px;
-  padding: 11px 16px;
-  height: 84px;
-  resize: none;
-}
-.franchise__textarea::-webkit-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea::-moz-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea::-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__textarea::placeholder {
-  font-size: 14px;
-  line-height: 1.4em;
-  letter-spacing: 0;
-  color: rgb(19, 19, 19);
-  font-weight: 400;
-}
-.franchise__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  background-color: rgb(248, 210, 78);
-  border: 0;
-  border-radius: 10px;
-  padding: 12px 34px;
-  color: rgb(19, 19, 19);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -2356,9 +2233,6 @@ label {
   .response__user-name {
     font-size: 20px;
   }
-  .franchise__desc {
-    font-size: 14px;
-  }
 }
 @media (max-width: 320px) {
   .response {
@@ -2369,6 +2243,15 @@ label {
     top: -32px;
     max-width: 280px;
     max-height: 130px;
+  }
+  .franchise {
+    padding: 28px;
+  }
+  .franchise__title {
+    padding-bottom: 20px;
+  }
+  .franchise__desc {
+    padding-bottom: 24px;
   }
 }
 .cards {
@@ -2634,9 +2517,5 @@ label {
   }
   .cards__button {
     margin-top: 0;
-  }
-  .cards__modal-map {
-    width: 224px;
-    height: 199px;
   }
 }/*# sourceMappingURL=main.css.map */
