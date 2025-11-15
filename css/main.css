@@ -608,6 +608,7 @@ body {
   font-weight: 700;
   color: rgb(19, 19, 19);
   text-align: right;
+  text-wrap: nowrap;
 }
 .footer__contact {
   color: #fff;
