@@ -1590,6 +1590,14 @@ label {
     max-width: 230px;
   }
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/ice-creams-bg@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .products {
   background-image: url(../images/ice-creams-bg.png);
   background-position: center;
@@ -1924,6 +1932,7 @@ label {
   .products__title {
     font-size: 34px;
     padding-bottom: 200px;
+    background-image: url(../images/ice-creams-bg-tablet.png);
   }
   .products__subtitle {
     font-size: 22px;
@@ -1968,7 +1977,47 @@ label {
     bottom: 12px;
   }
 }
+@media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/ice-creams-bg-tablet@2x.png);
+  }
+}
 @media (max-width: 480px) {
+  .products {
+    background-image: url(../images/ice-creams-bg-small.png);
+  }
+  .products__modal {
+    padding: 20px;
+  }
+  .products__modal-title {
+    font-size: 20px;
+  }
+  .products__modal-list {
+    gap: 9px;
+    padding-bottom: 40px;
+  }
+  .products__modal-nutrition {
+    font-size: 10px;
+    width: 43px;
+    height: 43px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products__modal-desc {
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
+  .products__modal-ingredients__item .modal__desc {
+    font-size: 14px;
+  }
   .products__title {
     font-size: 30px;
     padding-bottom: 150px;
@@ -1982,12 +2031,14 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .products__item {
     padding-inline: 60px;
     padding-top: 123px;
     padding-bottom: 16px;
-    width: 320px;
     margin: 0 auto;
   }
   .products__item-wrapper {
@@ -2027,37 +2078,24 @@ label {
   .products__img {
     bottom: 12px;
   }
-  .products__modal {
-    padding: 20px;
+}
+@media (max-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) and (min-resolution: 192dpi), (max-width: 480px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/ice-creams-bg-small@2x.png);
   }
-  .products__modal-title {
-    font-size: 20px;
+}
+@media (max-width: 320px) {
+  .products {
+    padding-bottom: 148px;
   }
-  .products__modal-list {
-    gap: 9px;
-    padding-bottom: 40px;
+  .products__item {
+    padding-inline: 40px;
   }
-  .products__modal-nutrition {
-    font-size: 10px;
-    width: 43px;
-    height: 43px;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .products__item-container {
+    left: 40px;
   }
-  .products__modal-desc {
-    font-size: 10px;
-    padding-bottom: 10px;
-  }
-  .products__modal-ingredients__item .modal__desc {
-    font-size: 14px;
+  .products__desc {
+    padding-bottom: 101px;
   }
 }
 .response {
