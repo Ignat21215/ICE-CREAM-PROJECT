@@ -15,6 +15,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -167,14 +169,12 @@
         <h2 class="products__title">products</h2>
         <ul class="products__list">
           <li class="products__item">
-            <div class="products__item-container">
               <div class="products__item-wrapper">
                 <picture>
                   <source srcset="./images/ice-cream-hand.png, ./images/ice-cream-hand@2x.png" />
                   <img src="./images/ice-cream-hand.png" alt="ice-creams" class="products__img" />
                 </picture>
               </div>
-            </div>
             <h3 class="products__item-title">ice cream</h3>
             <p class="products__desc products__desc--first">
               Soft ice cream with a delicate taste. Made with milk, cream,
@@ -188,7 +188,6 @@
           </li>
 
           <li class="products__item products__item--yellow">
-            <div class="products__item-container">
               <div class="products__item-wrapper products__item-wrapper--yellow">
                 <picture>
                   <source srcset="./images/cocktail.png, ./images/cocktail@2x.png" />
@@ -196,7 +195,6 @@
                   <img src="./images/cocktail.png" alt="cocktail" class="products__img" />
                 </picture>
               </div>
-            </div>
             <h3 class="products__item-title">ice coffee</h3>
             <p class="products__desc">
               Fragrant invigorating drink created from 100% natural
@@ -211,7 +209,6 @@
           </li>
 
           <li class="products__item products__item--brown">
-            <div class="products__item-container">
               <div class="products__item-wrapper products__item-wrapper--brown">
                 <picture>
                   <source srcset="./images/milkshake.png, ./images/milkshake@2x.png" />
@@ -219,7 +216,6 @@
                   <img src="./images/milkshake.png" alt="oreo-cocktail" class="products__img" />
                 </picture>
               </div>
-            </div>
             <h3 class="products__item-title">milkshakes</h3>
             <p class="products__desc">
               Sweet drinks based on milk and ice cream, supplemented with
@@ -304,11 +300,11 @@
 
     <section class="how-made" id="made">
       <div class="how-made__container container">
-        <h4 class="how-made__subtitle">tradition and love</h4>
-        <h2 class="how-made__title">how it’s made?</h2>
+        <h4 class="how-made__subtitle" data-aos="fade-up">tradition and love</h4>
+        <h2 class="how-made__title" data-aos="fade-up">how it’s made?</h2>
 
-        <div class="how-made__content">
-          <picture class="how-made__image-wrapper">
+        <div class="how-made__content" >
+          <picture class="how-made__image-wrapper" data-aos="fade-right">
             <source media="(min-width: 1168px)" srcset="
                   images/hlib/desktop/cow.jpg   1x,
                   images/hlib/desktop/cow@2.jpg 2x
@@ -324,22 +320,22 @@
           </picture>
 
           <div class="how-made__text-wrapper">
-            <p class="how-made__text">
+            <p class="how-made__text"  data-aos="fade-down">
               Ice is a place where you will become not only a little happier,
               but also healthier. Health is the main value for us, and we
               follow it when creating our handmade desserts.
             </p>
-            <p class="how-made__text">
+            <p class="how-made__text" data-aos="fade-left">
               We use traditional recipes and 100% natural ingredients. Our
               products are so natural that they can be given to children from
               the age of three years. Sweets lovers can expect 55 types of ice
               cream, 15 types of coffee and 23 milkshakes.
             </p>
-            <p class="how-made__text how-made__text--highlight">
+            <p class="how-made__text how-made__text--highlight" data-aos="fade-up">
               This is enough to choose ice cream and coffee for any mood!
             </p>
 
-            <button class="how-made__button button" data-open-modal="how-made">
+            <button class="how-made__button button" data-open-modal="how-made"  data-aos="fade-up">
               Read more
               <svg class="how-made__button-icon" width="12" height="12">
                 <use href="images/symbol-defs.svg#icon-short-arrow"></use>
@@ -350,35 +346,35 @@
 
         <ul class="how-made__stats">
           <li class="how-made__stat">
-            <div class="how-made__icon">
+            <div class="how-made__icon"  data-aos="fade-up">
               <svg width="36" height="36">
                 <use href="images/symbol-defs.svg#icon-cow"></use>
               </svg>
             </div>
-            <h4 class="how-made__stat-title">721</h4>
-            <p class="how-made__stat-text">
+            <h4 class="how-made__stat-title" data-aos="zoom-in-up">721</h4>
+            <p class="how-made__stat-text" data-aos="zoom-in-up" >
               Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
             </p>
           </li>
           <li class="how-made__stat">
-            <div class="how-made__icon">
+            <div class="how-made__icon"  data-aos="fade-up">
               <svg width="36" height="36">
                 <use href="images/symbol-defs.svg#icon-weight"></use>
               </svg>
             </div>
-            <h4 class="how-made__stat-title">16kg</h4>
-            <p class="how-made__stat-text">
+            <h4 class="how-made__stat-title" data-aos="zoom-in-up">16kg</h4>
+            <p class="how-made__stat-text"data-aos="zoom-in-up">
               Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
             </p>
           </li>
           <li class="how-made__stat">
-            <div class="how-made__icon">
+            <div class="how-made__icon"  data-aos="fade-up">
               <svg width="36" height="36">
                 <use href="images/symbol-defs.svg#icon-ice-cream"></use>
               </svg>
             </div>
-            <h4 class="how-made__stat-title">84</h4>
-            <p class="how-made__stat-text">
+            <h4 class="how-made__stat-title"data-aos="zoom-in-up">84</h4>
+            <p class="how-made__stat-text"data-aos="zoom-in-up">
               Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
             </p>
           </li>
@@ -425,57 +421,57 @@
         <div class="response__track">
           <ul class="response__list">
             <li class="response__item">
-              <picture>
+              <picture data-aos="fade-right">
                 <img class="response__user-img" src="images/hlib/desktop/woman.jpg" srcset="
                       images/hlib/desktop/woman.jpg   1x,
                       images/hlib/desktop/woman@2.jpg 2x
                     " alt="woman" />
               </picture>
-              <p class="response__text">
+              <p class="response__text" data-aos="fade-right">
                 I love visiting your cafe. You prepare the most delicious ice
                 cream in Los Angeles! In addition, you have beautiful serving,
                 cozy atmosphere and polite staff.
               </p>
-              <h3 class="response__user-name">Emily, Los Angeles</h3>
+              <h3 class="response__user-name" data-aos="fade-right">Emily, Los Angeles</h3>
             </li>
 
             <li class="response__item slider-hidden">
-              <picture>
+              <picture data-aos="fade-right">
                 <img class="response__user-img" src="images/hlib/desktop/man.jpg" srcset="
                       images/hlib/desktop/man.jpg   1x,
                       images/hlib/desktop/man@2.jpg 2x
                     " alt="man" />
               </picture>
-              <p class="response__text">
+              <p class="response__text" data-aos="fade-right">
                 Every day we come to you with friends after classes in
                 college. We love your ice cream and casual atmosphere!
               </p>
-              <h3 class="response__user-name">Bryan, New-York</h3>
+              <h3 class="response__user-name" data-aos="fade-right">Bryan, New-York</h3>
             </li>
 
             <li class="response__item slider-hidden">
-              <picture>
+              <picture data-aos="fade-right">
                 <img class="response__user-img" src="images/hlib/desktop/woman2.jpg" srcset="
                       images/hlib/desktop/woman2.jpg   1x,
                       images/hlib/desktop/woman2@2.jpg 2x
                     " alt="woman" />
               </picture>
-              <p class="response__text">
+              <p class="response__text" data-aos="fade-right">
                 Ice cream is my passion! I love your chocolate hazelnut ice
                 cream! And I really like the excellent service - always served
                 politely and quickly!
               </p>
-              <h3 class="response__user-name">Diana, Chicago</h3>
+              <h3 class="response__user-name" data-aos="fade-right">Diana, Chicago</h3>
             </li>
           </ul>
           <ul class="response__pagination">
-            <li role="presentation">
+            <li role="presentation" data-aos="fade-right">
               <button class="response__pagination-btn is-active" type="button" onclick="changeSlide(0)"></button>
             </li>
-            <li role="presentation">
+            <li role="presentation"data-aos="fade-up">
               <button class="response__pagination-btn" type="button" onclick="changeSlide(1)"></button>
             </li>
-            <li role="presentation">
+            <li role="presentation"data-aos="fade-left">
               <button class="response__pagination-btn" type="button" onclick="changeSlide(2)"></button>
             </li>
           </ul>
@@ -485,7 +481,7 @@
     <section class="cards">
       <div class="cards__container container">
         <ul class="cards__list">
-          <li class="cards__item">
+          <li class="cards__item" data-aos="zoom-out-right">
             <h2 class="cards__title">CAFE</h2>
             <h3 class="cards__subtitle">Chicago</h3>
             <div class="cards__wrapper">
@@ -508,7 +504,7 @@
             <a href="tel:61383766284" class="cards__phone">+61(0) 383 766 284</a>
             <a href="mailto:noreply@envato.com" class="cards__email">noreply@envato.com</a>
           </li>
-          <li class="cards__item">
+          <li class="cards__item" data-aos="zoom-in-up">
             <h2 class="cards__title">FOODTRUCK</h2>
             <h3 class="cards__subtitle">Los Angeles</h3>
             <div class="cards__wrapper">
@@ -531,7 +527,7 @@
             <a href="tel:61383766284" class="cards__phone">+61(0) 383 766 284</a>
             <a href="mailto:noreply@envato.com" class="cards__email">noreply@envato.com</a>
           </li>
-          <li class="cards__item">
+          <li class="cards__item" data-aos="zoom-in-left">
             <h2 class="cards__title">CAFE</h2>
             <h3 class="cards__subtitle">New York</h3>
             <div class="cards__wrapper">
@@ -557,7 +553,7 @@
         </ul>
 
         <div class="cards__actions">
-          <button type="button" class="cards__button cards__button--primary" data-open-modal="locations">
+          <button type="button" class="cards__button cards__button--primary" data-open-modal="locations" data-aos="fade-right">
             Our Locations
             <svg width="12" height="12" class="cards__button-icon">
               <use href="images/symbol-defs.svg#icon-short-arrow"></use>
@@ -565,7 +561,7 @@
           </button>
 
           <button type="button" class="cards__button cards__button--secondary button--hover"
-            data-open-modal="franchise">
+            data-open-modal="franchise" data-aos="fade-left">
             Franchise
             <svg width="12" height="12" class="cards__button-icon">
               <use href="images/symbol-defs.svg#icon-short-arrow"></use>
@@ -622,36 +618,36 @@
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__info">
-        <h3 class="footer__subtitle">homemade ice cream made</h3>
-        <h2 class="footer__title">with passion</h2>
+        <h3 class="footer__subtitle"  data-aos="fade-right">homemade ice cream made</h3>
+        <h2 class="footer__title" data-aos="fade-right" >with passion</h2>
       </div>
 
       <div class="footer__contacts">
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a href="#" class="footer__social-link">
-              <svg width="20" height="20" class="footer__social-icon">
+              <svg width="20" height="20" class="footer__social-icon"   data-aos="fade-up">
                 <use href="images/symbol-defs.svg#icon-github"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#" class="footer__social-link">
-              <svg width="20" height="20" class="footer__social-icon">
+              <svg width="20" height="20" class="footer__social-icon"  data-aos="fade-up">
                 <use href="images/symbol-defs.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#" class="footer__social-link">
-              <svg width="20" height="20" class="footer__social-icon">
+              <svg width="20" height="20" class="footer__social-icon"  data-aos="fade-up">
                 <use href="images/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
 
-        <p class="footer__text">
+        <p class="footer__text"  >
           Feel free to contact
           <a class="footer__contact" href="tel:+610383766284">+61 (0) 383 766 284</a>
         </p>
@@ -659,7 +655,7 @@
     </div>
 
     <div class="footer__bottom">
-      <p class="footer__copyright">
+      <p class="footer__copyright" >
         © 2022 - IceCream. All Rights Reserved.
       </p>
     </div>
@@ -667,6 +663,11 @@
 
   <script src="./js/modal.js"></script>
   <script src="./js/slider.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
 </body>
 
 </html>

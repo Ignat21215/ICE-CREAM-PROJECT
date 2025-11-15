@@ -10,7 +10,7 @@ label {
   nav {
     order: 1;
   }
-
+  
   label {
     display: block;
     position: absolute;
@@ -50,7 +50,6 @@ label {
 
   #toggle:checked ~ .header__nav {
     display: flex;
-    flex-direction: column;
   }
 
   .header__nav {
