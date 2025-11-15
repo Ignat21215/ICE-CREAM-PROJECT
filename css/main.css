@@ -832,7 +832,6 @@ body {
   .header {
     padding-top: 20px;
     padding-bottom: 14px;
-    position: relative;
   }
   .header__container {
     -webkit-box-pack: justify;
@@ -1108,6 +1107,10 @@ label {
   display: none;
 }
 
+.nav__wrapper {
+  display: none;
+}
+
 @media (max-width: 768px) {
   nav {
     -webkit-box-ordinal-group: 2;
@@ -1116,9 +1119,6 @@ label {
   }
   label {
     display: block;
-    position: absolute;
-    bottom: 25px;
-    right: 216px;
   }
   label {
     padding: 8px 4px;
@@ -1142,6 +1142,9 @@ label {
   label span::after {
     top: 8px;
     position: absolute;
+  }
+  .toggle__label {
+    display: none;
   }
   .header__nav {
     display: none;
@@ -1224,6 +1227,12 @@ label {
   }
 }
 @media (max-width: 480px) {
+  .toggle__label--first {
+    display: none;
+  }
+  .toggle__label {
+    display: block;
+  }
   .header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1234,14 +1243,14 @@ label {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .header__wrapper {
+  .nav__wrapper {
     position: absolute;
     z-index: 2;
     top: 0px;
     left: 0;
     width: 100%;
     background: rgb(132, 161, 120);
-    height: 600px;
+    height: 100vh;
     padding-top: 104px;
     padding-bottom: 88px;
   }
@@ -1254,12 +1263,12 @@ label {
   .header__wrapper {
     display: none;
   }
-  #toggle:checked ~ .header__wrapper {
+  .toggle:checked ~ .nav__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header__wrapper {
+  .nav__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1268,10 +1277,6 @@ label {
   }
   #toggle:checked ~ .hero__btn {
     z-index: 3;
-  }
-  label {
-    top: 31px;
-    right: 20px;
   }
 }
 .how-made {
@@ -2546,4 +2551,4 @@ label {
   .cards__button {
     margin-top: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}
