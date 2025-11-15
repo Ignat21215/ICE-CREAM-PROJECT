@@ -2341,11 +2341,8 @@ label {
 .cards__address:hover {
   text-decoration: underline;
 }
-.cards__wrapper {
-  border-bottom: 1px solid rgb(225, 225, 225);
-}
-.cards__time-wrapper {
-  padding: 32px 0;
+.cards__time-list {
+  padding: 32px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2357,8 +2354,14 @@ label {
   font-weight: 500;
   font-size: 16px;
   border-bottom: 1px solid rgb(225, 225, 225);
+  border-top: 1px solid rgb(225, 225, 225);
 }
-.cards__text-day {
+.cards__time-list::after {
+  content: "";
+  height: 1px;
+  width: 288px;
+}
+.cards__day {
   padding-bottom: 10px;
 }
 .cards__time {
@@ -2498,8 +2501,13 @@ label {
     font-size: 14px;
     padding: 40px 24px;
   }
-  .cards__email, .cards__phone, .cards__time-wrapper {
+  .cards__email, .cards__phone, .cards__time-list {
     font-size: 14px;
+  }
+  .cards__time-list::after {
+    content: "";
+    height: 1px;
+    width: 170px;
   }
   .cards__list {
     gap: 16px;
@@ -2519,8 +2527,13 @@ label {
     font-size: 12px;
     padding: 40px 32px;
   }
-  .cards__email, .cards__phone, .cards__time-wrapper {
+  .cards__email, .cards__phone, .cards__time-list {
     font-size: 12px;
+  }
+  .cards__time-list::after {
+    content: "";
+    height: 1px;
+    width: 216px;
   }
   .cards__list {
     gap: 16px;
@@ -2530,7 +2543,7 @@ label {
   .cards__address {
     margin-bottom: 24px;
   }
-  .cards__time-wrapper {
+  .cards__time-list {
     padding: 24px 0;
     gap: 12px;
   }
@@ -2551,4 +2564,4 @@ label {
   .cards__button {
     margin-top: 0;
   }
-}
+}/*# sourceMappingURL=main.css.map */
