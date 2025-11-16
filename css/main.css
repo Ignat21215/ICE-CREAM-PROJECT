@@ -1305,7 +1305,7 @@ label {
           transform: translateX(-50%);
   width: 490px;
   height: 490px;
-  background: rgb(248, 210, 78);
+  background: rgba(248, 210, 78, 0.7);
   border-radius: 50%;
   z-index: 1;
 }
@@ -1322,8 +1322,8 @@ label {
 .how-made__text-wrapper {
   max-width: 463px;
   font-family: "Montserrat", sans-serif;
-  line-height: 176%;
-  font-size: 14px;
+  line-height: 1.76;
+  font-size: 16px;
   gap: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1340,7 +1340,7 @@ label {
   margin-top: 54px;
   padding: 12px 34px;
   border-radius: 10px;
-  background-color: rgba(248, 210, 78, 0.7);
+  background-color: rgb(248, 210, 78);
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1393,7 +1393,7 @@ label {
   max-width: 368px;
   text-align: center;
   padding-top: 12px;
-  line-height: 176%;
+  line-height: 1.76;
 }
 .how-made__icon {
   background-color: rgb(248, 210, 78);
@@ -2171,16 +2171,20 @@ label {
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
-  padding: 43px 5vw;
+  padding: 43px 109px;
   max-width: 968px;
   max-height: 138px;
   border-radius: 24px;
   text-align: center;
   color: rgb(252, 252, 252);
+  line-height: 1.86;
+  font-weight: 500;
 }
 .response__user-name {
   color: rgb(19, 19, 19);
   text-align: center;
+  line-height: 1.86;
+  font-size: 16px;
 }
 .response__pagination {
   display: -webkit-box;
@@ -2333,7 +2337,6 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
   font-weight: 500;
   font-size: 16px;
   border-bottom: 1px solid rgb(225, 225, 225);
@@ -2345,22 +2348,31 @@ label {
   width: 288px;
 }
 .cards__day {
-  padding-bottom: 10px;
+  line-height: 1.86;
 }
 .cards__time {
   color: rgb(171, 171, 171);
+  line-height: 1.86;
+}
+.cards__time-item:first-of-type {
+  padding-bottom: 12px;
+}
+.cards__time-item--second {
+  padding-bottom: 32px;
 }
 .cards__phone {
   padding-top: 32px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   color: rgb(19, 19, 19);
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
 }
 .cards__email {
   color: rgb(19, 19, 19);
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
 }
 .cards__title {
   background-color: rgb(248, 210, 78);
@@ -2395,7 +2407,7 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
+  gap: 4px;
   font-weight: 600;
   text-align: center;
   -webkit-transition: background-color ease-in 0.3s;
@@ -2528,7 +2540,7 @@ label {
   }
   .cards__time-list {
     padding: 24px 0;
-    gap: 12px;
+    gap: 8px;
   }
   .cards__phone {
     padding-top: 24px;

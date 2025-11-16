@@ -67,17 +67,21 @@
 		display: flex;
 		align-items: center;
 		font-size: 16px;
-		padding: 43px 5vw;
+		padding: 43px 109px;
 		max-width: 968px;
 		max-height: 138px;
 		border-radius: 24px;
 		text-align: center;
 		color: $light-txt-color;
+		line-height: 1.86;
+		font-weight: 500;
 	}
 
 	&__user-name {
 		color: $dark-txt-color;
 		text-align: center;
+		line-height: 1.86;
+		font-size: 16px;
 	}
 
 	&__pagination {
