@@ -811,7 +811,6 @@ body {
   .header {
     padding-top: 20px;
     padding-bottom: 14px;
-    position: relative;
   }
   .header__container {
     -webkit-box-pack: justify;
@@ -891,12 +890,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.hero__faces-img {
-  position: absolute;
-  top: 14px;
-  right: 92px;
-  height: 560px;
 }
 .hero__title {
   color: rgb(252, 252, 252);
@@ -1095,6 +1088,10 @@ label {
   display: none;
 }
 
+.nav__wrapper {
+  display: none;
+}
+
 @media (max-width: 768px) {
   nav {
     -webkit-box-ordinal-group: 2;
@@ -1103,9 +1100,6 @@ label {
   }
   label {
     display: block;
-    position: absolute;
-    bottom: 25px;
-    right: 216px;
   }
   label {
     padding: 8px 4px;
@@ -1130,6 +1124,9 @@ label {
     top: 8px;
     position: absolute;
   }
+  .toggle__label {
+    display: none;
+  }
   .header__nav {
     display: none;
   }
@@ -1137,10 +1134,6 @@ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .header__nav {
     position: absolute;
@@ -1215,6 +1208,12 @@ label {
   }
 }
 @media (max-width: 480px) {
+  .toggle__label--first {
+    display: none;
+  }
+  .toggle__label {
+    display: block;
+  }
   .header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1225,14 +1224,14 @@ label {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .header__wrapper {
+  .nav__wrapper {
     position: absolute;
     z-index: 2;
     top: 0px;
     left: 0;
     width: 100%;
     background: rgb(132, 161, 120);
-    height: 600px;
+    height: 100vh;
     padding-top: 104px;
     padding-bottom: 88px;
   }
@@ -1245,12 +1244,12 @@ label {
   .header__wrapper {
     display: none;
   }
-  #toggle:checked ~ .header__wrapper {
+  .toggle:checked ~ .nav__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header__wrapper {
+  .nav__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1259,10 +1258,6 @@ label {
   }
   #toggle:checked ~ .hero__btn {
     z-index: 3;
-  }
-  label {
-    top: 31px;
-    right: 20px;
   }
 }
 .how-made {
@@ -1577,12 +1572,20 @@ label {
     max-width: 230px;
   }
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/ice-creams-bg@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .products {
   background-image: url(../images/ice-creams-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 60px;
+  padding-top: 58px;
   padding-bottom: 60px;
 }
 .products__title {
@@ -1633,13 +1636,10 @@ label {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.products__item-container {
+.products__item-wrapper {
   position: absolute;
   top: -183px;
   left: 34px;
-}
-.products__item-wrapper {
-  position: relative;
   background-color: rgb(217, 217, 217), rgba(156, 190, 143, 0.7);
   -webkit-box-shadow: 0px 8px 30px 0 rgba(10, 136, 23, 0.25);
           box-shadow: 0px 8px 30px 0 rgba(10, 136, 23, 0.25);
@@ -1661,7 +1661,6 @@ label {
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 66px;
-  line-height: 37px;
 }
 .products__img {
   position: absolute;
@@ -1670,7 +1669,7 @@ label {
 }
 .products__desc {
   font-size: 16px;
-  line-height: 28.4px;
+  line-height: 1.76;
   color: rgb(19, 19, 19);
   width: 246px;
   margin: 0 auto;
@@ -1914,6 +1913,7 @@ label {
   .products__title {
     font-size: 34px;
     padding-bottom: 200px;
+    background-image: url(../images/ice-creams-bg-tablet.png);
   }
   .products__subtitle {
     font-size: 22px;
@@ -1929,6 +1929,9 @@ label {
   .products__item-wrapper {
     width: 200px;
     height: 200px;
+    position: absolute;
+    top: -120px;
+    left: 11px;
   }
   .products__item-wrapper--yellow {
     -webkit-box-shadow: 0px 5px 19px 0 rgba(153, 114, 23, 0.25);
@@ -1942,11 +1945,6 @@ label {
     font-size: 22px;
     padding-bottom: 40px;
   }
-  .products__item-container {
-    position: absolute;
-    top: -120px;
-    left: 11px;
-  }
   .products__desc {
     font-size: 14px;
     width: 172px;
@@ -1958,64 +1956,14 @@ label {
     bottom: 12px;
   }
 }
+@media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/ice-creams-bg-tablet@2x.png);
+  }
+}
 @media (max-width: 480px) {
-  .products__title {
-    font-size: 30px;
-    padding-bottom: 150px;
-  }
-  .products__subtitle {
-    font-size: 18px;
-  }
-  .products__list {
-    gap: 168px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .products__item {
-    padding-inline: 60px;
-    padding-top: 123px;
-    padding-bottom: 16px;
-    width: 320px;
-    margin: 0 auto;
-  }
-  .products__item-wrapper {
-    width: 200px;
-    height: 200px;
-  }
-  .products__item-wrapper--yellow {
-    -webkit-box-shadow: 0px 5px 20px 0 rgba(153, 114, 23, 0.25);
-            box-shadow: 0px 5px 20px 0 rgba(153, 114, 23, 0.25);
-  }
-  .products__item-wrapper--brown {
-    -webkit-box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.25);
-  }
-  .products__item-title {
-    font-size: 20px;
-    max-width: 155px;
-    margin: 0 auto;
-  }
-  .products__item-container {
-    position: absolute;
-    top: -105px;
-    left: 60px;
-  }
-  .products__desc {
-    font-size: 14px;
-    padding-bottom: 61px;
-    width: 200px;
-    margin: 0;
-  }
-  .products__desc--first {
-    padding-bottom: 107px;
-  }
-  .products__link {
-    display: inline-block;
-  }
-  .products__img {
-    bottom: 12px;
+  .products {
+    background-image: url(../images/ice-creams-bg-small.png);
   }
   .products__modal {
     padding: 20px;
@@ -2048,6 +1996,83 @@ label {
   }
   .products__modal-ingredients__item .modal__desc {
     font-size: 14px;
+  }
+  .products__title {
+    font-size: 30px;
+    padding-bottom: 150px;
+  }
+  .products__subtitle {
+    font-size: 18px;
+  }
+  .products__list {
+    gap: 168px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products__item {
+    padding-inline: 60px;
+    padding-top: 123px;
+    padding-bottom: 16px;
+    margin: 0 auto;
+  }
+  .products__item-wrapper {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -105px;
+    left: 60px;
+  }
+  .products__item-wrapper--yellow {
+    -webkit-box-shadow: 0px 5px 20px 0 rgba(153, 114, 23, 0.25);
+            box-shadow: 0px 5px 20px 0 rgba(153, 114, 23, 0.25);
+  }
+  .products__item-wrapper--brown {
+    -webkit-box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.25);
+  }
+  .products__item-title {
+    font-size: 20px;
+    max-width: 155px;
+    margin: 0 auto;
+  }
+  .products__desc {
+    font-size: 14px;
+    padding-bottom: 61px;
+    width: 200px;
+    margin: 0;
+  }
+  .products__desc--first {
+    padding-bottom: 107px;
+  }
+  .products__link {
+    display: inline-block;
+  }
+  .products__img {
+    bottom: 12px;
+  }
+}
+@media (max-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) and (min-resolution: 192dpi), (max-width: 480px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/ice-creams-bg-small@2x.png);
+  }
+}
+@media (max-width: 320px) {
+  .products {
+    padding-bottom: 148px;
+  }
+  .products__item {
+    padding-inline: 40px;
+  }
+  .products__item-wrapper {
+    left: 40px;
+  }
+  .products__desc {
+    padding-bottom: 101px;
   }
 }
 .response {
@@ -2299,11 +2324,8 @@ label {
 .cards__address:hover {
   text-decoration: underline;
 }
-.cards__wrapper {
-  border-bottom: 1px solid rgb(225, 225, 225);
-}
-.cards__time-wrapper {
-  padding: 32px 0;
+.cards__time-list {
+  padding: 32px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2315,8 +2337,14 @@ label {
   font-weight: 500;
   font-size: 16px;
   border-bottom: 1px solid rgb(225, 225, 225);
+  border-top: 1px solid rgb(225, 225, 225);
 }
-.cards__text-day {
+.cards__time-list::after {
+  content: "";
+  height: 1px;
+  width: 288px;
+}
+.cards__day {
   padding-bottom: 10px;
 }
 .cards__time {
@@ -2456,8 +2484,13 @@ label {
     font-size: 14px;
     padding: 40px 24px;
   }
-  .cards__email, .cards__phone, .cards__time-wrapper {
+  .cards__email, .cards__phone, .cards__time-list {
     font-size: 14px;
+  }
+  .cards__time-list::after {
+    content: "";
+    height: 1px;
+    width: 170px;
   }
   .cards__list {
     gap: 16px;
@@ -2477,8 +2510,13 @@ label {
     font-size: 12px;
     padding: 40px 32px;
   }
-  .cards__email, .cards__phone, .cards__time-wrapper {
+  .cards__email, .cards__phone, .cards__time-list {
     font-size: 12px;
+  }
+  .cards__time-list::after {
+    content: "";
+    height: 1px;
+    width: 216px;
   }
   .cards__list {
     gap: 16px;
@@ -2488,7 +2526,7 @@ label {
   .cards__address {
     margin-bottom: 24px;
   }
-  .cards__time-wrapper {
+  .cards__time-list {
     padding: 24px 0;
     gap: 12px;
   }

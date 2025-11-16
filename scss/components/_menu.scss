@@ -6,6 +6,10 @@ label {
   display: none;
 }
 
+.nav__wrapper {
+  display: none;
+}
+
 @media (max-width: 768px) {
   nav {
     order: 1;
@@ -13,9 +17,6 @@ label {
 
   label {
     display: block;
-    position: absolute;
-    bottom: 25px;
-    right: 216px;
   }
 
   label {
@@ -44,13 +45,16 @@ label {
     position: absolute;
   }
 
+  .toggle__label {
+    display: none;
+  }
+
   .header__nav {
     display: none;
   }
 
   #toggle:checked ~ .header__nav {
     display: flex;
-    flex-direction: column;
   }
 
   .header__nav {
@@ -123,6 +127,15 @@ label {
 }
 
 @media (max-width: 480px) {
+
+  .toggle__label--first {
+    display: none;
+  }
+
+  .toggle__label {
+    display: block;
+  }
+
   .header__nav {
     display: flex;
     position: static;
@@ -132,14 +145,14 @@ label {
     padding-bottom: 0;
   }
 
-  .header__wrapper {
+  .nav__wrapper {
     position: absolute;
     z-index: 2;
     top: 0px;
     left: 0;
     width: 100%;
     background: $bg-color;
-    height: 600px;
+    height: 100vh;
     padding-top: 104px;
     padding-bottom: 88px;
   }
@@ -158,21 +171,16 @@ label {
     display: none;
   }
 
-  #toggle:checked ~ .header__wrapper {
+  .toggle:checked ~ .nav__wrapper {
     display: flex;
   }
 
-  .header__wrapper {
+  .nav__wrapper {
     flex-direction: column-reverse;
     gap: 114px;
   }
 
   #toggle:checked ~ .hero__btn {
     z-index: 3;
-  }
-
-  label {
-    top: 31px;
-    right: 20px;
   }
 }
