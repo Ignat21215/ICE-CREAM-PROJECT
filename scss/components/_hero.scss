@@ -36,6 +36,7 @@
     width: 367px;
     font-family: $second-family;
     padding-bottom: 28px;
+    line-height: 48px;
   }
 
   &__btn {
@@ -49,6 +50,7 @@
     font-weight: 600;
     transition: border ease-in 0.3s;
     text-align: center;
+    line-height: 18px;
   }
 
   &__link {
@@ -58,6 +60,7 @@
     font-weight: 600;
     padding: 12px 21px 11px 22px;
     margin-left: 12px;
+    line-height: 17px;
 
     &:hover {
       color: $btn-hover;
@@ -71,8 +74,9 @@
     width: 200px;
     font-size: 14px;
     font-family: $fourth-family;
-    line-height: 1.4;
+    line-height: 20px;
     padding-bottom: 24px;
+    letter-spacing: 0;
   }
 
   &__wrapper {
@@ -133,6 +137,11 @@
       font-size: 26px;
       width: 247px;
       padding-bottom: 24px;
+      line-height: 32px;
+
+      &-span {
+        font-size: 34px;
+      }
     }
     &__desc {
       font-size: 12px;

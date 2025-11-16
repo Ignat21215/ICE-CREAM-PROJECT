@@ -284,39 +284,34 @@ body {
   border: 1px solid rgb(132, 161, 120);
   border-radius: 10px;
   background-color: rgba(248, 210, 78, 0.1);
-  margin: 0 auto;
+  line-height: 20px;
 }
 .modal__input::-webkit-input-placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   letter-spacing: 0;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
 .modal__input::-moz-placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   letter-spacing: 0;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
 .modal__input:-ms-input-placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   letter-spacing: 0;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
 .modal__input::-ms-input-placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   letter-spacing: 0;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
 .modal__input::placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   letter-spacing: 0;
   color: rgb(19, 19, 19);
   font-weight: 400;
@@ -397,34 +392,30 @@ body {
   border-radius: 10px;
   background-color: rgba(248, 210, 78, 0.1);
   margin: 0 auto;
+  line-height: 20px;
 }
 .modal__input::-webkit-input-placeholder, .modal__textarea::-webkit-input-placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
 .modal__input::-moz-placeholder, .modal__textarea::-moz-placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
 .modal__input:-ms-input-placeholder, .modal__textarea:-ms-input-placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
 .modal__input::-ms-input-placeholder, .modal__textarea::-ms-input-placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
 .modal__input::placeholder, .modal__textarea::placeholder {
   font-size: 14px;
-  line-height: 1.4em;
   color: rgb(19, 19, 19);
   font-weight: 400;
 }
@@ -445,24 +436,28 @@ body {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0;
+  line-height: 18px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .modal__close-btn__icon {
     width: 20px;
     height: 20px;
   }
   .modal__title {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .modal__button {
     font-size: 12px;
+    line-height: 18px;
   }
   .modal__input, .modal__textarea {
     padding-inline: 12px;
     padding-block: 8px;
     width: 224px;
     height: 32px;
+    line-height: 16px;
   }
   .modal__textarea {
     height: 64px;
@@ -489,24 +484,7 @@ body {
   }
   .modal__desc {
     font-size: 14px;
-  }
-}
-@media (max-width: 480px) {
-  .modal {
-    max-width: 280px;
-    padding: 28px;
-  }
-  .modal__button {
-    font-size: 12px;
-  }
-  .modal__input {
-    max-width: 224px;
-  }
-  .modal__textarea {
-    max-width: 224px;
-  }
-  .modal__title {
-    font-size: 16px;
+    line-height: 20px;
   }
 }
 .button {
@@ -687,7 +665,7 @@ body {
 }
 .header {
   padding-top: 8px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   background-color: rgb(132, 161, 120);
 }
 .header__container {
@@ -794,6 +772,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   white-space: nowrap;
+  line-height: 20px;
 }
 .buy__item-title--padding {
   padding-left: 3px;
@@ -864,7 +843,7 @@ body {
     padding: 0;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .buy {
     padding: 28px;
   }
@@ -927,6 +906,7 @@ body {
   width: 367px;
   font-family: "Seymour One", sans-serif;
   padding-bottom: 28px;
+  line-height: 48px;
 }
 .hero__btn {
   color: rgb(19, 19, 19);
@@ -940,6 +920,7 @@ body {
   -webkit-transition: border ease-in 0.3s;
   transition: border ease-in 0.3s;
   text-align: center;
+  line-height: 18px;
 }
 .hero__link {
   color: rgb(248, 210, 78);
@@ -948,6 +929,7 @@ body {
   font-weight: 600;
   padding: 12px 21px 11px 22px;
   margin-left: 12px;
+  line-height: 17px;
 }
 .hero__link:hover {
   color: rgb(10, 136, 23);
@@ -959,8 +941,9 @@ body {
   width: 200px;
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
-  line-height: 1.4;
+  line-height: 20px;
   padding-bottom: 24px;
+  letter-spacing: 0;
 }
 .hero__wrapper {
   display: -webkit-box;
@@ -1021,6 +1004,10 @@ body {
     font-size: 26px;
     width: 247px;
     padding-bottom: 24px;
+    line-height: 32px;
+  }
+  .hero__title-span {
+    font-size: 34px;
   }
   .hero__desc {
     font-size: 12px;
@@ -1608,6 +1595,7 @@ label {
   padding-top: 12px;
   padding-bottom: 303px;
   text-align: center;
+  line-height: 45px;
 }
 .products__subtitle {
   color: rgb(19, 19, 19);
@@ -1615,6 +1603,7 @@ label {
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
+  line-height: 37px;
 }
 .products__list {
   display: -webkit-box;
@@ -1672,6 +1661,7 @@ label {
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 66px;
+  line-height: 37px;
 }
 .products__img {
   position: absolute;
@@ -1680,7 +1670,7 @@ label {
 }
 .products__desc {
   font-size: 16px;
-  line-height: 1.76em;
+  line-height: 28.4px;
   color: rgb(19, 19, 19);
   width: 246px;
   margin: 0 auto;

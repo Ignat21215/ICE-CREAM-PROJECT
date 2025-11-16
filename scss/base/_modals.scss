@@ -70,11 +70,10 @@
 		border: 1px solid $bg-color;
 		border-radius: 10px;
 		background-color: $input-bg;
-		margin: 0 auto;
+		line-height: 20px;
 
 		&::placeholder {
 			font-size: 14px;
-			line-height: 1.4em;
 			letter-spacing: 0;
 			color: $dark-txt-color;
 			font-weight: 400;
@@ -147,12 +146,12 @@
 		border-radius: 10px;
 		background-color: $input-bg;
 		margin: 0 auto;
+		line-height: 20px;
 	}
 
 	&__input::placeholder,
 	&__textarea::placeholder {
 		font-size: 14px;
-		line-height: 1.4em;
 		color: $dark-txt-color;
 		font-weight: 400;
 	}
@@ -173,20 +172,23 @@
 		font-size: 14px;
 		font-weight: 600;
 		letter-spacing: 0;
+		line-height: 18px;
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
 	.modal {
 		&__close-btn__icon {
 			width: 20px;
 			height: 20px;
 		}
 		&__title {
-			font-size: 20px;
+			font-size: 16px;
+			line-height: 24px;
 		}
 		&__button {
 			font-size: 12px;
+			line-height: 18px;
 		}
 		&__input,
 		&__textarea {
@@ -194,6 +196,7 @@
 			padding-block: 8px;
 			width: 224px;
 			height: 32px;
+			line-height: 16px;
 		}
 		&__textarea {
 			height: 64px;
@@ -209,26 +212,7 @@
 		}
 		&__desc {
 			font-size: 14px;
-		}
-	}
-}
-@media (max-width: 480px) {
-	.modal {
-		max-width: 280px;
-		padding: 28px;
-		&__button {
-			font-size: 12px;
-		}
-
-		&__input {
-			max-width: 224px;
-		}
-
-		&__textarea {
-			max-width: 224px;
-		}
-		&__title {
-			font-size: 16px;
+			line-height: 20px;
 		}
 	}
 }
