@@ -93,6 +93,9 @@ label {
   input[type="checkbox"]:checked ~ label span {
     transform: rotate(-45deg);
   }
+  input[type="checkbox"]:checked ~ body {
+    overflow: hidden;
+  }
   input[type="checkbox"]:checked ~ label span::before {
     top: 0;
     transform: rotate(0);

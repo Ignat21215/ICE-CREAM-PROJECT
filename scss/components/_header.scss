@@ -83,6 +83,10 @@
     justify-content: center;
   }
 
+  &__btn {
+    margin-top: 16px;
+  }
+
   &__item {
     padding: 95px 13px 20px 13px;
     border: 2px solid $buy-green-border;

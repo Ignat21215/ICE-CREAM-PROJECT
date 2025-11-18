@@ -22,7 +22,7 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" data-aos="fade-right">
         <picture>
           <source srcset="./images/logo.png, ./images/logo@2x.png" media="(min-width: 1200px)" />
           <source srcset="./images/logo-tablet.png, ./images/logo-tablet@2x.png" media="(min-width: 481px)" />
@@ -39,20 +39,20 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="index.html" class="header__link">Home</a>
+              <a href="index.html" class="header__link" data-aos="fade-up">Home</a>
             </li>
             <li class="header__item">
-              <a href="#made" class="header__link">How it’s made?</a>
+              <a href="#made" class="header__link" data-aos="fade-up">How it’s made?</a>
             </li>
             <li class="header__item">
-              <a href="#products" class="header__link">Our products</a>
+              <a href="#products" class="header__link" data-aos="fade-up">Our products</a>
             </li>
             <li class="header__item">
-              <a href="#contact" class="header__link">Contact</a>
+              <a href="#contact" class="header__link" data-aos="fade-up">Contact</a>
             </li>
           </ul>
         </nav>
-        <button class="header__btn button" type="button" data-open-modal="buy">
+        <button class="header__btn button" type="button" data-open-modal="buy" data-aos="fade-left">
           Buy now
           <svg class="header__btn-icon">
             <use href="./images/symbol-defs.svg#icon-short-arrow"></use>
@@ -88,7 +88,7 @@
         </button>
       </div>
 
-      <div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="buy">
+      <div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="buy" data-aos="fade-right">
         <div class="modal buy">
           <button class="modal__close-btn" data-close-modal>
             <svg class="modal__close-btn__icon">
@@ -132,8 +132,8 @@
             <input type="text" class="modal__input" placeholder="Name">
             <input type="tel" class="modal__input" placeholder="Phone">
             <textarea class="modal__textarea" placeholder="Comment"></textarea>
+            <button class="modal__button button buy__btn" type="button">Submit</button>
           </form>
-          <button class="modal__button button" type="button">Submit</button>
         </div>
       </div>
     </div>
@@ -143,12 +143,12 @@
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__left-wrapper">
-          <h1 class="hero__title">ice cream made with <span class="hero__title-span">passion</span></h1>
-          <button class="hero__btn button--hover" type="button" data-open-modal="buy">
+          <h1 class="hero__title" data-aos="fade-up">ice cream made with <span class="hero__title-span">passion</span></h1>
+          <button class="hero__btn button--hover" data-aos="fade-up" type="button" data-open-modal="buy">
             Products
           </button>
-          <a href="#made" class="hero__link">How it’s made?</a>
-          <div class="hero__wrapper">
+          <a href="#made" class="hero__link" data-aos="fade-up">How it’s made?</a>
+          <div class="hero__wrapper" data-aos="fade-right">
             <picture>
               <source srcset="./images/plate-of-ice-cream.png, ./images/plate-of-ice-cream@2x.png"
                 media="(min-width: 1200px)" />
@@ -178,7 +178,7 @@
             media="(max-width: 320px)">
           <img src="./images/ice-creams-faces.png" alt="ice-cream" class="hero__faces-img">
         </picture>
-        <ul class="hero__list">
+        <ul class="hero__list" data-aos="fade-left">
           <li class="hero__item">
             <h3 class="hero__item-title">16</h3>
             <p class="hero__item-desc">cafes</p>
@@ -193,10 +193,10 @@
 
     <section class="products" id="products">
       <div class="container">
-        <p class="products__subtitle">100% natural</p>
-        <h2 class="products__title">products</h2>
+        <p class="products__subtitle" data-aos="fade-up">100% natural</p>
+        <h2 class="products__title" data-aos="fade-up">products</h2>
         <ul class="products__list">
-          <li class="products__item">
+          <li class="products__item" data-aos="fade-right">
             <div class="products__item-wrapper">
               <picture>
                 <source srcset="./images/ice-cream-hand.png, ./images/ice-cream-hand@2x.png" />
@@ -215,7 +215,7 @@
             </a>
           </li>
 
-          <li class="products__item products__item--yellow">
+          <li class="products__item products__item--yellow" data-aos="fade-up">
             <div class="products__item-wrapper products__item-wrapper--yellow">
               <picture>
                 <source srcset="./images/cocktail.png, ./images/cocktail@2x.png" />
@@ -236,7 +236,7 @@
             </a>
           </li>
 
-          <li class="products__item products__item--brown">
+          <li class="products__item products__item--brown" data-aos="fade-left">
             <div class="products__item-wrapper products__item-wrapper--brown">
               <picture>
                 <source srcset="./images/milkshake.png, ./images/milkshake@2x.png" />
@@ -648,8 +648,8 @@
                 <input type="tel" class="modal__input" placeholder="Phone" />
                 <input type="email" class="modal__input" placeholder="Email" />
                 <textarea class="modal__textarea" placeholder="Comment"></textarea>
+                <button class="modal__button button" type="button">Submit</button>
               </form>
-              <button class="modal__button button" type="button">Submit</button>
             </div>
           </div>
         </div>
