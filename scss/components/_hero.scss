@@ -13,11 +13,9 @@
   background: url(../images/dots.png) bottom;
   background-repeat: no-repeat;
   background-color: $bg-color;
-  padding-bottom: 65px;
 
   &__container {
     display: flex;
-    justify-content: space-between;
   }
 
   &__title {
@@ -79,6 +77,7 @@
   &__txt-wrapper {
     padding-top: 67px;
     padding-bottom: 38px;
+    margin-right: 195px;
   }
 
   &__icon {

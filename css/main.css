@@ -665,7 +665,7 @@ body {
 }
 .header {
   padding-top: 8px;
-  padding-bottom: 45px;
+  padding-bottom: 31px;
   background-color: rgb(132, 161, 120);
 }
 .header__container {
@@ -883,15 +883,11 @@ body {
   background: url(../images/dots.png) bottom;
   background-repeat: no-repeat;
   background-color: rgb(132, 161, 120);
-  padding-bottom: 65px;
 }
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .hero__title {
   color: rgb(252, 252, 252);
@@ -949,6 +945,7 @@ body {
 .hero__txt-wrapper {
   padding-top: 67px;
   padding-bottom: 38px;
+  margin-right: 195px;
 }
 .hero__icon {
   fill: rgb(252, 252, 252);
