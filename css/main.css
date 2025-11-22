@@ -1,3 +1,11 @@
+.how-made__stat-title, .footer__title {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgb(252, 252, 252);
+  font-size: 58px;
+  font-weight: 700;
+}
+
 html,
 body,
 div,
@@ -488,14 +496,8 @@ body {
   }
 }
 .button {
-  background-color: rgb(248, 210, 78);
-  border-radius: 10px;
-  border: 0;
-  color: rgb(19, 19, 19);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 18px;
-  letter-spacing: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .button:hover {
   background-color: rgb(10, 136, 23);
@@ -527,11 +529,6 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   padding-bottom: 14px;
-}
-.footer__title {
-  font-size: 58px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 .footer__container {
   display: -webkit-box;
@@ -702,24 +699,22 @@ body {
   color: rgb(248, 210, 78);
 }
 .header__btn {
-  padding: 12px 35px 12px 36px;
+  background-color: rgb(248, 210, 78);
+  padding: 12px 36px;
+  border-radius: 10px;
+  border: 0;
+  color: rgb(19, 19, 19);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 4px;
-  border-radius: 10px;
-  background-color: rgb(248, 210, 78);
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: 600;
-  -webkit-transition: background-color ease-in 0.3s;
-  transition: background-color ease-in 0.3s;
-  text-align: center;
+  line-height: 18px;
 }
 .header__btn-icon {
   width: 12px;
@@ -941,6 +936,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
+  padding-bottom: 65px;
+}
+.hero__faces-img {
+  max-width: 456px;
 }
 .hero__txt-wrapper {
   padding-top: 67px;
@@ -984,7 +983,6 @@ body {
 
 @media (max-width: 768px) {
   .hero {
-    padding-bottom: 12px;
     background: url(../images/dots-tablet.png) bottom;
     background-repeat: no-repeat;
     background-color: rgb(132, 161, 120);
@@ -1001,10 +999,20 @@ body {
   .hero__title-span {
     font-size: 34px;
   }
+  .hero__wrapper {
+    gap: 32px;
+    padding-bottom: 12px;
+  }
+  .hero__txt-wrapper {
+    margin-right: 27px;
+    padding-top: 27px;
+    padding-bottom: 12px;
+  }
   .hero__desc {
     font-size: 12px;
     padding-bottom: 29px;
     width: 165px;
+    line-height: 17px;
   }
   .hero__link {
     font-size: 12px;
@@ -1026,10 +1034,6 @@ body {
     padding: 11px 26px;
     font-size: 14px;
   }
-  .hero__faces-img {
-    top: 6px;
-    height: 329px;
-  }
 }
 @media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
   .hero {
@@ -1042,11 +1046,6 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(132, 161, 120);
     padding-bottom: 150px;
-  }
-  .hero__faces-img {
-    right: 20px;
-    top: 50px;
-    height: 267px;
   }
   .hero__title {
     padding-bottom: 32px;
@@ -1068,11 +1067,6 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(132, 161, 120);
     padding-bottom: 236px;
-  }
-  .hero__faces-img {
-    right: 60px;
-    top: 236px;
-    height: 217px;
   }
 }
 @media (max-width: 320px) and (min-device-pixel-ratio: 2), (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 320px) and (min-resolution: 192dpi), (max-width: 320px) and (min-resolution: 2dppx) {
@@ -1340,21 +1334,22 @@ label {
 }
 .how-made__button {
   margin-top: 54px;
+  background-color: rgb(248, 210, 78);
   padding: 12px 34px;
   border-radius: 10px;
-  background-color: rgb(248, 210, 78);
-  border: none;
+  border: 0;
+  color: rgb(19, 19, 19);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
-  font-weight: 600;
-  -webkit-transition: background-color ease-in 0.3s;
-  transition: background-color ease-in 0.3s;
-  text-align: center;
+  line-height: 18px;
 }
 .how-made__button:hover, .how-made__button:focus {
   background-color: rgb(10, 136, 23);
@@ -1382,11 +1377,8 @@ label {
           align-items: center;
 }
 .how-made__stat-title {
-  font-size: 58px;
-  font-weight: 700;
+  text-transform: none;
   padding-top: 40px;
-  color: rgb(252, 252, 252);
-  font-family: "Montserrat", sans-serif;
 }
 .how-made__stat-text {
   font-size: 16px;
@@ -2472,19 +2464,22 @@ label {
 }
 
 .cards__button {
+  background-color: rgb(248, 210, 78);
   padding: 12px 40px;
   border-radius: 10px;
+  border: 0;
+  color: rgb(19, 19, 19);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 4px;
-  font-weight: 600;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  border: none;
+  line-height: 18px;
 }
 .cards__button--primary {
   background-color: rgb(248, 210, 78);
@@ -2495,9 +2490,25 @@ label {
   fill: #fff;
 }
 .cards__button--secondary {
+  background-color: rgb(248, 210, 78);
+  padding: 12px 55px;
+  border-radius: 10px;
+  border: 0;
+  color: rgb(19, 19, 19);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 18px;
   background-color: transparent;
-  padding: 12px 54px;
   border: 2px solid rgb(248, 210, 78);
+  color: rgb(0, 0, 0);
 }
 .cards__button--secondary:hover, .cards__button--secondary:focus {
   border-color: rgb(10, 136, 23);
@@ -2578,4 +2589,4 @@ label {
             flex-direction: column;
     padding-top: 1040px !important;
   }
-}/*# sourceMappingURL=main.css.map */
+}

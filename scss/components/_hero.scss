@@ -1,5 +1,6 @@
 @use "../utils/placeholders" as *;
 @use "../utils/variables" as *;
+@use '../utils/mixins' as *;
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -72,6 +73,11 @@
   &__wrapper {
     display: flex;
     gap: 16px;
+    padding-bottom: 65px;
+  }
+
+  &__faces-img {
+    max-width: 456px;
   }
 
   &__txt-wrapper {
@@ -116,7 +122,6 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-bottom: 12px;
     background: url(../images/dots-tablet.png) bottom;
     background-repeat: no-repeat;
     background-color: $bg-color;
@@ -134,10 +139,20 @@
         font-size: 34px;
       }
     }
+    &__wrapper {
+      gap: 32px;
+      padding-bottom: 12px;
+    }
+    &__txt-wrapper {
+      margin-right: 27px;
+      padding-top: 27px;
+      padding-bottom: 12px;
+    }
     &__desc {
       font-size: 12px;
       padding-bottom: 29px;
       width: 165px;
+      line-height: 17px;
     }
     &__link {
       font-size: 12px;
@@ -159,10 +174,6 @@
       padding: 11px 26px;
       font-size: 14px;
     }
-    &__faces-img {
-      top: 6px;
-      height: 329px;
-    }
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -180,12 +191,6 @@
     background-repeat: no-repeat;
     background-color: $bg-color;
     padding-bottom: 150px;
-
-    &__faces-img {
-      right: 20px;
-      top: 50px;
-      height: 267px;
-    }
 
     &__title {
       padding-bottom: 32px;
@@ -216,12 +221,6 @@
     background-repeat: no-repeat;
     background-color: $bg-color;
     padding-bottom: 236px;
-
-    &__faces-img {
-      right: 60px;
-      top: 236px;
-      height: 217px;
-    }
   }
 
   @media (min-device-pixel-ratio: 2),

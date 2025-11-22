@@ -2,15 +2,8 @@
 @use '../utils/variables' as *;
 
 .button {
-  background-color: $accent-color;
-  border-radius: 10px;
-  border: 0;
-  color: $dark-txt-color;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 18px;
-  letter-spacing: 0;
-
+  transition: 0.3s;
+  
   &:hover {
     background-color: $btn-hover;
   }

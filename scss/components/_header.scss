@@ -1,5 +1,6 @@
 @use "../utils/placeholders" as *;
 @use "../utils/variables" as *;
+@use '../utils/mixins' as *;
 
 .header {
   padding-top: 8px;
@@ -37,19 +38,7 @@
   }
 
   &__btn {
-    padding: 12px 35px 12px 36px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    border-radius: 10px;
-    background-color: $accent-color;
-    border: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-weight: 600;
-    transition: background-color ease-in 0.3s;
-    text-align: center;
+    @include button(12px 36px);
 
     &-icon {
       width: 12px;

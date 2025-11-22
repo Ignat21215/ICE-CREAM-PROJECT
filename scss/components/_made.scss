@@ -1,5 +1,6 @@
 @use '../utils/placeholders' as *;
 @use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 .how-made {
 	background-color: $bg-color;
@@ -74,16 +75,7 @@
 
 	&__button {
 		margin-top: 54px;
-		padding: 12px 34px;
-		border-radius: 10px;
-		background-color: $accent-color;
-		border: none;
-		display: flex;
-		align-items: center;
-		gap: 5px;
-		font-weight: 600;
-		transition: background-color ease-in 0.3s;
-		text-align: center;
+		@include button(12px 34px);
 
 		&:hover,
 		&:focus {
@@ -105,11 +97,9 @@
 	}
 
 	&__stat-title {
-		font-size: 58px;
-		font-weight: 700;
+		@extend %title;
+		text-transform: none;
 		padding-top: 40px;
-		color: $light-txt-color;
-		font-family: $font-family;
 	}
 
 	&__stat-text {

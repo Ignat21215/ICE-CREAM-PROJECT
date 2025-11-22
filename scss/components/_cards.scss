@@ -1,5 +1,6 @@
 @use '../utils/placeholders' as *;
 @use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 .cards {
 	background-color: $bg-color;
@@ -159,14 +160,7 @@
 }
 
 .cards__button {
-	padding: 12px 40px;
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	gap: 4px;
-	font-weight: 600;
-	transition: 0.3s;
-	border: none;
+	@include button(12px 40px);
 
 	&--primary {
 		background-color: $accent-color;
@@ -180,9 +174,10 @@
 	}
 
 	&--secondary {
+		@include button(12px 55px);
 		background-color: transparent;
-		padding: 12px 54px;
 		border: 2px solid $accent-color;
+		color: $dark-btn-txt-color;
 
 		&:hover,
 		&:focus {

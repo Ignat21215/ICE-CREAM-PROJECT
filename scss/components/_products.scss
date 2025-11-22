@@ -1,5 +1,6 @@
 @use '../utils/placeholders' as *;
 @use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 @media (min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi),
