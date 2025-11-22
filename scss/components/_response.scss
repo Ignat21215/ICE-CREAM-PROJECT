@@ -67,9 +67,9 @@
 		display: flex;
 		align-items: center;
 		font-size: 16px;
-		padding: 43px 109px;
+		padding: 0 40px;
 		max-width: 968px;
-		max-height: 138px;
+		height: 138px;
 		border-radius: 24px;
 		text-align: center;
 		color: $light-txt-color;
@@ -128,7 +128,8 @@
 		&__text {
 			font-size: 14px;
 			max-width: 705px;
-			max-height: 138px;
+			height: 138px;
+			padding: 0 20px;
 			display: flex;
 			align-items: center;
 		}
@@ -149,7 +150,8 @@
 		&__text {
 			font-size: 12px;
 			max-width: 280px;
-			max-height: 256px;
+			line-height: 2.55;
+			height: 256px;
 		}
 
 		&__user-name {
