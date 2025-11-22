@@ -2447,21 +2447,6 @@ label {
   padding-top: 474px;
   gap: 16px;
 }
-@media (max-width: 871px) {
-  .cards__actions {
-    padding-top: 1085px;
-  }
-}
-@media (max-width: 742px) {
-  .cards__actions {
-    padding-top: 855px !important;
-  }
-}
-@media (max-width: 495px) {
-  .cards__actions {
-    padding-top: 1385px !important;
-  }
-}
 
 .cards__button {
   background-color: rgb(248, 210, 78);
