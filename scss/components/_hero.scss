@@ -127,7 +127,8 @@
     background-color: $bg-color;
 
     &__list {
-      right: 32px;
+      margin-left: 14px;
+      gap: 20px;
     }
     &__title {
       font-size: 26px;
@@ -139,6 +140,7 @@
         font-size: 34px;
       }
     }
+
     &__wrapper {
       gap: 32px;
       padding-bottom: 12px;
@@ -190,16 +192,24 @@
     background: url(../images/dots-small.png) bottom right;
     background-repeat: no-repeat;
     background-color: $bg-color;
+    position: relative;
     padding-bottom: 150px;
+
+    &__container {
+      flex-direction: column;
+    }
 
     &__title {
       padding-bottom: 32px;
     }
 
-    &__img,
-    &__desc,
-    &__arrow-link,
-    &__list {
+    &__faces-img {
+      position: absolute;
+      bottom: 0px;
+      right: 20px;
+    }
+
+    &__wrapper, &__list {
       display: none;
     }
   }
@@ -220,7 +230,13 @@
     background: url(../images/dots-mobile.png) bottom;
     background-repeat: no-repeat;
     background-color: $bg-color;
-    padding-bottom: 236px;
+    position: static;
+    padding-bottom: 0;
+
+    &__faces-img {
+      margin-left: 63px;
+      position: static;
+    }
   }
 
   @media (min-device-pixel-ratio: 2),

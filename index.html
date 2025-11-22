@@ -32,10 +32,6 @@
         </picture>
       </a>
       <div class="header__wrapper">
-        <input type="checkbox" id="toggle" />
-        <label for="toggle" class="toggle__label--first">
-          <span class="toggle-btn"></span>
-        </label>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -52,19 +48,11 @@
             </li>
           </ul>
         </nav>
-        <button class="header__btn button" type="button" data-open-modal="buy" data-aos="fade-left">
-          Buy now
-          <svg class="header__btn-icon">
-            <use href="./images/symbol-defs.svg#icon-short-arrow"></use>
-          </svg>
-        </button>
-      </div>
-      <input type="checkbox" id="toggle" class="toggle" />
-      <label for="toggle" class="toggle__label">
-        <span class="toggle-btn"></span>
-      </label>
-      <div class="nav__wrapper">
-        <nav class="header__nav">
+        <input type="checkbox" id="toggle"/>
+        <label for="toggle">
+          <span class="toggle-btn"></span>
+        </label>
+        <nav class="nav">
           <ul class="header__list">
             <li class="header__item">
               <a href="index.html" class="header__link">Home</a>
@@ -79,15 +67,20 @@
               <a href="#contact" class="header__link">Contact</a>
             </li>
           </ul>
+          <button class="header__btn button nav__button" type="button" data-open-modal="buy">
+            Buy now
+            <svg class="header__btn-icon">
+              <use href="./images/symbol-defs.svg#icon-short-arrow"></use>
+            </svg>
+          </button>
         </nav>
-        <button class="header__btn button" type="button" data-open-modal="buy">
+        <button class="header__btn button" type="button" data-open-modal="buy" data-aos="fade-left">
           Buy now
           <svg class="header__btn-icon">
             <use href="./images/symbol-defs.svg#icon-short-arrow"></use>
           </svg>
         </button>
       </div>
-
       <div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="buy" data-aos="fade-right">
         <div class="modal buy">
           <button class="modal__close-btn" data-close-modal>
@@ -143,15 +136,18 @@
     <section class="hero">
       <div class="container hero__container">
         <div class="hero__left-wrapper">
-          <h1 class="hero__title" data-aos="fade-up">ice cream made with <span class="hero__title-span">passion</span></h1>
+          <h1 class="hero__title" data-aos="fade-up">ice cream made with <span class="hero__title-span">passion</span>
+          </h1>
           <button class="hero__btn button--hover" data-aos="fade-up" type="button" data-open-modal="buy">
             Products
           </button>
           <a href="#made" class="hero__link" data-aos="fade-up">How it’s made?</a>
           <div class="hero__wrapper" data-aos="fade-right">
             <picture>
-              <source srcset="./images/plate-of-ice-cream.png, ./images/plate-of-ice-cream@2x.png" media="(min-width: 1200px)" />
-              <source srcset="./images/plate-of-ice-cream-tablet.png, ./images/plate-of-ice-cream-tablet@2x.png" media="(min-width: 481px)" />
+              <source srcset="./images/plate-of-ice-cream.png, ./images/plate-of-ice-cream@2x.png"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/plate-of-ice-cream-tablet.png, ./images/plate-of-ice-cream-tablet@2x.png"
+                media="(min-width: 481px)" />
               <img src="./images/plate-of-ice-cream.png" alt="ice cream" class="hero__img" />
             </picture>
             <div class="hero__txt-wrapper">
@@ -428,300 +424,213 @@
     </section>
 
     <section class="response">
-        <div class="response__container container">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
+      <div class="response__container container">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="
                 images/hlib/desktop/ice-creams-on-table.jpg   1x,
                 images/hlib/desktop/ice-creams-on-table@2.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 705px)"
-              srcset="
+              " />
+          <source media="(min-width: 705px)" srcset="
                 images/hlib/tablet/ice-creams-on-table-tablet.jpg   1x,
                 images/hlib/tablet/ice-creams-on-table-tablet@2.jpg 2x
-              "
-            />
-            <img
-              class="response__img"
-              src="images/hlib/mobile/ice-creams-on-table-mobile.jpg"
-              srcset="
+              " />
+          <img class="response__img" src="images/hlib/mobile/ice-creams-on-table-mobile.jpg" srcset="
                 images/hlib/mobile/ice-creams-on-table-mobile.jpg   1x,
                 images/hlib/mobile/ice-creams-on-table-mobile@2.jpg 2x
-              "
-              alt="ice creams on table"
-            />
-          </picture>
+              " alt="ice creams on table" />
+        </picture>
 
-          <div class="response__track">
-            <ul class="response__list">
-              <li class="response__item">
-                <picture data-aos="fade-right">
-                  <img
-                    class="response__user-img"
-                    src="images/hlib/desktop/woman.jpg"
-                    srcset="
+        <div class="response__track">
+          <ul class="response__list">
+            <li class="response__item">
+              <picture data-aos="fade-right">
+                <img class="response__user-img" src="images/hlib/desktop/woman.jpg" srcset="
                       images/hlib/desktop/woman.jpg   1x,
                       images/hlib/desktop/woman@2.jpg 2x
-                    "
-                    alt="woman"
-                  />
-                </picture>
-                <p class="response__text" data-aos="fade-right">
-                  I love visiting your cafe. You prepare the most delicious ice
-                  cream in Los Angeles! In addition, you have beautiful serving,
-                  cozy atmosphere and polite staff.
-                </p>
-                <p class="response__user-name" data-aos="fade-right">
-                  Emily, Los Angeles
-                </p>
-              </li>
+                    " alt="woman" />
+              </picture>
+              <p class="response__text" data-aos="fade-right">
+                I love visiting your cafe. You prepare the most delicious ice
+                cream in Los Angeles! In addition, you have beautiful serving,
+                cozy atmosphere and polite staff.
+              </p>
+              <p class="response__user-name" data-aos="fade-right">
+                Emily, Los Angeles
+              </p>
+            </li>
 
-              <li class="response__item slider-hidden">
-                <picture data-aos="fade-right">
-                  <img
-                    class="response__user-img"
-                    src="images/hlib/desktop/man.jpg"
-                    srcset="
+            <li class="response__item slider-hidden">
+              <picture data-aos="fade-right">
+                <img class="response__user-img" src="images/hlib/desktop/man.jpg" srcset="
                       images/hlib/desktop/man.jpg   1x,
                       images/hlib/desktop/man@2.jpg 2x
-                    "
-                    alt="man"
-                  />
-                </picture>
-                <p class="response__text" data-aos="fade-right">
-                  Every day we come to you with friends after classes in
-                  college. We love your ice cream and casual atmosphere!
-                </p>
-                <p class="response__user-name" data-aos="fade-right">
-                  Bryan, New-York
-                </p>
-              </li>
+                    " alt="man" />
+              </picture>
+              <p class="response__text" data-aos="fade-right">
+                Every day we come to you with friends after classes in
+                college. We love your ice cream and casual atmosphere!
+              </p>
+              <p class="response__user-name" data-aos="fade-right">
+                Bryan, New-York
+              </p>
+            </li>
 
-              <li class="response__item slider-hidden">
-                <picture data-aos="fade-right">
-                  <img
-                    class="response__user-img"
-                    src="images/hlib/desktop/woman2.jpg"
-                    srcset="
+            <li class="response__item slider-hidden">
+              <picture data-aos="fade-right">
+                <img class="response__user-img" src="images/hlib/desktop/woman2.jpg" srcset="
                       images/hlib/desktop/woman2.jpg   1x,
                       images/hlib/desktop/woman2@2.jpg 2x
-                    "
-                    alt="woman"
-                  />
-                </picture>
-                <p class="response__text" data-aos="fade-right">
-                  Ice cream is my passion! I love your chocolate hazelnut ice
-                  cream! And I really like the excellent service - always served
-                  politely and quickly!
-                </p>
-                <p class="response__user-name" data-aos="fade-right">
-                  Diana, Chicago
-                </p>
-              </li>
-            </ul>
-            <ul class="response__pagination">
-              <li role="presentation" data-aos="fade-right">
-                <button
-                  class="response__pagination-btn is-active"
-                  type="button"
-                  onclick="changeSlide(0)"
-                ></button>
-              </li>
-              <li role="presentation" data-aos="fade-up">
-                <button
-                  class="response__pagination-btn"
-                  type="button"
-                  onclick="changeSlide(1)"
-                ></button>
-              </li>
-              <li role="presentation" data-aos="fade-left">
-                <button
-                  class="response__pagination-btn"
-                  type="button"
-                  onclick="changeSlide(2)"
-                ></button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="cards">
-        <div class="cards__container container">
-          <ul class="cards__list">
-            <li class="card" data-aos="zoom-in-left">
-              <p class="card__title">CAFE</p>
-              <p class="card__city">Chicago</p>
-
-              <a
-                href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
-                class="card__address"
-              >
-                10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
-              </a>
-
-              <div class="card__schedule">
-                <p><span>Monday – Friday:</span> 06:00 AM – 10:00 PM</p>
-                <p><span>Saturday – Sunday:</span> 08:00 AM – 04:00 PM</p>
-              </div>
-
-              <div class="card__contacts">
-                <a href="tel:61383766284" class="card__phone"
-                  >+61(0) 383 766 284</a
-                >
-                <a href="mailto:noreply@envato.com" class="card__email"
-                  >noreply@envato.com</a
-                >
-              </div>
-            </li>
-
-            <li class="card" data-aos="zoom-in-left">
-              <p class="card__title">FOOD TRUCK</p>
-              <p class="card__city">Los Angeles</p>
-
-              <a
-                href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
-                class="card__address"
-              >
-                1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
-              </a>
-
-              <div class="card__schedule">
-                <p><span>Monday – Friday:</span> 06:00 AM – 10:00 PM</p>
-                <p><span>Saturday – Sunday:</span> 08:00 AM – 04:00 PM</p>
-              </div>
-
-              <div class="card__contacts">
-                <a href="tel:61383766284" class="card__phone"
-                  >+61(0) 383 766 284</a
-                >
-                <a href="mailto:noreply@envato.com" class="card__email"
-                  >noreply@envato.com</a
-                >
-              </div>
-            </li>
-
-            <li class="card" data-aos="zoom-in-left">
-              <p class="card__title">CAFE</p>
-              <p class="card__city">New York</p>
-
-              <a
-                href="https://maps.app.goo.gl/fZmPPUdndzR753jY7"
-                class="card__address"
-              >
-                726 Sterling Pl, Brooklyn, NY 11222, USA
-              </a>
-
-              <div class="card__schedule">
-                <p><span>Monday – Friday:</span> 06:00 AM – 10:00 PM</p>
-                <p><span>Saturday – Sunday:</span> 08:00 AM – 04:00 PM</p>
-              </div>
-
-              <div class="card__contacts">
-                <a href="tel:61383766284" class="card__phone"
-                  >+61(0) 383 766 284</a
-                >
-                <a href="mailto:noreply@envato.com" class="card__email"
-                  >noreply@envato.com</a
-                >
-              </div>
+                    " alt="woman" />
+              </picture>
+              <p class="response__text" data-aos="fade-right">
+                Ice cream is my passion! I love your chocolate hazelnut ice
+                cream! And I really like the excellent service - always served
+                politely and quickly!
+              </p>
+              <p class="response__user-name" data-aos="fade-right">
+                Diana, Chicago
+              </p>
             </li>
           </ul>
-
-          <div class="cards__actions">
-            <button
-              type="button"
-              class="cards__button cards__button--primary"
-              data-open-modal="locations"
-              data-aos="fade-right"
-            >
-              Our Locations
-              <svg width="12" height="12" class="cards__button-icon">
-                <use href="images/symbol-defs.svg#icon-short-arrow"></use>
-              </svg>
-            </button>
-
-            <button
-              type="button"
-              class="cards__button cards__button--secondary button--hover"
-              data-open-modal="franchise"
-              data-aos="fade-left"
-            >
-              Franchise
-              <svg width="12" height="12" class="cards__button-icon">
-                <use href="images/symbol-defs.svg#icon-short-arrow"></use>
-              </svg>
-            </button>
-          </div>
+          <ul class="response__pagination">
+            <li role="presentation" data-aos="fade-right">
+              <button class="response__pagination-btn is-active" type="button" onclick="changeSlide(0)"></button>
+            </li>
+            <li role="presentation" data-aos="fade-up">
+              <button class="response__pagination-btn" type="button" onclick="changeSlide(1)"></button>
+            </li>
+            <li role="presentation" data-aos="fade-left">
+              <button class="response__pagination-btn" type="button" onclick="changeSlide(2)"></button>
+            </li>
+          </ul>
         </div>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="cards__container container">
+        <ul class="cards__list">
+          <li class="card" data-aos="zoom-in-left">
+            <p class="card__title">CAFE</p>
+            <p class="card__city">Chicago</p>
 
-        <div
-          class="modal-backdrop is-hidden"
-          data-action="backdrop"
-          data-modal="franchise"
-        >
-          <div class="franchise modal">
-            <button class="modal__close-btn" data-close-modal>
-              <svg class="modal__close-btn__icon">
-                <use href="images/symbol-defs.svg#icon-close-button"></use>
-              </svg>
-            </button>
-            <h2 class="franchise__title modal__title">
-              Thank you for your interest in owning an Ice Cream shop
-            </h2>
-            <p class="franchise__desc modal__desc">
-              Due to the overwhelming volume of franchise requests we are not
-              accepting new franchisee applications at this time. Once the
-              application process resumes, we will contact you for further
-              information. Please fill out the contact information below and we
-              will reach out for additional information. We appreciate your
-              patience.
-            </p>
+            <a href="https://maps.app.goo.gl/fZmPPUdndzR753jY7" class="card__address">
+              10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA
+            </a>
 
-            <form class="modal__form">
-              <input type="text" class="modal__input" placeholder="Name" />
-              <input type="tel" class="modal__input" placeholder="Phone" />
-              <input type="email" class="modal__input" placeholder="Email" />
-              <textarea
-                class="modal__textarea"
-                placeholder="Comment"
-              ></textarea>
-            </form>
-            <button class="modal__button button" type="button">Submit</button>
-          </div>
+            <div class="card__schedule">
+              <p><span>Monday – Friday:</span> 06:00 AM – 10:00 PM</p>
+              <p><span>Saturday – Sunday:</span> 08:00 AM – 04:00 PM</p>
+            </div>
+
+            <div class="card__contacts">
+              <a href="tel:61383766284" class="card__phone">+61(0) 383 766 284</a>
+              <a href="mailto:noreply@envato.com" class="card__email">noreply@envato.com</a>
+            </div>
+          </li>
+
+          <li class="card" data-aos="zoom-in-left">
+            <p class="card__title">FOOD TRUCK</p>
+            <p class="card__city">Los Angeles</p>
+
+            <a href="https://maps.app.goo.gl/fZmPPUdndzR753jY7" class="card__address">
+              1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+            </a>
+
+            <div class="card__schedule">
+              <p><span>Monday – Friday:</span> 06:00 AM – 10:00 PM</p>
+              <p><span>Saturday – Sunday:</span> 08:00 AM – 04:00 PM</p>
+            </div>
+
+            <div class="card__contacts">
+              <a href="tel:61383766284" class="card__phone">+61(0) 383 766 284</a>
+              <a href="mailto:noreply@envato.com" class="card__email">noreply@envato.com</a>
+            </div>
+          </li>
+
+          <li class="card" data-aos="zoom-in-left">
+            <p class="card__title">CAFE</p>
+            <p class="card__city">New York</p>
+
+            <a href="https://maps.app.goo.gl/fZmPPUdndzR753jY7" class="card__address">
+              726 Sterling Pl, Brooklyn, NY 11222, USA
+            </a>
+
+            <div class="card__schedule">
+              <p><span>Monday – Friday:</span> 06:00 AM – 10:00 PM</p>
+              <p><span>Saturday – Sunday:</span> 08:00 AM – 04:00 PM</p>
+            </div>
+
+            <div class="card__contacts">
+              <a href="tel:61383766284" class="card__phone">+61(0) 383 766 284</a>
+              <a href="mailto:noreply@envato.com" class="card__email">noreply@envato.com</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="cards__actions">
+          <button type="button" class="cards__button cards__button--primary" data-open-modal="locations"
+            data-aos="fade-right">
+            Our Locations
+            <svg width="12" height="12" class="cards__button-icon">
+              <use href="images/symbol-defs.svg#icon-short-arrow"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="cards__button cards__button--secondary button--hover" data-open-modal="franchise"
+            data-aos="fade-left">
+            Franchise
+            <svg width="12" height="12" class="cards__button-icon">
+              <use href="images/symbol-defs.svg#icon-short-arrow"></use>
+            </svg>
+          </button>
         </div>
+      </div>
 
-        <div
-          class="modal-backdrop is-hidden"
-          data-action="backdrop"
-          data-modal="locations"
-        >
-          <div class="cards__modal modal">
-            <button class="modal__close-btn" data-close-modal>
-              <svg>
-                <use href="images/symbol-defs.svg#icon-close-button"></use>
-              </svg>
-            </button>
-            <h2 class="modal__title">Our Locations</h2>
-            <iframe
-              class="cards__modal-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26469.123456789!2d34.557!3d49.589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDM1JzU5LjAiTiAzNMKwMzMnMjcuMCJF!5e0!3m2!1sen!2sua!4v1696234567890!5m2!1sen!2sua"
-              width="100%"
-              height="260"
-              loading="lazy"
-              style="border-radius: 10px"
-            ></iframe>
-            <a
-              href="https://www.google.com/maps/place/Poltava/"
-              target="_blank"
-            >
-              <button class="modal__button button">Open map</button></a
-            >
-          </div>
+      <div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="franchise">
+        <div class="franchise modal">
+          <button class="modal__close-btn" data-close-modal>
+            <svg class="modal__close-btn__icon">
+              <use href="images/symbol-defs.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <h2 class="franchise__title modal__title">
+            Thank you for your interest in owning an Ice Cream shop
+          </h2>
+          <p class="franchise__desc modal__desc">
+            Due to the overwhelming volume of franchise requests we are not
+            accepting new franchisee applications at this time. Once the
+            application process resumes, we will contact you for further
+            information. Please fill out the contact information below and we
+            will reach out for additional information. We appreciate your
+            patience.
+          </p>
+
+          <form class="modal__form">
+            <input type="text" class="modal__input" placeholder="Name" />
+            <input type="tel" class="modal__input" placeholder="Phone" />
+            <input type="email" class="modal__input" placeholder="Email" />
+            <textarea class="modal__textarea" placeholder="Comment"></textarea>
+          </form>
+          <button class="modal__button button" type="button">Submit</button>
         </div>
-      </section>
+      </div>
+
+      <div class="modal-backdrop is-hidden" data-action="backdrop" data-modal="locations">
+        <div class="cards__modal modal">
+          <button class="modal__close-btn" data-close-modal>
+            <svg>
+              <use href="images/symbol-defs.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">Our Locations</h2>
+          <iframe class="cards__modal-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26469.123456789!2d34.557!3d49.589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDM1JzU5LjAiTiAzNMKwMzMnMjcuMCJF!5e0!3m2!1sen!2sua!4v1696234567890!5m2!1sen!2sua"
+            width="100%" height="260" loading="lazy" style="border-radius: 10px"></iframe>
+          <a href="https://www.google.com/maps/place/Poltava/" target="_blank">
+            <button class="modal__button button">Open map</button></a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">

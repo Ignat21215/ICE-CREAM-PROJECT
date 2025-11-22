@@ -213,9 +213,6 @@ body {
   background-color: #fff;
   border-radius: 12px;
   padding: 20px 60px;
-  max-width: 500px;
-  width: 90%;
-  max-height: 90%;
   overflow-y: auto;
   position: relative;
   -webkit-transform: scale(1);
@@ -723,8 +720,6 @@ body {
 
 .buy {
   padding: 32px 54px;
-  width: 568px;
-  height: 644px;
   border-radius: 10px;
   border: 2px solid rgb(248, 210, 78);
 }
@@ -836,11 +831,15 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header__wrapper {
+    padding: 0;
+  }
+  .header__btn {
+    display: none;
+  }
   .logo {
     padding: 0;
   }
-}
-@media (max-width: 480px) {
   .buy {
     padding: 28px;
   }
@@ -988,7 +987,8 @@ body {
     background-color: rgb(132, 161, 120);
   }
   .hero__list {
-    right: 32px;
+    margin-left: 14px;
+    gap: 20px;
   }
   .hero__title {
     font-size: 26px;
@@ -1045,12 +1045,24 @@ body {
     background: url(../images/dots-small.png) bottom right;
     background-repeat: no-repeat;
     background-color: rgb(132, 161, 120);
+    position: relative;
     padding-bottom: 150px;
+  }
+  .hero__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .hero__title {
     padding-bottom: 32px;
   }
-  .hero__img, .hero__desc, .hero__arrow-link, .hero__list {
+  .hero__faces-img {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+  }
+  .hero__wrapper, .hero__list {
     display: none;
   }
 }
@@ -1066,7 +1078,12 @@ body {
     background: url(../images/dots-mobile.png) bottom;
     background-repeat: no-repeat;
     background-color: rgb(132, 161, 120);
-    padding-bottom: 236px;
+    position: static;
+    padding-bottom: 0;
+  }
+  .hero__faces-img {
+    margin-left: 63px;
+    position: static;
   }
 }
 @media (max-width: 320px) and (min-device-pixel-ratio: 2), (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 320px) and (min-resolution: 192dpi), (max-width: 320px) and (min-resolution: 2dppx) {
@@ -1081,7 +1098,10 @@ label {
   display: none;
 }
 
-.nav__wrapper {
+.nav {
+  display: none;
+}
+.nav__button {
   display: none;
 }
 
@@ -1117,25 +1137,25 @@ label {
     top: 8px;
     position: absolute;
   }
-  .toggle__label {
-    display: none;
-  }
   .header__nav {
     display: none;
   }
-  #toggle:checked ~ .header__nav {
+  #toggle:checked ~ .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header__nav {
+  #toggle:checked ~ body {
+    position: fixed;
+  }
+  .nav {
     position: absolute;
     z-index: 2;
     top: 0px;
     left: 0;
     width: 100%;
     background: rgb(132, 161, 120);
-    height: 796px;
+    height: 100vh;
     padding-top: 140px;
     padding-bottom: 528px;
   }
@@ -1204,56 +1224,25 @@ label {
   }
 }
 @media (max-width: 480px) {
-  .toggle__label--first {
-    display: none;
-  }
-  .toggle__label {
-    display: block;
-  }
-  .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: static;
-    background: 0;
-    height: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .nav__wrapper {
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    background: rgb(132, 161, 120);
-    height: 100vh;
-    padding-top: 104px;
-    padding-bottom: 88px;
-  }
   .header__list {
     gap: 32px;
   }
   .header__link {
     font-size: 32px;
   }
-  .header__wrapper {
-    display: none;
-  }
-  .toggle:checked ~ .nav__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .nav__wrapper {
+  .nav {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 114px;
+    height: 600px;
+    padding-top: 104px;
+    padding-bottom: 88px;
   }
-  #toggle:checked ~ .hero__btn {
-    z-index: 3;
+  .nav__button {
+    display: block;
+    margin: 0 auto;
   }
 }
 .how-made {

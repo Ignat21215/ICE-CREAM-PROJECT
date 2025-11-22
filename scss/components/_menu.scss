@@ -7,8 +7,12 @@ label {
   display: none;
 }
 
-.nav__wrapper {
+.nav {
   display: none;
+
+  &__button {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -46,26 +50,26 @@ label {
     position: absolute;
   }
 
-  .toggle__label {
-    display: none;
-  }
-
   .header__nav {
     display: none;
   }
 
-  #toggle:checked ~ .header__nav {
+  #toggle:checked ~ .nav {
     display: flex;
   }
 
-  .header__nav {
+  #toggle:checked ~ body {
+    position: fixed;
+  }
+
+  .nav {
     position: absolute;
     z-index: 2;
     top: 0px;
     left: 0;
     width: 100%;
     background: $bg-color;
-    height: 796px;
+    height: 100vh;
     padding-top: 140px;
     padding-bottom: 528px;
   }
@@ -132,35 +136,6 @@ label {
 
 @media (max-width: 480px) {
 
-  .toggle__label--first {
-    display: none;
-  }
-
-  .toggle__label {
-    display: block;
-  }
-
-  .header__nav {
-    display: flex;
-    position: static;
-    background: 0;
-    height: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .nav__wrapper {
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    background: $bg-color;
-    height: 100vh;
-    padding-top: 104px;
-    padding-bottom: 88px;
-  }
-
   .header {
     &__list {
       gap: 32px;
@@ -171,20 +146,16 @@ label {
     }
   }
 
-  .header__wrapper {
-    display: none;
-  }
-
-  .toggle:checked ~ .nav__wrapper {
-    display: flex;
-  }
-
-  .nav__wrapper {
-    flex-direction: column-reverse;
+  .nav {
+    flex-direction: column;
     gap: 114px;
-  }
+    height: 600px;
+    padding-top: 104px;
+    padding-bottom: 88px;
 
-  #toggle:checked ~ .hero__btn {
-    z-index: 3;
+    &__button {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }

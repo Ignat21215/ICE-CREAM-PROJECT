@@ -1,6 +1,6 @@
 @use "../utils/placeholders" as *;
 @use "../utils/variables" as *;
-@use '../utils/mixins' as *;
+@use "../utils/mixins" as *;
 
 .header {
   padding-top: 8px;
@@ -49,8 +49,6 @@
 
 .buy {
   padding: 32px 54px;
-  width: 568px;
-  height: 644px;
   border-radius: 10px;
   border: 2px solid $accent-color;
 
@@ -165,13 +163,19 @@
     &__container {
       align-items: center;
     }
+
+    &__wrapper {
+      padding: 0;
+    }
+
+    &__btn {
+      display: none;
+    }
   }
   .logo {
     padding: 0;
   }
-}
 
-@media (max-width: 480px) {
   .buy {
     padding: 28px;
 
