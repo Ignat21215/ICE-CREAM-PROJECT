@@ -207,6 +207,11 @@ body {
   z-index: 999;
   -webkit-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
+  opacity: 1;
+}
+.modal-backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -217,10 +222,16 @@ body {
   position: relative;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  transition: opacity 300ms ease, -webkit-transform 300ms ease;
-  transition: transform 300ms ease, opacity 300ms ease;
-  transition: transform 300ms ease, opacity 300ms ease, -webkit-transform 300ms ease;
+  opacity: 1;
+  -webkit-transition: opacity 1000ms ease, -webkit-transform 1000ms ease;
+  transition: opacity 1000ms ease, -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease, opacity 1000ms ease;
+  transition: transform 1000ms ease, opacity 1000ms ease, -webkit-transform 1000ms ease;
+}
+.modal-backdrop.is-hidden .modal {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0;
 }
 .modal__button {
   margin: 0 auto;
@@ -376,7 +387,7 @@ body {
 }
 
 .is-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 .modal__form {
@@ -2563,4 +2574,4 @@ label {
             flex-direction: column;
     padding-top: 1040px !important;
   }
-}
+}/*# sourceMappingURL=main.css.map */
