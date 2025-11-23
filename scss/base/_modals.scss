@@ -21,8 +21,6 @@
   padding: 20px 60px;
   overflow-y: auto;
   position: relative;
-  transform: scale(1);
-  transition: transform 300ms ease, opacity 300ms ease;
 
   &__button {
     display: flex;

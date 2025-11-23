@@ -14,6 +14,12 @@ body {
   margin: 0 auto;
 }
 
+.animation {
+  transition-property: color, background-color, fill, text-decoration !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 200ms !important;
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 768px;

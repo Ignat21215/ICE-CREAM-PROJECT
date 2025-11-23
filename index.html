@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ice Cream</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
@@ -15,8 +16,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -35,16 +34,16 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="index.html" class="header__link" data-aos="fade-up">Home</a>
+              <a href="index.html" class="header__link animation" data-aos="fade-up">Home</a>
             </li>
             <li class="header__item">
-              <a href="#made" class="header__link" data-aos="fade-up">How it’s made?</a>
+              <a href="#made" class="header__link animation" data-aos="fade-up">How it’s made?</a>
             </li>
             <li class="header__item">
-              <a href="#products" class="header__link" data-aos="fade-up">Our products</a>
+              <a href="#products" class="header__link animation" data-aos="fade-up">Our products</a>
             </li>
             <li class="header__item">
-              <a href="#contact" class="header__link" data-aos="fade-up">Contact</a>
+              <a href="#contact" class="header__link animation" data-aos="fade-up">Contact</a>
             </li>
           </ul>
         </nav>
@@ -55,26 +54,26 @@
         <nav class="nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="index.html" class="header__link">Home</a>
+              <a href="index.html" class="header__link animation">Home</a>
             </li>
             <li class="header__item">
-              <a href="#made" class="header__link">How it’s made?</a>
+              <a href="#made" class="header__link animation">How it’s made?</a>
             </li>
             <li class="header__item">
-              <a href="#products" class="header__link">Our products</a>
+              <a href="#products" class="header__link animation">Our products</a>
             </li>
             <li class="header__item">
-              <a href="#contact" class="header__link">Contact</a>
+              <a href="#contact" class="header__link animation">Contact</a>
             </li>
           </ul>
-          <button class="header__btn button nav__button" type="button" data-open-modal="buy">
+          <button class="header__btn button nav__button animation" type="button" data-open-modal="buy">
             Buy now
             <svg class="header__btn-icon">
               <use href="./images/symbol-defs.svg#icon-short-arrow"></use>
             </svg>
           </button>
         </nav>
-        <button class="header__btn button" type="button" data-open-modal="buy" data-aos="fade-left">
+        <button class="header__btn button animation" type="button" data-open-modal="buy" data-aos="fade-left">
           Buy now
           <svg class="header__btn-icon">
             <use href="./images/symbol-defs.svg#icon-short-arrow"></use>
@@ -125,7 +124,7 @@
             <input type="text" class="modal__input" placeholder="Name">
             <input type="tel" class="modal__input" placeholder="Phone">
             <textarea class="modal__textarea" placeholder="Comment"></textarea>
-            <button class="modal__button button buy__btn" type="button">Submit</button>
+            <button class="modal__button button buy__btn animation" type="button">Submit</button>
           </form>
         </div>
       </div>
@@ -138,10 +137,10 @@
         <div class="hero__left-wrapper">
           <h1 class="hero__title" data-aos="fade-up">ice cream made with <span class="hero__title-span">passion</span>
           </h1>
-          <button class="hero__btn button--hover" data-aos="fade-up" type="button" data-open-modal="buy">
+          <button class="hero__btn button--hover animation" data-aos="fade-up" type="button" data-open-modal="buy">
             Products
           </button>
-          <a href="#made" class="hero__link" data-aos="fade-up">How it’s made?</a>
+          <a href="#made" class="hero__link animation" data-aos="fade-up">How it’s made?</a>
           <div class="hero__wrapper" data-aos="fade-right">
             <picture>
               <source srcset="./images/plate-of-ice-cream.png, ./images/plate-of-ice-cream@2x.png"
@@ -610,7 +609,7 @@
             <input type="tel" class="modal__input" placeholder="Phone" />
             <input type="email" class="modal__input" placeholder="Email" />
             <textarea class="modal__textarea" placeholder="Comment"></textarea>
-            <button class="modal__button button" type="button">Submit</button>
+            <button class="modal__button button animation" type="button">Submit</button>
           </form>
         </div>
       </div>
