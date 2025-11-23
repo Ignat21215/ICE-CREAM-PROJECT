@@ -75,7 +75,7 @@
   }
 
   &__item {
-    padding: 95px 13px 20px 13px;
+    padding: 93px 13px 18px 13px;
     border: 2px solid $buy-green-border;
     border-radius: 15px;
     position: relative;
@@ -159,9 +159,12 @@
 @media (max-width: 480px) {
   .header {
     padding-bottom: 40px;
+    padding-top: 14px;
 
     &__container {
       align-items: center;
+      gap: 0;
+      justify-content: space-between;
     }
 
     &__wrapper {
@@ -171,9 +174,9 @@
     &__btn {
       display: none;
     }
-  }
-  .logo {
-    padding: 0;
+    .logo {
+      padding: 0;
+    }
   }
 
   .buy {
@@ -182,6 +185,7 @@
     &__title {
       font-size: 16px;
       padding-bottom: 83px;
+      line-height: 24px;
     }
 
     &__list {

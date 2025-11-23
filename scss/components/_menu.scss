@@ -25,7 +25,7 @@ label {
   }
 
   label {
-    padding: 8px 4px;
+    padding: 14.67px 4px;
   }
 
   label span,
@@ -69,7 +69,6 @@ label {
     left: 0;
     width: 100%;
     background: $bg-color;
-    height: 100vh;
     padding-top: 140px;
     padding-bottom: 528px;
   }
@@ -79,6 +78,7 @@ label {
     gap: 40px;
     flex-direction: column;
     margin: 0 auto;
+    text-align: center;
   }
 
   .header__link {
@@ -86,9 +86,6 @@ label {
     font-size: 48px;
     letter-spacing: 0;
     font-weight: 700;
-    max-width: 385px;
-    display: flex;
-    justify-content: center;
 
     &:hover {
       color: $dark-txt-color;
@@ -144,12 +141,15 @@ label {
     &__link {
       font-size: 32px;
     }
+
+    label {
+      margin-bottom: 12px;
+    }
   }
 
   .nav {
     flex-direction: column;
     gap: 114px;
-    height: 600px;
     padding-top: 104px;
     padding-bottom: 88px;
 
