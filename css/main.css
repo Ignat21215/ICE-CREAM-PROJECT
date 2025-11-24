@@ -333,7 +333,7 @@ body {
 }
 
 .is-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 @media (max-width: 480px) {
@@ -1070,6 +1070,7 @@ label {
     background: rgb(132, 161, 120);
     padding-top: 140px;
     padding-bottom: 528px;
+    height: 100vh;
   }
   .header__list {
     display: -webkit-box;
@@ -1468,6 +1469,7 @@ label {
     background-image: url(../images/ice-creams-bg@2x.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .products {
@@ -1864,7 +1866,6 @@ label {
     background-image: url(../images/ice-creams-bg-tablet@2x.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 @media (max-width: 480px) {

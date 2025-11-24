@@ -71,6 +71,8 @@ label {
     background: $bg-color;
     padding-top: 140px;
     padding-bottom: 528px;
+    height: 100vh;
+    // для кращої роботи на мобільних пристроях
   }
 
   .header__list {

@@ -86,7 +86,7 @@
 
   &__close-btn {
     position: absolute;
-	right: 12px;
+	  right: 12px;
     top: 12px;
     background: none;
     border: none;
@@ -109,7 +109,7 @@
 }
 
 .is-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 @media (max-width: 480px) {
