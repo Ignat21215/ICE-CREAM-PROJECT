@@ -1,6 +1,9 @@
 @use '../utils/placeholders' as *;
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
+iframe {
+	width: 448px;
+}
 
 .cards {
 	background-color: $bg-color;
@@ -25,7 +28,7 @@
 		transform: translateY(-128px);
 	}
 	&__modal {
-		padding-inline: 16px;
+		padding-inline: 60px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -204,6 +207,17 @@
 // }
 
 @media (max-width: 768px) {
+	iframe {
+		width: 224px;
+	}
+	.cards__modal {
+		padding-inline: 28px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 22px;
+		
+	}
 	.cards__list {
 		gap: 16px;
 		transform: translateY(-299px);

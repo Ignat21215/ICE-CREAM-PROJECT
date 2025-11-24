@@ -227,6 +227,8 @@ body {
   padding: 20px 60px;
   overflow-y: auto;
   position: relative;
+  max-height: 674px;
+  overflow-x: hidden;
 }
 .modal__button {
   display: -webkit-box;
@@ -1314,6 +1316,7 @@ label {
       -ms-flex-align: center;
           align-items: center;
   gap: 32px;
+  padding: 20px 18px;
 }
 .how-made__modal-title {
   font-family: "Seymour One", sans-serif;
@@ -1583,8 +1586,8 @@ label {
   height: 16px;
 }
 .products__modal {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 28px;
+  padding-right: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2211,6 +2214,10 @@ label {
     max-height: 130px;
   }
 }
+iframe {
+  width: 448px;
+}
+
 .cards {
   background-color: rgb(132, 161, 120);
   color: rgb(19, 19, 19);
@@ -2241,7 +2248,7 @@ label {
           transform: translateY(-128px);
 }
 .cards__modal {
-  padding-inline: 16px;
+  padding-inline: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2444,6 +2451,23 @@ label {
 }
 
 @media (max-width: 768px) {
+  iframe {
+    width: 224px;
+  }
+  .cards__modal {
+    padding-inline: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 22px;
+  }
   .cards__list {
     gap: 16px;
     -webkit-transform: translateY(-299px);
@@ -2516,4 +2540,4 @@ label {
             flex-direction: column;
     padding-top: 1040px !important;
   }
-}
+}/*# sourceMappingURL=main.css.map */
