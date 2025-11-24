@@ -87,7 +87,8 @@
   &__txt-wrapper {
     padding-top: 67px;
     padding-bottom: 38px;
-    margin-right: 195px;
+    margin-right: 192px;
+    // Без цього список ломається
   }
 
   &__icon {
@@ -150,7 +151,7 @@
 
     &__wrapper {
       gap: 32px;
-      padding-bottom: 12px;
+      padding-bottom: 0;
     }
     &__txt-wrapper {
       margin-right: 27px;
@@ -169,14 +170,19 @@
     &__link {
       font-size: 12px;
       line-height: 24px;
+      padding: 0;
       padding-top: 7px;
     }
-    &__item__title {
-      font-size: 28px;
-      line-height: 34px;
-    }
-    &__item__desc {
-      font-size: 8px;
+    &__item {
+      &-title {
+        font-size: 28px;
+        line-height: 34px;
+      }
+
+      &-desc {
+        font-size: 8px;
+        line-height: 10px;
+      }
     }
     &__txt-wrapper {
       padding-top: 27px;

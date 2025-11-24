@@ -847,7 +847,7 @@ body {
 .hero__txt-wrapper {
   padding-top: 67px;
   padding-bottom: 38px;
-  margin-right: 195px;
+  margin-right: 192px;
 }
 .hero__icon {
   fill: rgb(252, 252, 252);
@@ -907,7 +907,7 @@ body {
   }
   .hero__wrapper {
     gap: 32px;
-    padding-bottom: 12px;
+    padding-bottom: 0;
   }
   .hero__txt-wrapper {
     margin-right: 27px;
@@ -926,14 +926,16 @@ body {
   .hero__link {
     font-size: 12px;
     line-height: 24px;
+    padding: 0;
     padding-top: 7px;
   }
-  .hero__item__title {
+  .hero__item-title {
     font-size: 28px;
     line-height: 34px;
   }
-  .hero__item__desc {
+  .hero__item-desc {
     font-size: 8px;
+    line-height: 10px;
   }
   .hero__txt-wrapper {
     padding-top: 27px;
@@ -1466,7 +1468,6 @@ label {
     background-image: url(../images/ice-creams-bg@2x.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 .products {
@@ -1809,9 +1810,11 @@ label {
     font-size: 34px;
     padding-bottom: 200px;
     background-image: url(../images/ice-creams-bg-tablet.png);
+    line-height: 43px;
   }
   .products__subtitle {
     font-size: 22px;
+    line-height: 27px;
   }
   .products__list {
     gap: 16px;
@@ -1839,13 +1842,18 @@ label {
   .products__item-title {
     font-size: 22px;
     padding-bottom: 40px;
+    line-height: 27px;
   }
   .products__desc {
     font-size: 14px;
     width: 172px;
+    line-height: 25px;
   }
   .products__desc--first {
-    padding-bottom: 107px;
+    padding-bottom: 100px;
+  }
+  .products__desc--third {
+    padding-bottom: 75px;
   }
   .products__img {
     bottom: 12px;
@@ -1854,6 +1862,9 @@ label {
 @media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
   .products {
     background-image: url(../images/ice-creams-bg-tablet@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 480px) {
@@ -1895,9 +1906,11 @@ label {
   .products__title {
     font-size: 30px;
     padding-bottom: 150px;
+    line-height: 38px;
   }
   .products__subtitle {
     font-size: 18px;
+    line-height: 22px;
   }
   .products__list {
     gap: 168px;
@@ -1911,9 +1924,15 @@ label {
   }
   .products__item {
     padding-inline: 60px;
-    padding-top: 123px;
+    padding-top: 126px;
     padding-bottom: 16px;
     margin: 0 auto;
+  }
+  .products__item--brown, .products__item--yellow {
+    padding-top: 123px;
+  }
+  .products__item--brown {
+    padding-inline: 71px;
   }
   .products__item-wrapper {
     width: 200px;
@@ -1932,20 +1951,26 @@ label {
   }
   .products__item-title {
     font-size: 20px;
-    max-width: 155px;
-    margin: 0 auto;
+    line-height: 24px;
+  }
+  .products__item-title--third {
+    line-height: 20px;
   }
   .products__desc {
     font-size: 14px;
     padding-bottom: 61px;
     width: 200px;
     margin: 0;
+    line-height: 24.5px;
   }
   .products__desc--first {
-    padding-bottom: 107px;
+    padding-bottom: 106px;
+    line-height: 25px;
   }
-  .products__link {
-    display: inline-block;
+  .products__desc--third {
+    max-width: 178px;
+    line-height: 25px;
+    padding-bottom: 63px;
   }
   .products__img {
     bottom: 12px;
@@ -1954,20 +1979,31 @@ label {
 @media (max-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) and (min-resolution: 192dpi), (max-width: 480px) and (min-resolution: 2dppx) {
   .products {
     background-image: url(../images/ice-creams-bg-small@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 320px) {
   .products {
-    padding-bottom: 148px;
+    padding-bottom: 60px;
   }
   .products__item {
     padding-inline: 40px;
+    padding-top: 123px;
   }
   .products__item-wrapper {
     left: 40px;
   }
   .products__desc {
+    padding-bottom: 53px;
+    max-width: 200px;
+  }
+  .products__desc--first {
     padding-bottom: 101px;
+  }
+  .products__desc--third {
+    padding-bottom: 55px;
   }
 }
 .response {
