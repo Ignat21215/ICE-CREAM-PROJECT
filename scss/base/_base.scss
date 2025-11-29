@@ -5,12 +5,10 @@ body {
   font-family: $font-family;
   color: $light-txt-color;
   letter-spacing: 0.04em;
-  line-height: 1;
 }
 
 .container {
-  max-width: 1200px;
-  padding-inline: 16px;
+  max-width: 1168px;
   margin: 0 auto;
 }
 
@@ -22,20 +20,18 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 768px;
-    padding-inline: 32px;
+    max-width: 704px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    max-width: 480px;
-    padding-inline: 20px;
+    max-width: 440px;
   }
 }
 
 @media (max-width: 320px) {
   .container {
-    max-width: 320px;
+    max-width: 280px;
   }
 }

@@ -163,12 +163,10 @@ body {
   font-family: "Montserrat", sans-serif;
   color: rgb(252, 252, 252);
   letter-spacing: 0.04em;
-  line-height: 1;
 }
 
 .container {
-  max-width: 1200px;
-  padding-inline: 16px;
+  max-width: 1168px;
   margin: 0 auto;
 }
 
@@ -185,19 +183,17 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 768px;
-    padding-inline: 32px;
+    max-width: 704px;
   }
 }
 @media (max-width: 480px) {
   .container {
-    max-width: 480px;
-    padding-inline: 20px;
+    max-width: 440px;
   }
 }
 @media (max-width: 320px) {
   .container {
-    max-width: 320px;
+    max-width: 280px;
   }
 }
 .modal-backdrop {
@@ -551,22 +547,21 @@ body {
 }
 .header {
   padding-top: 8px;
-  padding-bottom: 31px;
   background-color: rgb(132, 161, 120);
 }
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 308px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 208px;
-  padding-top: 20px;
-  padding-bottom: 3px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -778,6 +773,7 @@ body {
   background: url(../images/dots.png) bottom;
   background-repeat: no-repeat;
   background-color: rgb(132, 161, 120);
+  padding-top: 31px;
 }
 .hero__container {
   display: -webkit-box;
@@ -840,13 +836,14 @@ body {
   display: flex;
   gap: 16px;
   padding-bottom: 65px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .hero__faces-img {
   max-width: 456px;
 }
 .hero__txt-wrapper {
-  padding-top: 67px;
-  padding-bottom: 38px;
   margin-right: 192px;
 }
 .hero__icon {
@@ -868,6 +865,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
+  padding-top: 22px;
 }
 .hero__item {
   text-align: right;
@@ -894,6 +892,7 @@ body {
   .hero__list {
     margin-left: 14px;
     gap: 20px;
+    padding-top: 14px;
   }
   .hero__title {
     font-size: 26px;

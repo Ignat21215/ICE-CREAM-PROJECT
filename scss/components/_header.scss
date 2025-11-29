@@ -4,19 +4,16 @@
 
 .header {
   padding-top: 8px;
-  padding-bottom: 31px;
   background-color: $bg-color;
 
   &__container {
     display: flex;
-    gap: 308px;
+    justify-content: space-between;
   }
 
   &__wrapper {
     display: flex;
     gap: 208px;
-    padding-top: 20px;
-    padding-bottom: 3px;
     align-items: center;
   }
 
